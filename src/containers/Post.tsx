@@ -1,5 +1,5 @@
 import React from 'react'
-import { withRouteData, Link } from 'react-static'
+import { Link, withRouteData } from 'react-static'
 import { Post } from '../types'
 
 interface Props {

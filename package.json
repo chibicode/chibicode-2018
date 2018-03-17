@@ -26,8 +26,12 @@
     "@types/webpack-env": "^1.13.5",
     "convert-tsconfig-paths-to-webpack-aliases": "^0.9.2",
     "eslint-config-react-tools": "1.1.2",
+    "prettier": "^1.11.1",
     "serve": "^6.5.3",
     "ts-loader": "^3.5.0",
+    "tslint": "^5.9.1",
+    "tslint-config-prettier": "^1.10.0",
+    "tslint-react": "^3.5.1",
     "typescript": "^2.7.2"
   },
   "prettier": {
