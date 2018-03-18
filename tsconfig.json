@@ -16,9 +16,6 @@
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@myPathAlias/*": [
-        "src/path-alias-example/*"
-      ]
     },
     "typeRoots": [
       "./node_modules/@types"
