@@ -17,6 +17,7 @@
     "react-static": "^5.6.1",
     "recompose": "^0.26.0",
     "styled-components": "^3.2.3",
+    "tachyons": "^4.9.1",
     "typeface-roboto-mono": "^0.0.54"
   },
   "devDependencies": {
