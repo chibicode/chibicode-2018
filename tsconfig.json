@@ -15,19 +15,14 @@
     "sourceMap": true,
     "skipLibCheck": true,
     "baseUrl": ".",
-    "paths": {
-    },
-    "typeRoots": [
-      "./node_modules/@types"
-    ],
-    "lib": [
-      "dom",
-      "es2015",
-      "es2016"
+    "paths": {},
+    "lib": ["dom", "es2017"],
+    "typeRoots": ["./node_modules/@types"],
+    "plugins": [
+      {
+        "name": "typescript-styled-plugin"
+      }
     ]
   },
-  "exclude": [
-    "dist/**/*",
-    "public/**/*"
-  ]
+  "exclude": ["dist/**/*", "public/**/*", "node_modules"]
 }
