@@ -1,3 +1,1 @@
-declare module '*.png'
-declare module '*.jpg'
-declare module '*.svg'
+import * as images from './src/types/images'
