@@ -56,5 +56,6 @@ module.exports = {
         compilerOptions: tsconfig.compilerOptions,
       },
     },
+    '`gatsby-plugin-styled-components',
   ],
 }
