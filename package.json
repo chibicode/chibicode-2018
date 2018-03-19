@@ -28,8 +28,6 @@
     "react-responsive-grid": "^0.3.4",
     "styled-components": "^3.2.3",
     "tachyons": "^4.9.1",
-    "typeface-merriweather": "0.0.43",
-    "typeface-montserrat": "0.0.43",
     "typeface-roboto-mono": "^0.0.54"
   },
   "devDependencies": {
@@ -39,6 +37,7 @@
     "@types/react-dom": "^16.0.4",
     "eslint": "^4.19.0",
     "eslint-plugin-react": "^7.7.0",
+    "fork-ts-checker-webpack-plugin": "^0.4.1",
     "gh-pages": "^1.1.0",
     "prettier": "^1.11.1",
     "tslint": "^5.9.1",

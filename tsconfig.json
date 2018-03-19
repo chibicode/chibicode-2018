@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "strict": true,
     "noImplicitReturns": true,
@@ -9,6 +10,11 @@
     "skipLibCheck": true,
     "lib": ["dom", "es2017"],
     "typeRoots": ["./node_modules/@types"],
+    "jsx": "react",
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
     "plugins": [
       {
         "name": "typescript-styled-plugin"
