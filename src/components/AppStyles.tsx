@@ -2,21 +2,18 @@ import classNames from 'classnames'
 import React from 'react'
 import styled from 'styled-components'
 
-interface Props {
-  className?: string
-  children: React.ReactNode
-}
-
-const AppStyles: React.SFC<Props> = ({ className, children }) => (
-  <div className={classNames('lh-copy dark-gray', className)}>{children}</div>
-)
-
-const StyledAppStyles = styled(AppStyles)`
+const Styled = styled.div`
   font-family: 'Roboto Mono', monospace;
+  line-height: 1.6;
 
   a {
     color: inherit;
   }
 `
 
-export default StyledAppStyles
+const AppStyles: React.SFC<React.HTMLAttributes<HTMLDivElement>> = ({
+  className,
+  ...props
+}) => <Styled className={classNames('dark-gray', className)} {...props} />
+
+export default AppStyles
