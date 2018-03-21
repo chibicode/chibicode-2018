@@ -1,5 +1,17 @@
 import React from 'react'
-import { IndexPageQuery } from '../types/graphql'
+import rehypeReact from 'rehype-react'
+import { IndexPageQuery } from './__generated__/IndexPageQuery'
+
+const CustomParagraphTag: React.SFC<React.ReactNode> = ({ children }) => (
+  <div style={{ color: 'red' }}>{children}</div>
+)
+
+type renderAstType = (htmlAst: JSON) => string
+
+const renderAst: renderAstType = new rehypeReact({
+  components: { p: CustomParagraphTag },
+  createElement: React.createElement,
+}).Compiler
 
 export interface Props {
   data: IndexPageQuery
@@ -8,12 +20,13 @@ export interface Props {
 interface SubProps {
   title: string
   slug: string
-  date: string
+  date: Date
+  htmlAst: JSON
 }
 
-const IndexPageItem: React.SFC<SubProps> = ({ title, slug, date }) => (
+const IndexPageItem: React.SFC<SubProps> = ({ title, slug, date, htmlAst }) => (
   <div>
-    {title} {slug} {date}
+    {title} {slug} {date} {renderAst(htmlAst)}
   </div>
 )
 
@@ -29,12 +42,14 @@ const IndexPage: React.SFC<Props> = ({ data }) =>
           e.node.fields &&
           e.node.frontmatter.title &&
           e.node.fields.slug &&
-          e.node.frontmatter.date && (
+          e.node.frontmatter.date &&
+          e.node.htmlAst && (
             <IndexPageItem
               key={e.node.fields.slug}
               title={e.node.frontmatter.title}
               slug={e.node.fields.slug}
               date={e.node.frontmatter.date}
+              htmlAst={e.node.htmlAst}
             />
           )
       )}
@@ -44,7 +59,7 @@ const IndexPage: React.SFC<Props> = ({ data }) =>
 export default IndexPage
 
 export const pageQuery = graphql`
-  query IndexPage {
+  query IndexPageQuery {
     site {
       siteMetadata {
         title
@@ -53,6 +68,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
+          htmlAst
           excerpt
           fields {
             slug
