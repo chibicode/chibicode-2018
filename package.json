@@ -25,8 +25,6 @@
     "gatsby-source-filesystem": "^1.5.27",
     "gatsby-transformer-remark": "^1.7.37",
     "gatsby-transformer-sharp": "^1.6.22",
-    "lodash": "^4.17.5",
-    "react-responsive-grid": "^0.3.4",
     "rehype-react": "^3.0.2",
     "styled-components": "^3.2.3",
     "tachyons": "^4.9.1",
@@ -34,7 +32,6 @@
   },
   "devDependencies": {
     "@types/classnames": "^2.2.3",
-    "@types/lodash": "^4.14.105",
     "@types/node": "^9.4.7",
     "@types/react": "^16.0.40",
     "@types/react-dom": "^16.0.4",
@@ -42,7 +39,6 @@
     "apollo-codegen": "^0.19.0",
     "eslint": "^4.19.0",
     "eslint-plugin-react": "^7.7.0",
-    "fork-ts-checker-webpack-plugin": "^0.4.1",
     "gh-pages": "^1.1.0",
     "prettier": "^1.11.1",
     "tslint": "^5.9.1",
@@ -51,7 +47,9 @@
     "typescript-styled-plugin": "^0.6.0"
   },
   "homepage": "https://github.com/chibicode/chibicode#readme",
-  "keywords": ["gatsby"],
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
   "main": "n/a",
   "repository": {
@@ -62,10 +60,8 @@
     "dev": "gatsby develop",
     "build": "gatsby build",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "apollo:introspect-schema":
-      "apollo-codegen introspect-schema http://localhost:8000/___graphql --output schema.json",
-    "apollo:generate":
-      "apollo-codegen generate src/**/*.tsx --schema schema.json --target typescript-modern --tag-name=graphql --add-typename",
+    "apollo:introspect-schema": "apollo-codegen introspect-schema http://localhost:8000/___graphql --output schema.json",
+    "apollo:generate": "apollo-codegen generate src/**/*.tsx --schema schema.json --target typescript-modern --tag-name=graphql --add-typename",
     "apollo": "yarn apollo:introspect-schema && yarn apollo:generate",
     "tsc-watch": "tsc -w --noEmit"
   }
