@@ -8,7 +8,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
 
   return new Promise((resolve, reject) => {
-    const blogPost = path.resolve('./src/templates/blog-post.js')
+    const blogPost = path.resolve('./src/templates/PostTemplate.tsx')
     resolve(
       graphql(
         `
@@ -47,6 +47,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           createPage({
             path: post.node.fields.slug,
             component: blogPost,
+            // passed onto PostTemplate as pathContext
             context: {
               slug: post.node.fields.slug,
               previous,

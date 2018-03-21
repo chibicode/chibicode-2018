@@ -15,6 +15,7 @@
     "module": "esnext",
     "moduleResolution": "node",
     "experimentalDecorators": true,
+    "rootDir": "./src",
     "plugins": [
       {
         "name": "typescript-styled-plugin"
