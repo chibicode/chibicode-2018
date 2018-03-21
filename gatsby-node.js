@@ -71,12 +71,3 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     })
   }
 }
-
-exports.modifyWebpackConfig = ({ config }) => {
-  config.plugin('ForkTsCheckerWebpackPlugin', ForkTsCheckerWebpackPlugin, [
-    {
-      tsconfig: path.join(__dirname, './tsconfig.json'),
-      tslint: path.join(__dirname, './tslint.json'),
-    },
-  ])
-}
