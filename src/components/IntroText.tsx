@@ -13,14 +13,14 @@ const IntroText: React.SFC<{}> = () => (
         <strong>Short</strong>: Keep it as short as possible.
       </li>
       <li>
-        <strong>Signal</strong>: Maximize the signal-to-noise ratio.
+        <strong>Signal</strong>: Maximize signal-to-noise ratio.
       </li>
       <li>
         <strong>Simple</strong>: Use simple words. Globally, there are{' '}
         <a href="https://www.weforum.org/agenda/2015/10/which-languages-are-most-widely-spoken/">
           3x
         </a>{' '}
-        as many non-native English speakers than native English speakers.
+        as many non-native English speakers as native English speakers.
       </li>
     </ol>
   </Container>

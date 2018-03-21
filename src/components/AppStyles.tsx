@@ -1,10 +1,11 @@
 import classNames from 'classnames'
 import React from 'react'
 import styled, { injectGlobal } from 'styled-components'
+import { BREAKPOINT_NOT_SMALL } from '../constants/styles'
 
 // tslint:disable-next-line
 injectGlobal`
-  @media screen and (min-width: 48em) {
+  @media ${BREAKPOINT_NOT_SMALL} {
     html {
       font-size: 18px;
     }
