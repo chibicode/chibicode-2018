@@ -1,10 +1,18 @@
 import classNames from 'classnames'
 import React from 'react'
-import styled from 'styled-components'
+import styled, { injectGlobal } from 'styled-components'
+
+// tslint:disable-next-line
+injectGlobal`
+  @media screen and (min-width: 48em) {
+    html {
+      font-size: 18px;
+    }
+  }
+`
 
 const Styled = styled.div`
-  font-family: 'Roboto Mono', monospace;
-  line-height: 1.6;
+  font-family: 'Lato', sans-serif;
 
   a {
     color: inherit;
@@ -14,6 +22,11 @@ const Styled = styled.div`
 const AppStyles: React.SFC<React.HTMLAttributes<HTMLDivElement>> = ({
   className,
   ...props
-}) => <Styled className={classNames('dark-gray', className)} {...props} />
+}) => (
+  <Styled
+    className={classNames('lh-copy sans-serif dark-gray', className)}
+    {...props}
+  />
+)
 
 export default AppStyles

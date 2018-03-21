@@ -4,9 +4,9 @@ import Container, { Size as ContainerSize } from '../components/Container'
 const IntroText: React.SFC<{}> = () => (
   <Container size={ContainerSize.Small}>
     <p>
-      Hi, I'm <strong>Shu Uesugi</strong>, a software developer in San
-      Francisco. <strong>Chibicode</strong> is my blog, written with the
-      following principles in mind:
+      I'm <strong>Shu Uesugi</strong>, a software developer in San Francisco.{' '}
+      <strong>Chibicode</strong> is my blog, written with the following
+      principles in mind:
     </p>
     <ol>
       <li>

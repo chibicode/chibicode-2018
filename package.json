@@ -28,6 +28,7 @@
     "rehype-react": "^3.0.2",
     "styled-components": "^3.2.3",
     "tachyons": "^4.9.1",
+    "typeface-lato": "^0.0.54",
     "typeface-roboto-mono": "^0.0.54"
   },
   "devDependencies": {

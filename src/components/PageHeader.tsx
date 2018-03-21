@@ -12,7 +12,7 @@ const HeaderSection = styled.div`
 `
 
 const HeaderLogoSection = styled.div`
-  max-width: 8rem;
+  max-width: 7rem;
 `
 
 interface Props {
