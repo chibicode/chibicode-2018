@@ -15,7 +15,11 @@ const HeaderLogoSection = styled.div`
   max-width: 8rem;
 `
 
-const PageHeader: React.SFC<{}> = () => (
+interface Props {
+  showIntroText: boolean
+}
+
+const PageHeader: React.SFC<Props> = ({ showIntroText }) => (
   <div>
     <Container size={ContainerSize.Large} className="flex mt4 mb4 items-center">
       <HeaderSection className="flex justify-center">
@@ -34,8 +38,12 @@ const PageHeader: React.SFC<{}> = () => (
         </div>
       </HeaderSection>
     </Container>
-    <IntroText />
-    <SectionBorder />
+    {showIntroText && (
+      <div>
+        <IntroText />
+        <SectionBorder />
+      </div>
+    )}
   </div>
 )
 
