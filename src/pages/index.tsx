@@ -1,34 +1,10 @@
 import React from 'react'
-import rehypeReact from 'rehype-react'
+import Post from '../components/Post'
 import { IndexPageQuery } from './__generated__/IndexPageQuery'
-
-const CustomParagraphTag: React.SFC<React.ReactNode> = ({ children }) => (
-  <div style={{ color: 'red' }}>{children}</div>
-)
-
-type renderAstType = (htmlAst: JSON) => string
-
-const renderAst: renderAstType = new rehypeReact({
-  components: { p: CustomParagraphTag },
-  createElement: React.createElement,
-}).Compiler
 
 export interface Props {
   data: IndexPageQuery
 }
-
-interface SubProps {
-  title: string
-  slug: string
-  date: Date
-  htmlAst: JSON
-}
-
-const IndexPageItem: React.SFC<SubProps> = ({ title, slug, date, htmlAst }) => (
-  <div>
-    {title} {slug} {date} {renderAst(htmlAst)}
-  </div>
-)
 
 const IndexPage: React.SFC<Props> = ({ data }) =>
   data.allMarkdownRemark &&
@@ -44,7 +20,7 @@ const IndexPage: React.SFC<Props> = ({ data }) =>
           e.node.fields.slug &&
           e.node.frontmatter.date &&
           e.node.htmlAst && (
-            <IndexPageItem
+            <Post
               key={e.node.fields.slug}
               title={e.node.frontmatter.title}
               slug={e.node.fields.slug}
