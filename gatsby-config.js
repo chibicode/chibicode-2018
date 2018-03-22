@@ -7,7 +7,6 @@ module.exports = {
     description: "Shu Uesugi's Blog.",
     siteUrl: 'https://chibicode.com/',
   },
-  pathPrefix: '',
   plugins: [
     {
       resolve: 'gatsby-source-filesystem',
@@ -23,7 +22,8 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 590,
+              maxWidth: 900,
+              sizeByPixelDensity: true,
             },
           },
           {
@@ -57,5 +57,7 @@ module.exports = {
       },
     },
     'gatsby-plugin-styled-components',
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-catch-links',
   ],
 }
