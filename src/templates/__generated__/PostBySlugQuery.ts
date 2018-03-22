@@ -11,6 +11,7 @@ export interface PostBySlugQuery_site_siteMetadata {
   __typename: "siteMetadata_2";
   title: string | null;
   author: string | null;
+  siteUrl: string | null;
 }
 
 export interface PostBySlugQuery_site {
@@ -23,10 +24,28 @@ export interface PostBySlugQuery_markdownRemark_fields {
   slug: string | null;
 }
 
+export interface PostBySlugQuery_markdownRemark_frontmatter_image_childImageSharp_resolutions {
+  __typename: "ImageSharpResolutions";
+  height: number | null;
+  src: string | null;
+  width: number | null;
+}
+
+export interface PostBySlugQuery_markdownRemark_frontmatter_image_childImageSharp {
+  __typename: "ImageSharp";
+  resolutions: PostBySlugQuery_markdownRemark_frontmatter_image_childImageSharp_resolutions | null;
+}
+
+export interface PostBySlugQuery_markdownRemark_frontmatter_image {
+  __typename: "File";
+  childImageSharp: PostBySlugQuery_markdownRemark_frontmatter_image_childImageSharp | null;  // The child of this node of type imageSharp
+}
+
 export interface PostBySlugQuery_markdownRemark_frontmatter {
   __typename: "frontmatter_2";
   title: string | null;
   date: string | null;
+  image: PostBySlugQuery_markdownRemark_frontmatter_image | null;
 }
 
 export interface PostBySlugQuery_markdownRemark {

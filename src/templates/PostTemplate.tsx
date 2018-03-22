@@ -12,6 +12,7 @@ const PostTemplate: React.SFC<Props> = ({ data }) =>
   (data.site &&
     data.site.siteMetadata &&
     data.site.siteMetadata.title &&
+    data.site.siteMetadata.siteUrl &&
     data.markdownRemark &&
     data.markdownRemark.frontmatter &&
     data.markdownRemark.frontmatter.title &&
@@ -24,7 +25,18 @@ const PostTemplate: React.SFC<Props> = ({ data }) =>
           title={`${data.markdownRemark.frontmatter.title} | ${
             data.site.siteMetadata.title
           }`}
-        />
+        >
+          {data.markdownRemark.frontmatter.image && (
+            <meta
+              property="og:image"
+              content={`${
+                data.site.siteMetadata.siteUrl
+              }${data.markdownRemark.frontmatter.image.childImageSharp!.resolutions!.src!.substring(
+                1
+              )}`}
+            />
+          )}
+        </Helmet>
         <Post
           title={data.markdownRemark.frontmatter.title}
           slug={data.markdownRemark.fields.slug}
@@ -42,6 +54,7 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
+        siteUrl
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -53,6 +66,15 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        image {
+          childImageSharp {
+            resolutions(width: 1200) {
+              height
+              src
+              width
+            }
+          }
+        }
       }
     }
   }

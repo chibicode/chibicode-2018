@@ -1,9 +1,12 @@
 ---
 title: About me (and this blog)
 date: "2015-05-01T22:12:03.284Z"
+image: "./uyuni.jpg"
 ---
 
 This is my first post on my new fake blog! How exciting!
+
+[Home](/)
 
 I'm sure I'll write a lot more interesting things in the future.
 
