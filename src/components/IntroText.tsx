@@ -23,6 +23,7 @@ const IntroText: React.SFC<{}> = () => (
         as many non-native English speakers as native English speakers.
       </LiTag>
     </OlTag>
+    <PTag>You can learn more about me here.</PTag>
   </section>
 )
 

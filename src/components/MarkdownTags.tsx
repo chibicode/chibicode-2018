@@ -1,17 +1,28 @@
 import React from 'react'
 import styled from 'styled-components'
-import Block, { BlockVSpacing, BlockWidth } from '../components/Block'
+import Block, {
+  BlockTopSpacing,
+  BlockVSpacing,
+  BlockWidth,
+} from '../components/Block'
 
 interface Props extends React.HTMLAttributes<HTMLElement> {
   reactType: React.ReactType
   vSpacing?: BlockVSpacing
+  topSpacing?: BlockTopSpacing
 }
 
-const StandardTag: React.SFC<Props> = ({ reactType, vSpacing, ...props }) => (
+export const StandardTag: React.SFC<Props> = ({
+  reactType,
+  vSpacing,
+  topSpacing,
+  ...props
+}) => (
   <Block
     reactType={reactType}
     {...props}
     vSpacing={vSpacing || BlockVSpacing.Small}
+    topSpacing={topSpacing}
     width={BlockWidth.Small}
   />
 )
@@ -40,4 +51,63 @@ export const LiTag: React.SFC<React.HTMLAttributes<HTMLLIElement>> = ({
   ...props
 }) => (
   <StandardTag reactType={'li'} vSpacing={BlockVSpacing.XSmall} {...props} />
+)
+
+export const H1Tag: React.SFC<React.HTMLAttributes<HTMLHeadingElement>> = ({
+  ...props
+}) => <StandardTag reactType={'h1'} className="f2 lh-title" {...props} />
+
+export const H2Tag: React.SFC<React.HTMLAttributes<HTMLHeadingElement>> = ({
+  ...props
+}) => (
+  <StandardTag
+    reactType={'h2'}
+    className="f3 lh-title"
+    topSpacing={BlockTopSpacing.Medium}
+    {...props}
+  />
+)
+
+export const H3Tag: React.SFC<React.HTMLAttributes<HTMLHeadingElement>> = ({
+  ...props
+}) => (
+  <StandardTag
+    reactType={'h3'}
+    className="f4 lh-title"
+    topSpacing={BlockTopSpacing.Medium}
+    {...props}
+  />
+)
+
+export const H4Tag: React.SFC<React.HTMLAttributes<HTMLHeadingElement>> = ({
+  ...props
+}) => (
+  <StandardTag
+    reactType={'h4'}
+    className="f5 lh-title"
+    topSpacing={BlockTopSpacing.Medium}
+    {...props}
+  />
+)
+
+export const H5Tag: React.SFC<React.HTMLAttributes<HTMLHeadingElement>> = ({
+  ...props
+}) => (
+  <StandardTag
+    reactType={'h5'}
+    className="f5 lh-title"
+    topSpacing={BlockTopSpacing.Medium}
+    {...props}
+  />
+)
+
+export const H6Tag: React.SFC<React.HTMLAttributes<HTMLHeadingElement>> = ({
+  ...props
+}) => (
+  <StandardTag
+    reactType={'h6'}
+    className="f5 lh-title"
+    topSpacing={BlockTopSpacing.Medium}
+    {...props}
+  />
 )

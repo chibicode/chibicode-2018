@@ -9,7 +9,7 @@ export interface Props {
 const IndexPage: React.SFC<Props> = ({ data }) =>
   (data.allMarkdownRemark &&
     data.allMarkdownRemark.edges && (
-      <div>
+      <main>
         {data.allMarkdownRemark.edges.map(
           e =>
             e &&
@@ -29,7 +29,7 @@ const IndexPage: React.SFC<Props> = ({ data }) =>
               />
             )
         )}
-      </div>
+      </main>
     )) || <div />
 
 export default IndexPage
@@ -50,7 +50,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "DD MMMM, YYYY")
+            date(formatString: "MMMM DD, YYYY")
             title
           }
         }

@@ -3,9 +3,6 @@ import styled from 'styled-components'
 import Block, { BlockVSpacing, BlockWidth } from '../components/Block'
 import IntroText from '../components/IntroText'
 import Logo from '../components/Logo'
-import PageHeaderLeft from '../components/PageHeaderLeft'
-import PageHeaderRight from '../components/PageHeaderRight'
-import SectionBorder from '../components/SectionBorder'
 
 const HeaderSection = styled.div`
   flex: 1;
@@ -14,6 +11,32 @@ const HeaderSection = styled.div`
 const HeaderLogoSection = styled.div`
   max-width: 6rem;
 `
+
+import UnderlineOnHoverLink from '../components/UnderlineOnHoverLink'
+import twitterLogo from '../images/twitter-logo.svg'
+
+const LogoImage = styled.img`
+  width: 2em;
+  height: 2em;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+`
+
+const PageHeaderRight: React.SFC<{}> = () => (
+  <UnderlineOnHoverLink href="https://twitter.com/chibicode">
+    <LogoImage src={twitterLogo} alt="Twitter" />@chibicode
+  </UnderlineOnHoverLink>
+)
+
+const PageHeaderLeft: React.SFC<{}> = () => (
+  <div>
+    🇯🇵{' '}
+    <UnderlineOnHoverLink href="https://chibicode.com/jp">
+      日本語
+    </UnderlineOnHoverLink>
+  </div>
+)
 
 interface Props {
   showIntroText: boolean
@@ -43,12 +66,7 @@ const PageHeader: React.SFC<Props> = ({ showIntroText }) => (
         </div>
       </HeaderSection>
     </Block>
-    {showIntroText && (
-      <div>
-        <IntroText />
-        <SectionBorder />
-      </div>
-    )}
+    {showIntroText && <IntroText />}
   </div>
 )
 
