@@ -10,7 +10,7 @@ const IntroText: React.SFC<Props> = ({ detailed }) => {
   const learnMore = (
     <span>
       <UnderlineLink to="/posts/about">
-        Learn more about me (and my blog) here
+        Learn more about me (and this blog) here
       </UnderlineLink>.
     </span>
   )
