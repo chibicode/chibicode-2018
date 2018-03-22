@@ -2,12 +2,12 @@ const tsconfig = require('./tsconfig.json')
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter Blog',
-    author: 'Kyle Mathews',
-    description: 'A starter blog demonstrating what Gatsby can do.',
-    siteUrl: 'https://gatsbyjs.github.io/gatsby-starter-blog/',
+    title: 'Shu Uesugi',
+    author: 'Shu Uesugi',
+    description: "Shu Uesugi's Blog.",
+    siteUrl: 'https://chibicode.com/',
   },
-  pathPrefix: '/gatsby-starter-blog',
+  pathPrefix: '',
   plugins: [
     {
       resolve: 'gatsby-source-filesystem',

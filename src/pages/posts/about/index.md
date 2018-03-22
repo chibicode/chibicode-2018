@@ -1,5 +1,5 @@
 ---
-title: About Me
+title: About Me (and My Blog)
 date: "2015-05-01T22:12:03.284Z"
 ---
 

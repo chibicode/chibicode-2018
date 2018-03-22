@@ -9,9 +9,8 @@ interface Props {
 const IntroText: React.SFC<Props> = ({ detailed }) => {
   const learnMore = (
     <span>
-      You can{' '}
-      <UnderlineLink to="/posts/about-me">
-        learn more about me here
+      <UnderlineLink to="/posts/about">
+        Learn more about me (and my blog) here
       </UnderlineLink>.
     </span>
   )

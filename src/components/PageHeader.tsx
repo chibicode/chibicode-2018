@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import Block, { BlockVSpacing, BlockWidth } from '../components/Block'
+import HeaderLogo from '../components/HeaderLogo'
 import { ATagNoUnderline } from '../components/InlineElements'
 import IntroText from '../components/IntroText'
-import Logo from '../components/Logo'
 import twitterLogo from '../images/twitter-logo.svg'
 
 const HeaderSection = styled.div`
@@ -47,7 +47,7 @@ const PageHeader: React.SFC<Props> = ({ shortIntroText }) => (
       reactType="section"
       width={BlockWidth.Large}
       vSpacing={BlockVSpacing.Medium}
-      className="flex items-center"
+      className="flex items-start"
     >
       <HeaderSection className="flex justify-center">
         <div className="mr-auto">
@@ -56,7 +56,7 @@ const PageHeader: React.SFC<Props> = ({ shortIntroText }) => (
       </HeaderSection>
       <HeaderSection className="flex justify-center">
         <HeaderLogoSection>
-          <Logo />
+          <HeaderLogo />
         </HeaderLogoSection>
       </HeaderSection>
       <HeaderSection className="flex justify-center">
