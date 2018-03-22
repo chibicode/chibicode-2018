@@ -1,29 +1,29 @@
 import React from 'react'
-import Container, { Size as ContainerSize } from '../components/Container'
+import { LiTag, OlTag, PTag } from '../components/MarkdownTags'
 
 const IntroText: React.SFC<{}> = () => (
-  <Container size={ContainerSize.Small}>
-    <p>
+  <section>
+    <PTag>
       I'm <strong>Shu Uesugi</strong>, a software developer in San Francisco.{' '}
       <strong>Chibicode</strong> is my blog, written with the following
       principles in mind:
-    </p>
-    <ol>
-      <li>
+    </PTag>
+    <OlTag>
+      <LiTag>
         <strong>Short</strong>: Keep it as short as possible.
-      </li>
-      <li>
+      </LiTag>
+      <LiTag>
         <strong>Signal</strong>: Maximize signal-to-noise ratio.
-      </li>
-      <li>
+      </LiTag>
+      <LiTag>
         <strong>Simple</strong>: Use simple words. Globally, there are{' '}
         <a href="https://www.weforum.org/agenda/2015/10/which-languages-are-most-widely-spoken/">
           3x
         </a>{' '}
         as many non-native English speakers as native English speakers.
-      </li>
-    </ol>
-  </Container>
+      </LiTag>
+    </OlTag>
+  </section>
 )
 
 export default IntroText

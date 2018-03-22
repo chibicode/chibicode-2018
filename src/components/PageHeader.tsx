@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Container, { Size as ContainerSize } from '../components/Container'
+import Block, { BlockVSpacing, BlockWidth } from '../components/Block'
 import IntroText from '../components/IntroText'
 import Logo from '../components/Logo'
 import PageHeaderLeft from '../components/PageHeaderLeft'
@@ -21,7 +21,12 @@ interface Props {
 
 const PageHeader: React.SFC<Props> = ({ showIntroText }) => (
   <div>
-    <Container size={ContainerSize.Large} className="flex mt4 mb4 items-center">
+    <Block
+      reactType="section"
+      width={BlockWidth.Large}
+      vSpacing={BlockVSpacing.Medium}
+      className="flex items-center"
+    >
       <HeaderSection className="flex justify-center">
         <div className="mr-auto">
           <PageHeaderLeft />
@@ -37,7 +42,7 @@ const PageHeader: React.SFC<Props> = ({ showIntroText }) => (
           <PageHeaderRight />
         </div>
       </HeaderSection>
-    </Container>
+    </Block>
     {showIntroText && (
       <div>
         <IntroText />
