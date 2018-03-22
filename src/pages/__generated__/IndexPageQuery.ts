@@ -24,7 +24,7 @@ export interface IndexPageQuery_allMarkdownRemark_edges_node_fields {
 
 export interface IndexPageQuery_allMarkdownRemark_edges_node_frontmatter {
   __typename: "frontmatter_2";
-  date: Date | null;
+  date: string | null;
   title: string | null;
 }
 

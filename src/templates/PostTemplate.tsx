@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import Post from '../components/Post'
 import { PostBySlugQuery } from './__generated__/PostBySlugQuery'
 
 interface Props {
@@ -15,17 +16,21 @@ const PostTemplate: React.SFC<Props> = ({ data }) =>
     data.markdownRemark.frontmatter &&
     data.markdownRemark.frontmatter.title &&
     data.markdownRemark.frontmatter.date &&
-    data.markdownRemark.html && (
+    data.markdownRemark.fields &&
+    data.markdownRemark.fields.slug &&
+    data.markdownRemark.htmlAst && (
       <div>
         <Helmet
           title={`${data.markdownRemark.frontmatter.title} | ${
             data.site.siteMetadata.title
           }`}
         />
-        <h1>{data.markdownRemark.frontmatter.title}</h1>
-        <p>{data.markdownRemark.frontmatter.date}</p>
-        <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
-        <hr />
+        <Post
+          title={data.markdownRemark.frontmatter.title}
+          slug={data.markdownRemark.fields.slug}
+          date={data.markdownRemark.frontmatter.date}
+          htmlAst={data.markdownRemark.htmlAst}
+        />
       </div>
     )) || <div />
 
@@ -41,7 +46,10 @@ export const pageQuery = graphql`
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
-      html
+      htmlAst
+      fields {
+        slug
+      }
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")

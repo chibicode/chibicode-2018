@@ -18,16 +18,22 @@ export interface PostBySlugQuery_site {
   siteMetadata: PostBySlugQuery_site_siteMetadata | null;
 }
 
+export interface PostBySlugQuery_markdownRemark_fields {
+  __typename: "fields_2";
+  slug: string | null;
+}
+
 export interface PostBySlugQuery_markdownRemark_frontmatter {
   __typename: "frontmatter_2";
   title: string | null;
-  date: Date | null;
+  date: string | null;
 }
 
 export interface PostBySlugQuery_markdownRemark {
   __typename: "MarkdownRemark";
   id: string;  // The id of this node.
-  html: string | null;
+  htmlAst: JSON | null;
+  fields: PostBySlugQuery_markdownRemark_fields | null;
   frontmatter: PostBySlugQuery_markdownRemark_frontmatter | null;
 }
 

@@ -1,8 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import Block, { BlockVSpacing, BlockWidth } from '../components/Block'
+import { ATagNoUnderline } from '../components/InlineElements'
 import IntroText from '../components/IntroText'
 import Logo from '../components/Logo'
+import twitterLogo from '../images/twitter-logo.svg'
 
 const HeaderSection = styled.div`
   flex: 1;
@@ -11,9 +13,6 @@ const HeaderSection = styled.div`
 const HeaderLogoSection = styled.div`
   max-width: 6rem;
 `
-
-import UnderlineOnHoverLink from '../components/UnderlineOnHoverLink'
-import twitterLogo from '../images/twitter-logo.svg'
 
 const LogoImage = styled.img`
   width: 2em;
@@ -24,25 +23,25 @@ const LogoImage = styled.img`
 `
 
 const PageHeaderRight: React.SFC<{}> = () => (
-  <UnderlineOnHoverLink href="https://twitter.com/chibicode">
-    <LogoImage src={twitterLogo} alt="Twitter" />@chibicode
-  </UnderlineOnHoverLink>
+  <div>
+    <LogoImage src={twitterLogo} alt="Twitter" />
+    <ATagNoUnderline href="https://twitter.com/chibicode">
+      @chibicode
+    </ATagNoUnderline>
+  </div>
 )
 
 const PageHeaderLeft: React.SFC<{}> = () => (
   <div>
-    🇯🇵{' '}
-    <UnderlineOnHoverLink href="https://chibicode.com/jp">
-      日本語
-    </UnderlineOnHoverLink>
+    🇯🇵 <ATagNoUnderline href="https://chibicode.com/jp">日本語</ATagNoUnderline>
   </div>
 )
 
 interface Props {
-  showIntroText: boolean
+  shortIntroText: boolean
 }
 
-const PageHeader: React.SFC<Props> = ({ showIntroText }) => (
+const PageHeader: React.SFC<Props> = ({ shortIntroText }) => (
   <div>
     <Block
       reactType="section"
@@ -66,7 +65,7 @@ const PageHeader: React.SFC<Props> = ({ showIntroText }) => (
         </div>
       </HeaderSection>
     </Block>
-    {showIntroText && <IntroText />}
+    <IntroText detailed={!shortIntroText} />
   </div>
 )
 

@@ -14,10 +14,6 @@ injectGlobal`
 
 const Styled = styled.div`
   font-family: 'Lato', sans-serif;
-
-  a {
-    color: inherit;
-  }
 `
 
 const AppStyles: React.SFC<React.HTMLAttributes<HTMLDivElement>> = ({

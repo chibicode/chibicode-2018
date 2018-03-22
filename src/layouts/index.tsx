@@ -14,7 +14,7 @@ const App: React.SFC<Props> = ({ location, children }) => {
   const isHomepage = location.pathname === withPrefix('/')
   return (
     <AppStyles>
-      <PageHeader showIntroText={isHomepage} />
+      <PageHeader shortIntroText={!isHomepage} />
       {children()}
     </AppStyles>
   )

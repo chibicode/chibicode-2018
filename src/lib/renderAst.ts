@@ -10,7 +10,8 @@ import {
   OlTag,
   PTag,
   UlTag,
-} from '../components/MarkdownTags'
+} from '../components/BlockElements'
+import { ATag } from '../components/InlineElements'
 
 type renderAstType = (htmlAst: JSON) => string
 
@@ -25,6 +26,7 @@ const renderAst: renderAstType = new rehypeReact({
     ol: OlTag,
     p: PTag,
     ul: UlTag,
+    a: ATag,
   },
   createElement: React.createElement,
 }).Compiler
