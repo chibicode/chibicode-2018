@@ -8,43 +8,32 @@ interface Props {
   pathContext?: object
 }
 
-const PostTemplate: React.SFC<Props> = ({ data }) =>
-  (data.site &&
-    data.site.siteMetadata &&
-    data.site.siteMetadata.title &&
-    data.site.siteMetadata.siteUrl &&
-    data.markdownRemark &&
-    data.markdownRemark.frontmatter &&
-    data.markdownRemark.frontmatter.title &&
-    data.markdownRemark.frontmatter.date &&
-    data.markdownRemark.fields &&
-    data.markdownRemark.fields.slug &&
-    data.markdownRemark.htmlAst && (
-      <div>
-        <Helmet
-          title={`${data.markdownRemark.frontmatter.title} | ${
-            data.site.siteMetadata.title
-          }`}
-        >
-          {data.markdownRemark.frontmatter.image && (
-            <meta
-              property="og:image"
-              content={`${
-                data.site.siteMetadata.siteUrl
-              }${data.markdownRemark.frontmatter.image.childImageSharp!.resolutions!.src!.substring(
-                1
-              )}`}
-            />
-          )}
-        </Helmet>
-        <Post
-          title={data.markdownRemark.frontmatter.title}
-          slug={data.markdownRemark.fields.slug}
-          date={data.markdownRemark.frontmatter.date}
-          htmlAst={data.markdownRemark.htmlAst}
+const PostTemplate: React.SFC<Props> = ({ data }) => (
+  <div>
+    <Helmet
+      title={`${data!.markdownRemark!.frontmatter!.title} | ${
+        data!.site!.siteMetadata!.title
+      }`}
+    >
+      {data!.markdownRemark!.frontmatter!.image && (
+        <meta
+          property="og:image"
+          content={`${
+            data!.site!.siteMetadata!.siteUrl
+          }${data!.markdownRemark!.frontmatter!.image!.childImageSharp!.resolutions!.src!.substring(
+            1
+          )}`}
         />
-      </div>
-    )) || <div />
+      )}
+    </Helmet>
+    <Post
+      title={data!.markdownRemark!.frontmatter!.title!}
+      slug={data!.markdownRemark!.fields!.slug!}
+      date={data!.markdownRemark!.frontmatter!.date!}
+      htmlAst={data!.markdownRemark!.htmlAst!}
+    />
+  </div>
+)
 
 export default PostTemplate
 

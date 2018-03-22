@@ -6,31 +6,19 @@ export interface Props {
   data: IndexPageQuery
 }
 
-const IndexPage: React.SFC<Props> = ({ data }) =>
-  (data.allMarkdownRemark &&
-    data.allMarkdownRemark.edges && (
-      <main>
-        {data.allMarkdownRemark.edges.map(
-          e =>
-            e &&
-            e.node &&
-            e.node.frontmatter &&
-            e.node.fields &&
-            e.node.frontmatter.title &&
-            e.node.fields.slug &&
-            e.node.frontmatter.date &&
-            e.node.htmlAst && (
-              <Post
-                key={e.node.fields.slug}
-                title={e.node.frontmatter.title}
-                slug={e.node.fields.slug}
-                date={e.node.frontmatter.date}
-                htmlAst={e.node.htmlAst}
-              />
-            )
-        )}
-      </main>
-    )) || <div />
+const IndexPage: React.SFC<Props> = ({ data }) => (
+  <main>
+    {data!.allMarkdownRemark!.edges!.map(e => (
+      <Post
+        key={e!.node!.fields!.slug!}
+        title={e!.node!.frontmatter!.title!}
+        slug={e!.node!.fields!.slug!}
+        date={e!.node!.frontmatter!.date!}
+        htmlAst={e!.node!.htmlAst!}
+      />
+    ))}
+  </main>
+)
 
 export default IndexPage
 
