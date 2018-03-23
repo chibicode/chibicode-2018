@@ -24,16 +24,26 @@ export interface PostBySlugQuery_markdownRemark_fields {
   slug: string | null;
 }
 
-export interface PostBySlugQuery_markdownRemark_frontmatter_image_childImageSharp_resolutions {
+export interface PostBySlugQuery_markdownRemark_frontmatter_image_childImageSharp_width1200 {
   __typename: "ImageSharpResolutions";
   height: number | null;
   src: string | null;
   width: number | null;
 }
 
+export interface PostBySlugQuery_markdownRemark_frontmatter_image_childImageSharp_width750 {
+  __typename: "ImageSharpSizes";
+  aspectRatio: number | null;
+  base64: string | null;
+  sizes: string | null;
+  src: string | null;
+  srcSet: string | null;
+}
+
 export interface PostBySlugQuery_markdownRemark_frontmatter_image_childImageSharp {
   __typename: "ImageSharp";
-  resolutions: PostBySlugQuery_markdownRemark_frontmatter_image_childImageSharp_resolutions | null;
+  width1200: PostBySlugQuery_markdownRemark_frontmatter_image_childImageSharp_width1200 | null;
+  width750: PostBySlugQuery_markdownRemark_frontmatter_image_childImageSharp_width750 | null;
 }
 
 export interface PostBySlugQuery_markdownRemark_frontmatter_image {
@@ -45,6 +55,8 @@ export interface PostBySlugQuery_markdownRemark_frontmatter {
   __typename: "frontmatter_2";
   title: string | null;
   date: string | null;
+  imageAttributionName: string | null;
+  imageAttributionUrl: string | null;
   image: PostBySlugQuery_markdownRemark_frontmatter_image | null;
 }
 

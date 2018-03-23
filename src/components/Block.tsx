@@ -5,9 +5,11 @@ export enum BlockWidth {
   Small = 'Small',
   Medium = 'Medium',
   Large = 'Large',
+  Full = 'Full',
 }
 
 export enum BlockVSpacing {
+  None = 'None',
   XSmall = 'XSmall',
   Small = 'Small',
   Medium = 'Medium',
@@ -15,6 +17,7 @@ export enum BlockVSpacing {
 }
 
 export enum BlockTopSpacing {
+  None = 'None',
   Small = 'Small',
   Medium = 'Medium',
   Large = 'Large',
@@ -39,11 +42,12 @@ const Block: React.SFC<Props> = ({
     className: classNames(
       'center',
       {
+        mb0: !vSpacing || vSpacing === BlockVSpacing.None,
         mb2: vSpacing === BlockVSpacing.XSmall,
         mb3: vSpacing === BlockVSpacing.Small,
         mb4: vSpacing === BlockVSpacing.Medium,
         mb5: vSpacing === BlockVSpacing.Large,
-        mt0: !topSpacing,
+        mt0: !topSpacing || topSpacing === BlockTopSpacing.None,
         mt3: topSpacing === BlockTopSpacing.Small,
         mt4: topSpacing === BlockTopSpacing.Medium,
         mt5: topSpacing === BlockTopSpacing.Large,

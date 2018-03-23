@@ -20,10 +20,10 @@ export const StandardTag: React.SFC<Props> = ({
 }) => (
   <Block
     reactType={reactType}
-    {...props}
     vSpacing={vSpacing || BlockVSpacing.Small}
     topSpacing={topSpacing}
     width={BlockWidth.Small}
+    {...props}
   />
 )
 
@@ -108,6 +108,17 @@ export const H6Tag: React.SFC<React.HTMLAttributes<HTMLHeadingElement>> = ({
     reactType={'h6'}
     className="f5 lh-title"
     topSpacing={BlockTopSpacing.Medium}
+    {...props}
+  />
+)
+
+export const FigureTag: React.SFC<React.HTMLAttributes<HTMLDivElement>> = ({
+  ...props
+}) => (
+  <StandardTag
+    reactType={'figure'}
+    className="mr0 ml0"
+    topSpacing={BlockTopSpacing.None}
     {...props}
   />
 )

@@ -22,10 +22,40 @@ export interface IndexPageQuery_allMarkdownRemark_edges_node_fields {
   slug: string | null;
 }
 
+export interface IndexPageQuery_allMarkdownRemark_edges_node_frontmatter_image_childImageSharp_width1200 {
+  __typename: "ImageSharpResolutions";
+  height: number | null;
+  src: string | null;
+  width: number | null;
+}
+
+export interface IndexPageQuery_allMarkdownRemark_edges_node_frontmatter_image_childImageSharp_width750 {
+  __typename: "ImageSharpSizes";
+  aspectRatio: number | null;
+  base64: string | null;
+  sizes: string | null;
+  src: string | null;
+  srcSet: string | null;
+}
+
+export interface IndexPageQuery_allMarkdownRemark_edges_node_frontmatter_image_childImageSharp {
+  __typename: "ImageSharp";
+  width1200: IndexPageQuery_allMarkdownRemark_edges_node_frontmatter_image_childImageSharp_width1200 | null;
+  width750: IndexPageQuery_allMarkdownRemark_edges_node_frontmatter_image_childImageSharp_width750 | null;
+}
+
+export interface IndexPageQuery_allMarkdownRemark_edges_node_frontmatter_image {
+  __typename: "File";
+  childImageSharp: IndexPageQuery_allMarkdownRemark_edges_node_frontmatter_image_childImageSharp | null;  // The child of this node of type imageSharp
+}
+
 export interface IndexPageQuery_allMarkdownRemark_edges_node_frontmatter {
   __typename: "frontmatter_2";
   date: string | null;
   title: string | null;
+  imageAttributionName: string | null;
+  imageAttributionUrl: string | null;
+  image: IndexPageQuery_allMarkdownRemark_edges_node_frontmatter_image | null;
 }
 
 export interface IndexPageQuery_allMarkdownRemark_edges_node {
