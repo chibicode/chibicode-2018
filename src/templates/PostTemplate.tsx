@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import Helmet from 'react-helmet'
 import Post from '../components/Post'
 import { PostBySlugQuery } from './__generated__/PostBySlugQuery'
@@ -16,26 +16,29 @@ const PostTemplate: React.SFC<Props> = ({ data }) => (
       }`}
     >
       {data!.markdownRemark!.frontmatter!.image && (
-        <Fragment>
-          <meta
-            property="og:image"
-            content={`${
-              data!.site!.siteMetadata!.siteUrl
-            }${data!.markdownRemark!.frontmatter!.image!.childImageSharp!.width1200!.src!.substring(
-              1
-            )}`}
-          />
-          <meta
-            property="og:image:width"
-            content={`${data!.markdownRemark!.frontmatter!.image!
-              .childImageSharp!.width1200!.width!}`}
-          />
-          <meta
-            property="og:image:height"
-            content={`${data!.markdownRemark!.frontmatter!.image!
-              .childImageSharp!.width1200!.height!}`}
-          />
-        </Fragment>
+        <meta
+          property="og:image"
+          content={`${
+            data!.site!.siteMetadata!.siteUrl
+          }${data!.markdownRemark!.frontmatter!.image!.childImageSharp!.width1200!.src!.substring(
+            1
+          )}`}
+        />
+      )}
+      {data!.markdownRemark!.frontmatter!.image && (
+        <meta
+          property="og:image:width"
+          content={`${data!.markdownRemark!.frontmatter!.image!.childImageSharp!
+            .width1200!.width!}`}
+        />
+      )}
+      {data!.markdownRemark!.frontmatter!.image && (
+        <meta
+          property="og:image:height"
+          content={`${data!.markdownRemark!.frontmatter!.image!.childImageSharp!
+            .width1200!.height!}`}
+        />
+      )}
       )}
     </Helmet>
     <Post

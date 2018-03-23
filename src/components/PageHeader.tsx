@@ -4,6 +4,7 @@ import Block, { BlockVSpacing, BlockWidth } from '../components/Block'
 import HeaderLogo from '../components/HeaderLogo'
 import { ATagNoUnderline } from '../components/InlineElements'
 import IntroText from '../components/IntroText'
+import { BREAKPOINT_NOT_SMALL } from '../constants/styles'
 import twitterLogo from '../images/twitter-logo.svg'
 
 const HeaderSection = styled.div`
@@ -11,30 +12,30 @@ const HeaderSection = styled.div`
 `
 
 const HeaderLogoSection = styled.div`
-  max-width: 6rem;
+  max-width: 5rem;
+  @media ${BREAKPOINT_NOT_SMALL} {
+    max-width: 6rem;
+  }
 `
 
 const LogoImage = styled.img`
-  width: 2em;
-  height: 2em;
+  width: 1.5em;
+  height: 1.5em;
   vertical-align: middle;
   position: relative;
   top: -1px;
 `
 
 const PageHeaderRight: React.SFC<{}> = () => (
-  <div>
-    <LogoImage src={twitterLogo} alt="Twitter" />
-    <ATagNoUnderline href="https://twitter.com/chibicode">
-      @chibicode
-    </ATagNoUnderline>
-  </div>
+  <ATagNoUnderline href="https://twitter.com/chibicode" className="dib">
+    <LogoImage src={twitterLogo} alt="Twitter" /> Twitter
+  </ATagNoUnderline>
 )
 
 const PageHeaderLeft: React.SFC<{}> = () => (
-  <div>
-    🇯🇵 <ATagNoUnderline href="https://chibicode.com/jp">日本語</ATagNoUnderline>
-  </div>
+  <ATagNoUnderline href="https://chibicode.com/jp" className="dib">
+    🇯🇵 日本語
+  </ATagNoUnderline>
 )
 
 interface Props {
