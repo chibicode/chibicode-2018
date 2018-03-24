@@ -1,6 +1,6 @@
 ---
 title: About me (and this blog)
-date: "2018-03-22"
+date: "2018-03-22T01:00:00.000Z"
 image: "./cover.jpg"
 imageAttributionName: "Shu Uesugi"
 imageAttributionUrl: "https://twitter.com/chibicode/status/838586029330288640"
