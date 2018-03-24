@@ -55,14 +55,14 @@ export const LiTag: React.SFC<React.HTMLAttributes<HTMLLIElement>> = ({
 
 export const H1Tag: React.SFC<React.HTMLAttributes<HTMLHeadingElement>> = ({
   ...props
-}) => <StandardTag reactType={'h1'} className="f2 lh-title" {...props} />
+}) => <StandardTag reactType={'h1'} className="f3 lh-title" {...props} />
 
 export const H2Tag: React.SFC<React.HTMLAttributes<HTMLHeadingElement>> = ({
   ...props
 }) => (
   <StandardTag
     reactType={'h2'}
-    className="f3 lh-title"
+    className="f4 lh-title"
     topSpacing={BlockTopSpacing.Medium}
     {...props}
   />
@@ -73,7 +73,7 @@ export const H3Tag: React.SFC<React.HTMLAttributes<HTMLHeadingElement>> = ({
 }) => (
   <StandardTag
     reactType={'h3'}
-    className="f4 lh-title"
+    className="f5 lh-title"
     topSpacing={BlockTopSpacing.Medium}
     {...props}
   />
