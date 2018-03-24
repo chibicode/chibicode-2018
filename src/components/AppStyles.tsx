@@ -22,7 +22,7 @@ const AppStyles: React.SFC<React.HTMLAttributes<HTMLDivElement>> = ({
 }) => (
   <Styled
     className={classNames(
-      'lh-copy sans-serif dark-gray pt4 pb4 ph4-ns ph3',
+      'lh-copy sans-serif dark-gray pt4 pb5 ph4-ns ph3',
       className
     )}
     {...props}

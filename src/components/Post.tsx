@@ -47,7 +47,7 @@ const Post: React.SFC<Props> = ({
       )}
       <time className="f6">{date}</time>
     </StandardTag>
-    <H1Tag>
+    <H1Tag className="pb2">
       <NoUnderlineLink to={slug}>{title}</NoUnderlineLink>
     </H1Tag>
     {image && (
@@ -73,7 +73,7 @@ const Post: React.SFC<Props> = ({
         </figure>
       </Block>
     )}
-    {renderAst(htmlAst)}
+    <div className="pt2">{renderAst(htmlAst)}</div>
   </article>
 )
 

@@ -1,3 +1,4 @@
+import classNames from 'classnames'
 import React from 'react'
 import styled from 'styled-components'
 import Block, {
@@ -54,70 +55,83 @@ export const LiTag: React.SFC<React.HTMLAttributes<HTMLLIElement>> = ({
 )
 
 export const H1Tag: React.SFC<React.HTMLAttributes<HTMLHeadingElement>> = ({
+  className,
   ...props
-}) => <StandardTag reactType={'h1'} className="f3 lh-title" {...props} />
+}) => (
+  <StandardTag
+    reactType={'h1'}
+    className={classNames('f3 lh-title', className)}
+    {...props}
+  />
+)
 
 export const H2Tag: React.SFC<React.HTMLAttributes<HTMLHeadingElement>> = ({
+  className,
   ...props
 }) => (
   <StandardTag
     reactType={'h2'}
-    className="f4 lh-title"
+    className={classNames('f4 lh-title', className)}
     topSpacing={BlockTopSpacing.Medium}
     {...props}
   />
 )
 
 export const H3Tag: React.SFC<React.HTMLAttributes<HTMLHeadingElement>> = ({
+  className,
   ...props
 }) => (
   <StandardTag
     reactType={'h3'}
-    className="f5 lh-title"
+    className={classNames('f5 lh-title', className)}
     topSpacing={BlockTopSpacing.Medium}
     {...props}
   />
 )
 
 export const H4Tag: React.SFC<React.HTMLAttributes<HTMLHeadingElement>> = ({
+  className,
   ...props
 }) => (
   <StandardTag
     reactType={'h4'}
-    className="f5 lh-title"
+    className={classNames('f5 lh-title', className)}
     topSpacing={BlockTopSpacing.Medium}
     {...props}
   />
 )
 
 export const H5Tag: React.SFC<React.HTMLAttributes<HTMLHeadingElement>> = ({
+  className,
   ...props
 }) => (
   <StandardTag
     reactType={'h5'}
-    className="f5 lh-title"
+    className={classNames('f5 lh-title', className)}
     topSpacing={BlockTopSpacing.Medium}
     {...props}
   />
 )
 
 export const H6Tag: React.SFC<React.HTMLAttributes<HTMLHeadingElement>> = ({
+  className,
   ...props
 }) => (
   <StandardTag
     reactType={'h6'}
-    className="f5 lh-title"
+    className={classNames('f5 lh-title', className)}
     topSpacing={BlockTopSpacing.Medium}
     {...props}
   />
 )
 
 export const FigureTag: React.SFC<React.HTMLAttributes<HTMLDivElement>> = ({
+  className,
   ...props
 }) => (
   <StandardTag
     reactType={'figure'}
-    className="mr0 ml0"
+    className={classNames('mr0 ml0', className)}
     topSpacing={BlockTopSpacing.None}
     {...props}
   />
