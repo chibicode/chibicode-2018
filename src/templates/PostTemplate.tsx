@@ -56,6 +56,7 @@ const PostTemplate: React.SFC<Props> = ({ data }) => (
       imageAttributionUrl={
         data!.markdownRemark!.frontmatter!.imageAttributionUrl
       }
+      isPostPage
     />
   </div>
 )

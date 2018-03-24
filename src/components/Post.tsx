@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Block, { BlockVSpacing, BlockWidth } from '../components/Block'
 import { H1Tag, StandardTag } from '../components/BlockElements'
 import { ATag, NoUnderlineLink } from '../components/InlineElements'
-import { COLOR_BLACK, COLOR_YELLOW } from '../constants/styles'
+import { COLOR_RED, COLOR_YELLOW } from '../constants/styles'
 import renderAst from '../lib/renderAst'
 
 interface Props {
@@ -15,12 +15,18 @@ interface Props {
   image: object | null
   imageAttributionName: string | null
   imageAttributionUrl: string | null
+  isPostPage: boolean
 }
 
-const PostTopBorder = styled.div`
-  border-top: 2px solid ${COLOR_BLACK};
+const PostTopBorderYellow = styled.div`
   background: ${COLOR_YELLOW};
 `
+
+const PostTopBorderRed = styled.div`
+  background: ${COLOR_RED};
+`
+
+const postTopBorderClasses = 'pt2 mb3 nl3 nr3 nl4-ns nr4-ns b--dark-gray bt bw1'
 
 const Post: React.SFC<Props> = ({
   title,
@@ -30,10 +36,15 @@ const Post: React.SFC<Props> = ({
   image,
   imageAttributionName,
   imageAttributionUrl,
+  isPostPage,
 }) => (
   <article className="pt4-ns pt3 pb5-ns pb4">
     <StandardTag reactType={'div'} vSpacing={BlockVSpacing.XSmall}>
-      <PostTopBorder className="pt2 mb3 nl3 nr3 nl4-ns nr4-ns" />
+      {isPostPage ? (
+        <PostTopBorderRed className={postTopBorderClasses} />
+      ) : (
+        <PostTopBorderYellow className={postTopBorderClasses} />
+      )}
       <time className="f6">{date}</time>
     </StandardTag>
     <H1Tag>

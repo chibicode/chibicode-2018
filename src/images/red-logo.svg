@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="1500px" height="1500px" viewBox="0 0 1500 1500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
-    <title>shu-uesugi</title>
+    <title>red-logo</title>
     <desc>Created with Sketch.</desc>
     <defs>
         <rect id="path-1" x="0" y="0" width="1500" height="1500"></rect>
     </defs>
-    <g id="shu-uesugi" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g>
+    <g id="red-logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="shu-uesugi">
             <g id="Group">
                 <g id="Rectangle">
-                    <use fill="#E53935" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use fill="#E57373" fill-rule="evenodd" xlink:href="#path-1"></use>
                     <rect stroke-opacity="0.87" stroke="#000000" stroke-width="30" x="15" y="15" width="1470" height="1470"></rect>
                 </g>
                 <g id="Letters-Outline" transform="translate(221.000000, 219.000000)" fill="#000000" fill-opacity="0.87">

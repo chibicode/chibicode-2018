@@ -3,7 +3,6 @@ import React from 'react'
 import 'tachyons'
 import 'typeface-roboto-mono'
 import AppStyles from '../components/AppStyles'
-import PageFooter from '../components/PageFooter'
 import PageHeader from '../components/PageHeader'
 
 interface Props {
@@ -15,9 +14,8 @@ const App: React.SFC<Props> = ({ location, children }) => {
   const isHomepage = location.pathname === withPrefix('/')
   return (
     <AppStyles>
-      <PageHeader shortIntroText={!isHomepage} />
+      <PageHeader isHomepage={isHomepage} />
       {children()}
-      <PageFooter />
     </AppStyles>
   )
 }
