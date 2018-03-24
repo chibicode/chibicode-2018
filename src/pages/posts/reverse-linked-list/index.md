@@ -2,7 +2,7 @@
 title: Reverse Linked List
 date: "2018-03-22"
 image: "./template.jpg"
-twitter_id: 975799665198157824
+twitterId: 975799665198157824
 ---
 
 Hi there

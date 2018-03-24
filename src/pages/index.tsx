@@ -56,6 +56,7 @@ export const pageQuery = graphql`
             title
             imageAttributionName
             imageAttributionUrl
+            twitterId
             image {
               childImageSharp {
                 width1200: resolutions(width: 1200) {

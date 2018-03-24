@@ -83,6 +83,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         imageAttributionName
         imageAttributionUrl
+        twitterId
         image {
           childImageSharp {
             width1200: resolutions(width: 1200) {

@@ -4,7 +4,7 @@ date: "2018-03-22"
 image: "./cover.jpg"
 imageAttributionName: "Zeit"
 imageAttributionUrl: "https://www.youtube.com/watch?v=G39lKaONAlA"
-twitter_id: 975799665198157824
+twitterId: 975799665198157824
 ---
 
 Hi there
