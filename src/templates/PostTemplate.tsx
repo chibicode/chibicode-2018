@@ -57,6 +57,7 @@ const PostTemplate: React.SFC<Props> = ({ data }) => (
         data!.markdownRemark!.frontmatter!.imageAttributionUrl
       }
       isPostPage
+      twitterId={data!.markdownRemark!.frontmatter!.twitterId}
     />
   </div>
 )

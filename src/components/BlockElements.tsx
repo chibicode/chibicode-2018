@@ -7,7 +7,11 @@ import Block, {
   BlockWidth,
 } from '../components/Block'
 
-interface Props extends React.HTMLAttributes<HTMLElement> {
+interface Props
+  extends React.DetailedHTMLProps<
+      React.HTMLAttributes<HTMLElement>,
+      HTMLElement
+    > {
   reactType: React.ReactType
   vSpacing?: BlockVSpacing
   topSpacing?: BlockTopSpacing

@@ -55,6 +55,7 @@ export interface IndexPageQuery_allMarkdownRemark_edges_node_frontmatter {
   title: string | null;
   imageAttributionName: string | null;
   imageAttributionUrl: string | null;
+  twitterId: string | null;
   image: IndexPageQuery_allMarkdownRemark_edges_node_frontmatter_image | null;
 }
 

@@ -57,6 +57,7 @@ export interface PostBySlugQuery_markdownRemark_frontmatter {
   date: string | null;
   imageAttributionName: string | null;
   imageAttributionUrl: string | null;
+  twitterId: string | null;
   image: PostBySlugQuery_markdownRemark_frontmatter_image | null;
 }
 

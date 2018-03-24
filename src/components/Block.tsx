@@ -23,7 +23,11 @@ export enum BlockTopSpacing {
   Large = 'Large',
 }
 
-interface Props extends React.HTMLAttributes<HTMLElement> {
+interface Props
+  extends React.DetailedHTMLProps<
+      React.HTMLAttributes<HTMLElement>,
+      HTMLElement
+    > {
   width?: BlockWidth
   reactType: React.ReactType
   vSpacing?: BlockVSpacing

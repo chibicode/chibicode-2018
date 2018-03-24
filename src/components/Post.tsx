@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Block, { BlockVSpacing, BlockWidth } from '../components/Block'
 import { H1Tag, StandardTag } from '../components/BlockElements'
 import { ATag, NoUnderlineLink } from '../components/InlineElements'
+import TwitterEmbed from '../components/TwitterEmbed'
 import { COLOR_RED, COLOR_YELLOW } from '../constants/styles'
 import renderAst from '../lib/renderAst'
 
@@ -16,6 +17,7 @@ interface Props {
   imageAttributionName: string | null
   imageAttributionUrl: string | null
   isPostPage: boolean
+  twitterId: string | null
 }
 
 const PostTopBorderYellow = styled.div`
@@ -37,6 +39,7 @@ const Post: React.SFC<Props> = ({
   imageAttributionName,
   imageAttributionUrl,
   isPostPage,
+  twitterId,
 }) => (
   <article className="pt4-ns pt3 pb5-ns pb4">
     <StandardTag reactType={'div'} vSpacing={BlockVSpacing.XSmall}>
@@ -74,6 +77,7 @@ const Post: React.SFC<Props> = ({
       </Block>
     )}
     <div className="pt2">{renderAst(htmlAst)}</div>
+    {twitterId && <TwitterEmbed twitterId={twitterId} />}
   </article>
 )
 

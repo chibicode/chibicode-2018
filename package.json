@@ -28,6 +28,7 @@
     "gatsby-source-filesystem": "^1.5.27",
     "gatsby-transformer-remark": "^1.7.37",
     "gatsby-transformer-sharp": "^1.6.22",
+    "lodash": "^4.17.5",
     "rehype-react": "^3.0.2",
     "styled-components": "^3.2.3",
     "tachyons": "^4.9.1",
@@ -36,6 +37,7 @@
   },
   "devDependencies": {
     "@types/classnames": "^2.2.3",
+    "@types/lodash": "^4.14.106",
     "@types/node": "^9.4.7",
     "@types/react": "^16.0.40",
     "@types/react-dom": "^16.0.4",
