@@ -1,15 +1,10 @@
 import GatsbyImage from 'gatsby-image'
 import React from 'react'
-import styled from 'styled-components'
 import Block, { BlockBottomSpacing, BlockWidth } from '../components/Block'
 import { H1Tag, StandardTag } from '../components/BlockElements'
 import { ATag, NoUnderlineLink } from '../components/InlineElements'
 import PostContent from '../components/PostContent'
-import {
-  COLOR_CLASS_DARK_GRAY,
-  COLOR_RED,
-  COLOR_YELLOW,
-} from '../constants/styles'
+import PostTopBorder from '../components/PostTopBorder'
 
 interface Props {
   title: string
@@ -23,16 +18,6 @@ interface Props {
   twitterId: string | null
   numWords: number
 }
-
-const PostTopBorderYellow = styled.div`
-  background: ${COLOR_YELLOW};
-`
-
-const PostTopBorderRed = styled.div`
-  background: ${COLOR_RED};
-`
-
-const postTopBorderClasses = `pt2 mb3 nl3 nr3 nl4-ns nr4-ns b--${COLOR_CLASS_DARK_GRAY} bt bw1`
 
 const Post: React.SFC<Props> = ({
   title,
@@ -48,11 +33,7 @@ const Post: React.SFC<Props> = ({
 }) => (
   <article className="pt4-ns pt3 pb5-ns pb4">
     <StandardTag reactType={'div'} bottomSpacing={BlockBottomSpacing.XSmall}>
-      {isMainArticleOnPostPage ? (
-        <PostTopBorderRed className={postTopBorderClasses} />
-      ) : (
-        <PostTopBorderYellow className={postTopBorderClasses} />
-      )}
+      <PostTopBorder isRed={isMainArticleOnPostPage} />
       <time className="f6">{date}</time>
     </StandardTag>
     <H1Tag className="pb2">
