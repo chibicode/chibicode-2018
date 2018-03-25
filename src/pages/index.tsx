@@ -1,10 +1,10 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Post from '../components/Post'
+import PostList from '../components/PostList'
 import ogImage from '../images/og-image.jpg'
-import { IndexPageQuery } from './__generated__/IndexPageQuery'
+import { IndexPageQuery } from '../pages/__generated__/IndexPageQuery'
 
-export interface Props {
+interface Props {
   data: IndexPageQuery
 }
 
@@ -15,24 +15,7 @@ const IndexPage: React.SFC<Props> = ({ data }) => (
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
     </Helmet>
-    {data!.allMarkdownRemark!.edges!.map(e => (
-      <Post
-        key={e!.node!.fields!.slug!}
-        title={e!.node!.frontmatter!.title!}
-        slug={e!.node!.fields!.slug!}
-        date={e!.node!.frontmatter!.date!}
-        htmlAst={e!.node!.htmlAst!}
-        image={
-          e!.node!.frontmatter!.image &&
-          e!.node!.frontmatter!.image!.childImageSharp!.width750
-        }
-        imageAttributionName={e!.node!.frontmatter!.imageAttributionName}
-        imageAttributionUrl={e!.node!.frontmatter!.imageAttributionUrl}
-        isMainArticleOnPostPage={false}
-        twitterId={e!.node!.frontmatter!.twitterId}
-        numWords={e!.node!.wordCount!.words!}
-      />
-    ))}
+    <PostList allMarkdownRemark={data!.allMarkdownRemark!} />
   </main>
 )
 

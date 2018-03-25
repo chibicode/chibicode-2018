@@ -3,10 +3,16 @@ import { LiTag, OlTag, PTag } from '../components/BlockElements'
 import { ATag, UnderlineLink } from '../components/InlineElements'
 
 interface Props {
-  detailed: boolean
+  variation: IntroTextVariation
 }
 
-const IntroText: React.SFC<Props> = ({ detailed }) => {
+export enum IntroTextVariation {
+  NameOnly = 'NameOnly',
+  BlogOnly = 'BlogOnly',
+  NameAndBlog = 'NameAndBlog',
+}
+
+const IntroText: React.SFC<Props> = ({ variation }) => {
   const learnMore = (
     <span>
       <UnderlineLink to="/posts/about">
@@ -17,16 +23,22 @@ const IntroText: React.SFC<Props> = ({ detailed }) => {
   return (
     <section>
       <PTag>
-        I'm <strong>Shu Uesugi</strong>, a software developer in San Francisco.{detailed && (
+        {variation !== IntroTextVariation.BlogOnly && (
+          <span>
+            I'm <strong>Shu Uesugi</strong>, a software developer in San
+            Francisco.
+          </span>
+        )}
+        {variation !== IntroTextVariation.NameOnly && (
           <span>
             {' '}
             <strong>Chibicode</strong> is my blog, written with the following
             principles in mind:
           </span>
         )}
-        {!detailed && <span> {learnMore}</span>}
+        {variation === IntroTextVariation.NameOnly && <span> {learnMore}</span>}
       </PTag>
-      {detailed && (
+      {variation !== IntroTextVariation.NameOnly && (
         <div>
           <OlTag>
             <LiTag>

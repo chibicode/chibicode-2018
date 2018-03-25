@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Block, { BlockBottomSpacing, BlockWidth } from '../components/Block'
 import HeaderLogo from '../components/HeaderLogo'
-import IntroText from '../components/IntroText'
+import IntroText, { IntroTextVariation } from '../components/IntroText'
 
 const HeaderSection = styled.div`
   flex: 1;
@@ -12,11 +12,17 @@ const HeaderLogoSection = styled.div`
   max-width: 6rem;
 `
 
-interface Props {
-  isHomepage: boolean
+export enum PageHeaderLocation {
+  Homepage = 'HomePage',
+  PostPageTop = 'PostPageTop',
+  PostPageSecondary = 'PostPageSecondary',
 }
 
-const PageHeader: React.SFC<Props> = ({ isHomepage }) => (
+interface Props {
+  location: PageHeaderLocation
+}
+
+const PageHeader: React.SFC<Props> = ({ location }) => (
   <div>
     <Block
       reactType="section"
@@ -26,11 +32,21 @@ const PageHeader: React.SFC<Props> = ({ isHomepage }) => (
     >
       <HeaderSection className="flex justify-center">
         <HeaderLogoSection>
-          <HeaderLogo showAlternativeLogo={!isHomepage} />
+          <HeaderLogo
+            showAlternativeLogo={location === PageHeaderLocation.PostPageTop}
+          />
         </HeaderLogoSection>
       </HeaderSection>
     </Block>
-    <IntroText detailed={isHomepage} />
+    <IntroText
+      variation={
+        {
+          [PageHeaderLocation.Homepage]: IntroTextVariation.NameAndBlog,
+          [PageHeaderLocation.PostPageTop]: IntroTextVariation.NameOnly,
+          [PageHeaderLocation.PostPageSecondary]: IntroTextVariation.BlogOnly,
+        }[location]
+      }
+    />
   </div>
 )
 

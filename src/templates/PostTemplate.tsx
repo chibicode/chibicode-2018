@@ -1,7 +1,9 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import PageHeader, { PageHeaderLocation } from '../components/PageHeader'
 import Post from '../components/Post'
-import { PostBySlugQuery } from './__generated__/PostBySlugQuery'
+import PostList from '../components/PostList'
+import { PostBySlugQuery } from '../templates/__generated__/PostBySlugQuery'
 
 interface Props {
   data: PostBySlugQuery
@@ -60,6 +62,13 @@ const PostTemplate: React.SFC<Props> = ({ data }) => (
       twitterId={data!.markdownRemark!.frontmatter!.twitterId}
       numWords={data!.markdownRemark!.wordCount!.words!}
     />
+    <div className="pt5">
+      <PageHeader location={PageHeaderLocation.PostPageSecondary} />
+      <PostList
+        exceptSlug={data!.markdownRemark!.fields!.slug!}
+        allMarkdownRemark={data!.allMarkdownRemark!}
+      />
+    </div>
   </div>
 )
 
@@ -72,6 +81,43 @@ export const pageQuery = graphql`
         title
         author
         siteUrl
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          htmlAst
+          excerpt
+          wordCount {
+            words
+          }
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            imageAttributionName
+            imageAttributionUrl
+            twitterId
+            image {
+              childImageSharp {
+                width1200: resolutions(width: 1200) {
+                  height
+                  src
+                  width
+                }
+                width750: sizes(maxWidth: 750) {
+                  aspectRatio
+                  base64
+                  sizes
+                  src
+                  srcSet
+                }
+              }
+            }
+          }
+        }
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
