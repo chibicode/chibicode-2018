@@ -4,6 +4,7 @@
   "rules": {
     "interface-name": [true, "never-prefix"],
     "no-implicit-dependencies": false,
-    "member-ordering": false
+    "member-ordering": false,
+    "no-submodule-imports": false
   }
 }

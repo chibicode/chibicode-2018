@@ -1,6 +1,6 @@
 // https://github.com/capaj/react-tweet-embed
 import classnames from 'classnames'
-import { debounce } from 'lodash'
+import debounce from 'lodash/debounce'
 import React from 'react'
 import Block, {
   BlockTopSpacing,

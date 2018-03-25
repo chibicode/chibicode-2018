@@ -35,6 +35,7 @@ module.exports = {
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
+          'gatsby-remark-katex',
         ],
       },
     },
@@ -59,5 +60,6 @@ module.exports = {
     'gatsby-plugin-styled-components',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-catch-links',
+    'gatsby-plugin-twitter',
   ],
 }
