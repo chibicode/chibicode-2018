@@ -23,15 +23,9 @@ module.exports = {
             resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 900,
-              sizeByPixelDensity: true,
             },
           },
-          {
-            resolve: 'gatsby-remark-responsive-iframe',
-            options: {
-              wrapperStyle: 'margin-bottom: 1.0725rem',
-            },
-          },
+          'gatsby-remark-responsive-iframe',
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
@@ -44,7 +38,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
-        //trackingId: 'ADD YOUR TRACKING ID HERE',
+        trackingId: 'UA-32987822-1',
       },
     },
     'gatsby-plugin-feed',

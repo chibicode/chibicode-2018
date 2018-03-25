@@ -62,7 +62,7 @@ const PostTemplate: React.SFC<Props> = ({ data }) => (
       twitterId={data!.markdownRemark!.frontmatter!.twitterId}
       numWords={data!.markdownRemark!.wordCount!.words!}
     />
-    <div className="pt5">
+    <div className="pt6-ns pt5">
       <PageHeader location={PageHeaderLocation.PostPageSecondary} />
       <PostList
         exceptSlug={data!.markdownRemark!.fields!.slug!}

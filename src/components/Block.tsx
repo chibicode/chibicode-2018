@@ -18,6 +18,7 @@ export enum BlockBottomSpacing {
 
 export enum BlockTopSpacing {
   None = 'None',
+  XSmall = 'XSmall',
   Small = 'Small',
   Medium = 'Medium',
   Large = 'Large',
@@ -52,6 +53,7 @@ const Block: React.SFC<Props> = ({
         mb4: bottomSpacing === BlockBottomSpacing.Medium,
         mb5: bottomSpacing === BlockBottomSpacing.Large,
         mt0: !topSpacing || topSpacing === BlockTopSpacing.None,
+        mt2: topSpacing === BlockTopSpacing.XSmall,
         mt3: topSpacing === BlockTopSpacing.Small,
         mt4: topSpacing === BlockTopSpacing.Medium,
         mt5: topSpacing === BlockTopSpacing.Large,

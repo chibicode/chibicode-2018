@@ -6,6 +6,7 @@ import Block, {
   BlockTopSpacing,
   BlockWidth,
 } from '../components/Block'
+import { COLOR_YELLOW } from '../constants/styles'
 
 interface StandardTagProps extends Props {
   reactType: React.ReactType
@@ -123,4 +124,33 @@ export const FigureTag: React.SFC<Props> = ({ className, ...props }) => (
     topSpacing={BlockTopSpacing.None}
     {...props}
   />
+)
+
+export const FigcaptionTag: React.SFC<Props> = ({ className, ...props }) => (
+  <StandardTag
+    reactType={'figcaption'}
+    className={classNames('silver f7', className)}
+    topSpacing={BlockTopSpacing.XSmall}
+    {...props}
+  />
+)
+
+const StyledBlockquoteTag = styled.blockquote`
+  border-left-color: ${COLOR_YELLOW};
+`
+
+export const BlockquoteTag: React.SFC<Props> = ({
+  className,
+  children,
+  ...props
+}) => (
+  <StandardTag
+    reactType={'div'}
+    className={classNames('bl bw1 b--dark-gray i', className)}
+    {...props}
+  >
+    <StyledBlockquoteTag className="mh0 pl3 bl bw3">
+      {children}
+    </StyledBlockquoteTag>
+  </StandardTag>
 )
