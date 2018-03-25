@@ -4,6 +4,9 @@ import styled, { injectGlobal } from 'styled-components'
 import {
   BREAKPOINT_NOT_SMALL,
   COLOR_CLASS_DARK_GRAY,
+  COLOR_DARK_GRAY,
+  COLOR_YELLOW,
+  COLOR_YELLOW_SEMI_TRANSPARENT_30,
 } from '../constants/styles'
 
 // tslint:disable-next-line
@@ -12,6 +15,16 @@ injectGlobal`
     html {
       font-size: 18px;
     }
+  }
+
+  ::selection {
+    background: ${COLOR_YELLOW};
+    color: ${COLOR_DARK_GRAY};
+  }
+
+  ::-moz-selection {
+    background: ${COLOR_YELLOW};
+    color: ${COLOR_DARK_GRAY};
   }
 `
 
@@ -23,6 +36,21 @@ const Styled = styled.div`
   button,
   select {
     font-family: inherit;
+  }
+
+  code {
+    font-size: 0.85em;
+    background-color: ${COLOR_YELLOW_SEMI_TRANSPARENT_30};
+  }
+
+  pre {
+    font-size: 0.95em;
+  }
+
+  pre,
+  code {
+    font-family: 'Roboto Mono', SFMono-Regular, Menlo, Monaco, Consolas,
+      Liberation Mono, Courier New, monospace;
   }
 `
 

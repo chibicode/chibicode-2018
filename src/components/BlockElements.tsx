@@ -6,7 +6,12 @@ import Block, {
   BlockTopSpacing,
   BlockWidth,
 } from '../components/Block'
-import { COLOR_YELLOW } from '../constants/styles'
+import {
+  COLOR_DARK_GRAY,
+  COLOR_YELLOW,
+  COLOR_YELLOW_SEMI_TRANSPARENT_10,
+  COLOR_YELLOW_SEMI_TRANSPARENT_30,
+} from '../constants/styles'
 
 interface StandardTagProps extends Props {
   reactType: React.ReactType
@@ -19,19 +24,21 @@ interface Props
     > {
   bottomSpacing?: BlockBottomSpacing
   topSpacing?: BlockTopSpacing
+  width?: BlockWidth
 }
 
 export const StandardTag: React.SFC<StandardTagProps> = ({
   reactType,
   bottomSpacing,
   topSpacing,
+  width,
   ...props
 }) => (
   <Block
     reactType={reactType}
     bottomSpacing={bottomSpacing || BlockBottomSpacing.Small}
-    topSpacing={topSpacing}
-    width={BlockWidth.Small}
+    topSpacing={topSpacing || BlockTopSpacing.None}
+    width={width || BlockWidth.Small}
     {...props}
   />
 )
@@ -152,5 +159,65 @@ export const BlockquoteTag: React.SFC<Props> = ({
     <StyledBlockquoteTag className="mh0 pl3 bl bw3">
       {children}
     </StyledBlockquoteTag>
+  </StandardTag>
+)
+
+const PreWrapper = styled.div`
+  /* https://www.gatsbyjs.org/packages/gatsby-remark-prismjs/ */
+  .gatsby-highlight-code-line {
+    background-color: ${COLOR_YELLOW_SEMI_TRANSPARENT_30}; /* Modified */
+    display: block;
+    margin-right: -1em;
+    margin-left: -1em;
+    padding-right: 1em;
+    padding-left: 0.75em;
+    border-left: 0.25em solid #f99;
+    line-height: 2.25; /* Modified - seems this must be (line height)^2 */
+  }
+
+  .gatsby-highlight-inner {
+    background-color: ${COLOR_YELLOW_SEMI_TRANSPARENT_10}; /* Modified */
+    border-radius: 0.3em;
+    padding: 1em 0.85em; /* Modified - not sure why 0.85em */
+    overflow: auto;
+  }
+
+  .gatsby-highlight-inner pre {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    overflow: initial;
+    float: left;
+    min-width: 100%;
+  }
+
+  .gatsby-highlight-inner code {
+    background-color: transparent;
+  }
+
+  pre[class*='language-']::-moz-selection,
+  pre[class*='language-'] ::-moz-selection,
+  code[class*='language-']::-moz-selection,
+  code[class*='language-'] ::-moz-selection {
+    background: ${COLOR_YELLOW};
+    color: ${COLOR_DARK_GRAY};
+  }
+
+  pre[class*='language-']::selection,
+  pre[class*='language-'] ::selection,
+  code[class*='language-']::selection,
+  code[class*='language-'] ::selection {
+    background: ${COLOR_YELLOW};
+    color: ${COLOR_DARK_GRAY};
+  }
+`
+
+export const PreTag: React.SFC<Props> = ({ ...props }) => (
+  <StandardTag reactType={'div'} width={BlockWidth.Large}>
+    <PreWrapper>
+      <div className="gatsby-highlight-inner">
+        <pre {...props} />
+      </div>
+    </PreWrapper>
   </StandardTag>
 )

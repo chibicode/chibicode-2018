@@ -11,6 +11,7 @@ import {
   H6Tag,
   LiTag,
   OlTag,
+  PreTag,
   PTag,
   UlTag,
 } from '../components/BlockElements'
@@ -37,6 +38,7 @@ const renderAst: renderAstType = new rehypeReact({
     ol: OlTag,
     p: PTag,
     ul: UlTag,
+    pre: PreTag,
     'post-separator': PostSeparator,
     'responsive-iframe': ResponsiveIframe,
   },
