@@ -16,7 +16,7 @@ interface Props {
   image: object | null
   imageAttributionName: string | null
   imageAttributionUrl: string | null
-  isPostPage: boolean
+  isMainArticleOnPostPage: boolean
   twitterId: string | null
 }
 
@@ -38,12 +38,12 @@ const Post: React.SFC<Props> = ({
   image,
   imageAttributionName,
   imageAttributionUrl,
-  isPostPage,
+  isMainArticleOnPostPage,
   twitterId,
 }) => (
   <article className="pt4-ns pt3 pb5-ns pb4">
     <StandardTag reactType={'div'} bottomSpacing={BlockBottomSpacing.XSmall}>
-      {isPostPage ? (
+      {isMainArticleOnPostPage ? (
         <PostTopBorderRed className={postTopBorderClasses} />
       ) : (
         <PostTopBorderYellow className={postTopBorderClasses} />
@@ -81,7 +81,7 @@ const Post: React.SFC<Props> = ({
         htmlAst={htmlAst}
         twitterId={twitterId}
         slug={slug}
-        expanded={isPostPage}
+        expanded={isMainArticleOnPostPage}
       />
     </div>
   </article>

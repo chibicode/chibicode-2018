@@ -28,7 +28,7 @@ const IndexPage: React.SFC<Props> = ({ data }) => (
         }
         imageAttributionName={e!.node!.frontmatter!.imageAttributionName}
         imageAttributionUrl={e!.node!.frontmatter!.imageAttributionUrl}
-        isPostPage={false}
+        isMainArticleOnPostPage={false}
         twitterId={e!.node!.frontmatter!.twitterId}
       />
     ))}
