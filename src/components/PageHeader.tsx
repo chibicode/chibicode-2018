@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Block, { BlockVSpacing, BlockWidth } from '../components/Block'
+import Block, { BlockBottomSpacing, BlockWidth } from '../components/Block'
 import HeaderLogo from '../components/HeaderLogo'
 import IntroText from '../components/IntroText'
 
@@ -21,7 +21,7 @@ const PageHeader: React.SFC<Props> = ({ isHomepage }) => (
     <Block
       reactType="section"
       width={BlockWidth.Large}
-      vSpacing={BlockVSpacing.Medium}
+      bottomSpacing={BlockBottomSpacing.Medium}
       className="flex items-start"
     >
       <HeaderSection className="flex justify-center">

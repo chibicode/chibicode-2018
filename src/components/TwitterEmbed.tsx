@@ -4,7 +4,7 @@ import debounce from 'lodash/debounce'
 import React from 'react'
 import Block, {
   BlockTopSpacing,
-  BlockVSpacing,
+  BlockBottomSpacing,
   BlockWidth,
 } from '../components/Block'
 
@@ -113,7 +113,7 @@ export default class TwitterEmbed extends React.Component<Props, State> {
         {...restProps}
         reactType="div"
         width={BlockWidth.Small}
-        vSpacing={renderSuccess ? BlockVSpacing.Medium : BlockVSpacing.None}
+        bottomSpacing={renderSuccess ? BlockBottomSpacing.Medium : BlockBottomSpacing.None}
         topSpacing={
           this.props.addSpaceToTop! && renderSuccess
             ? BlockTopSpacing.Medium

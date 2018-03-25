@@ -24,21 +24,22 @@ const urlBoxOnclick: React.MouseEventHandler<HTMLInputElement> = e =>
 const UrlBox: React.SFC<UrlBoxProps> = ({ slug }) => (
   <UrlBoxInput
     type="text"
+    readOnly
     onClick={urlBoxOnclick}
     value={`https://chibicode.com/${slug}`}
-    className="f7 db w-100 ba b--moon-gray"
+    className="f7 db w-100 ba b--moon-gray br2"
   />
 )
 
-interface ShareWidgetProps {
-  twitterId?: string
+export interface ShareWidgetProps {
+  twitterId?: string | null
   slug: string
 }
 
 const ShareWidget: React.SFC<ShareWidgetProps> = ({ twitterId, slug }) => {
   const link = (
     <H3Tag className="flex items-center">
-      <span className="mr2">Link:</span>
+      <span className="mr2">Share Link:</span>
       <span className="flex-auto">
         <UrlBox slug={slug} />
       </span>

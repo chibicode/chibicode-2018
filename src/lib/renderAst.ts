@@ -12,11 +12,15 @@ import {
   UlTag,
 } from '../components/BlockElements'
 import { ATag } from '../components/InlineElements'
+import PostSeparator from '../components/PostSeparator'
 
-type renderAstType = (htmlAst: JSON) => string
+type renderAstType = (
+  htmlAst: JSON
+) => React.ReactElement<{ children: React.ReactNode }>
 
 const renderAst: renderAstType = new rehypeReact({
   components: {
+    a: ATag,
     h2: H2Tag,
     h3: H3Tag,
     h4: H4Tag,
@@ -25,8 +29,8 @@ const renderAst: renderAstType = new rehypeReact({
     li: LiTag,
     ol: OlTag,
     p: PTag,
+    separator: PostSeparator,
     ul: UlTag,
-    a: ATag,
   },
   createElement: React.createElement,
 }).Compiler

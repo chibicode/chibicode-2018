@@ -3,7 +3,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Block, {
   BlockTopSpacing,
-  BlockVSpacing,
+  BlockBottomSpacing,
   BlockWidth,
 } from '../components/Block'
 
@@ -13,19 +13,19 @@ interface Props
       HTMLElement
     > {
   reactType: React.ReactType
-  vSpacing?: BlockVSpacing
+  bottomSpacing?: BlockBottomSpacing
   topSpacing?: BlockTopSpacing
 }
 
 export const StandardTag: React.SFC<Props> = ({
   reactType,
-  vSpacing,
+  bottomSpacing,
   topSpacing,
   ...props
 }) => (
   <Block
     reactType={reactType}
-    vSpacing={vSpacing || BlockVSpacing.Small}
+    bottomSpacing={bottomSpacing || BlockBottomSpacing.Small}
     topSpacing={topSpacing}
     width={BlockWidth.Small}
     {...props}
@@ -55,7 +55,7 @@ export const UlTag: React.SFC<React.HTMLAttributes<HTMLUListElement>> = ({
 export const LiTag: React.SFC<React.HTMLAttributes<HTMLLIElement>> = ({
   ...props
 }) => (
-  <StandardTag reactType={'li'} vSpacing={BlockVSpacing.XSmall} {...props} />
+  <StandardTag reactType={'li'} bottomSpacing={BlockBottomSpacing.XSmall} {...props} />
 )
 
 export const H1Tag: React.SFC<React.HTMLAttributes<HTMLHeadingElement>> = ({

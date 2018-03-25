@@ -8,7 +8,7 @@ export enum BlockWidth {
   Full = 'Full',
 }
 
-export enum BlockVSpacing {
+export enum BlockBottomSpacing {
   None = 'None',
   XSmall = 'XSmall',
   Small = 'Small',
@@ -30,13 +30,13 @@ interface Props
     > {
   width?: BlockWidth
   reactType: React.ReactType
-  vSpacing?: BlockVSpacing
+  bottomSpacing?: BlockBottomSpacing
   topSpacing?: BlockTopSpacing
 }
 
 const Block: React.SFC<Props> = ({
   reactType,
-  vSpacing,
+  bottomSpacing,
   topSpacing,
   width,
   className,
@@ -46,11 +46,11 @@ const Block: React.SFC<Props> = ({
     className: classNames(
       'center',
       {
-        mb0: !vSpacing || vSpacing === BlockVSpacing.None,
-        mb2: vSpacing === BlockVSpacing.XSmall,
-        mb3: vSpacing === BlockVSpacing.Small,
-        mb4: vSpacing === BlockVSpacing.Medium,
-        mb5: vSpacing === BlockVSpacing.Large,
+        mb0: !bottomSpacing || bottomSpacing === BlockBottomSpacing.None,
+        mb2: bottomSpacing === BlockBottomSpacing.XSmall,
+        mb3: bottomSpacing === BlockBottomSpacing.Small,
+        mb4: bottomSpacing === BlockBottomSpacing.Medium,
+        mb5: bottomSpacing === BlockBottomSpacing.Large,
         mt0: !topSpacing || topSpacing === BlockTopSpacing.None,
         mt3: topSpacing === BlockTopSpacing.Small,
         mt4: topSpacing === BlockTopSpacing.Medium,

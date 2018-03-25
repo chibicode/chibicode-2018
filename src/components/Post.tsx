@@ -1,12 +1,12 @@
 import GatsbyImage from 'gatsby-image'
 import React from 'react'
 import styled from 'styled-components'
-import Block, { BlockVSpacing, BlockWidth } from '../components/Block'
+import Block, { BlockBottomSpacing, BlockWidth } from '../components/Block'
 import { H1Tag, StandardTag } from '../components/BlockElements'
 import { ATag, NoUnderlineLink } from '../components/InlineElements'
+import PostContent from '../components/PostContent'
 import ShareWidget from '../components/ShareWidget'
 import { COLOR_RED, COLOR_YELLOW } from '../constants/styles'
-import renderAst from '../lib/renderAst'
 
 interface Props {
   title: string
@@ -42,7 +42,7 @@ const Post: React.SFC<Props> = ({
   twitterId,
 }) => (
   <article className="pt4-ns pt3 pb5-ns pb4">
-    <StandardTag reactType={'div'} vSpacing={BlockVSpacing.XSmall}>
+    <StandardTag reactType={'div'} bottomSpacing={BlockBottomSpacing.XSmall}>
       {isPostPage ? (
         <PostTopBorderRed className={postTopBorderClasses} />
       ) : (
@@ -56,7 +56,7 @@ const Post: React.SFC<Props> = ({
     {image && (
       <Block
         reactType={'div'}
-        vSpacing={BlockVSpacing.Small}
+        bottomSpacing={BlockBottomSpacing.Small}
         width={BlockWidth.Small}
       >
         <figure className="mv0 nl3 nr3 nl4-ns nr4-ns">
@@ -76,8 +76,14 @@ const Post: React.SFC<Props> = ({
         </figure>
       </Block>
     )}
-    <div className="pt2">{renderAst(htmlAst)}</div>
-    <ShareWidget twitterId={twitterId} slug={slug!} />
+    <div className="pt2">
+      <PostContent
+        htmlAst={htmlAst}
+        twitterId={twitterId}
+        slug={slug}
+        expanded={isPostPage}
+      />
+    </div>
   </article>
 )
 
