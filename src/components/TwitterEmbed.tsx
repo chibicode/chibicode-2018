@@ -23,6 +23,7 @@ declare let window: WindowWithTwttr
 interface Props {
   twitterId: string
   wrapperProps?: React.HTMLAttributes<HTMLDivElement>
+  addSpaceToTop?: boolean
 }
 
 enum TweetRenderStatus {
@@ -38,6 +39,7 @@ interface State {
 
 export default class TwitterEmbed extends React.Component<Props, State> {
   public static defaultProps = {
+    addSpaceToTop: true,
     wrapperProps: {},
   }
 
@@ -113,7 +115,9 @@ export default class TwitterEmbed extends React.Component<Props, State> {
         width={BlockWidth.Small}
         vSpacing={renderSuccess ? BlockVSpacing.Medium : BlockVSpacing.None}
         topSpacing={
-          renderSuccess ? BlockTopSpacing.Medium : BlockTopSpacing.None
+          this.props.addSpaceToTop! && renderSuccess
+            ? BlockTopSpacing.Medium
+            : BlockTopSpacing.None
         }
         className={classnames({
           [className || '']: renderSuccess,

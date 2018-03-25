@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Block, { BlockVSpacing, BlockWidth } from '../components/Block'
 import { H1Tag, StandardTag } from '../components/BlockElements'
 import { ATag, NoUnderlineLink } from '../components/InlineElements'
-import TwitterEmbed from '../components/TwitterEmbed'
+import ShareWidget from '../components/ShareWidget'
 import { COLOR_RED, COLOR_YELLOW } from '../constants/styles'
 import renderAst from '../lib/renderAst'
 
@@ -77,7 +77,7 @@ const Post: React.SFC<Props> = ({
       </Block>
     )}
     <div className="pt2">{renderAst(htmlAst)}</div>
-    {twitterId && <TwitterEmbed twitterId={twitterId} />}
+    <ShareWidget twitterId={twitterId} slug={slug!} />
   </article>
 )
 

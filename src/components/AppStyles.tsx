@@ -14,6 +14,11 @@ injectGlobal`
 
 const Styled = styled.div`
   font-family: 'Lato', sans-serif;
+
+  input,
+  textarea {
+    font-family: 'Lato', sans-serif;
+  }
 `
 
 const AppStyles: React.SFC<React.HTMLAttributes<HTMLDivElement>> = ({

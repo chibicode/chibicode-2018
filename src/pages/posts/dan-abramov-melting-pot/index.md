@@ -1,5 +1,5 @@
 ---
-title: Dan Abramov on Helping Beginners
+title: Dan Abramov on helping beginners
 date: "2018-03-22T02:00:00.000Z"
 image: "./cover.jpg"
 imageAttributionName: "Zeit"
