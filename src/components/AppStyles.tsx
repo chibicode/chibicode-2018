@@ -16,8 +16,10 @@ const Styled = styled.div`
   font-family: 'Lato', sans-serif;
 
   input,
-  textarea {
-    font-family: 'Lato', sans-serif;
+  textarea,
+  button,
+  select {
+    font-family: inherit;
   }
 `
 

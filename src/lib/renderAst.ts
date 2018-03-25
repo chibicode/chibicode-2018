@@ -29,7 +29,7 @@ const renderAst: renderAstType = new rehypeReact({
     li: LiTag,
     ol: OlTag,
     p: PTag,
-    separator: PostSeparator,
+    'post-separator': PostSeparator,
     ul: UlTag,
   },
   createElement: React.createElement,
