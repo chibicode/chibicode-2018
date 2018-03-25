@@ -27,7 +27,7 @@ const UrlBox: React.SFC<UrlBoxProps> = ({ slug }) => (
     readOnly
     onClick={urlBoxOnclick}
     value={`https://chibicode.com/${slug}`}
-    className="f7 db w-100 ba b--moon-gray br2"
+    className="f7 db w-100 ba b--moon-gray br2 b"
   />
 )
 
