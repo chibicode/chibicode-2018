@@ -8,6 +8,7 @@ import 'typeface-lato'
 import 'typeface-roboto-mono'
 import AppStyles from '../components/AppStyles'
 import PageHeader, { PageHeaderLocation } from '../components/PageHeader'
+import favicon152 from '../images/favicon-152.png'
 
 interface Props {
   location: Location
@@ -24,6 +25,7 @@ const App: React.SFC<Props> = ({ location, children }) => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@chibicode" />
         <meta name="twitter:creator" content="@chibicode" />
+        <link rel="apple-touch-icon-precomposed" href={favicon152} />
       </Helmet>
       <PageHeader
         location={
