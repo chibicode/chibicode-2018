@@ -1,13 +1,16 @@
 import React from 'react'
 import { PTag } from '../components/BlockElements'
 import Button from '../components/Button'
+import ReadingTimeText from '../components/ReadingTimeText'
 import ShareWidget, { ShareWidgetProps } from '../components/ShareWidget'
 import { POST_SEPARATOR_DISPLAY_NAME } from '../constants/components'
+import { COLOR_CLASS_LIGHT_GRAY } from '../constants/styles'
 import renderAst from '../lib/renderAst'
 
 interface Props extends ShareWidgetProps {
   htmlAst: JSON
   expanded: boolean
+  numWords: number
 }
 
 interface State {
@@ -91,6 +94,9 @@ export default class PostContent extends React.Component<Props, State> {
               <Button onClick={this.onClickKeepReadingButton}>
                 Keep Reading
               </Button>
+              <span className={`f7 db mt2`}>
+                <ReadingTimeText numWords={this.props.numWords} />
+              </span>
             </PTag>
           </div>
         )

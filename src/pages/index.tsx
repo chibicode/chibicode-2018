@@ -30,6 +30,7 @@ const IndexPage: React.SFC<Props> = ({ data }) => (
         imageAttributionUrl={e!.node!.frontmatter!.imageAttributionUrl}
         isMainArticleOnPostPage={false}
         twitterId={e!.node!.frontmatter!.twitterId}
+        numWords={e!.node!.wordCount!.words!}
       />
     ))}
   </main>
@@ -49,6 +50,9 @@ export const pageQuery = graphql`
         node {
           htmlAst
           excerpt
+          wordCount {
+            words
+          }
           fields {
             slug
           }

@@ -1,7 +1,10 @@
 import classNames from 'classnames'
 import React from 'react'
 import styled, { injectGlobal } from 'styled-components'
-import { BREAKPOINT_NOT_SMALL } from '../constants/styles'
+import {
+  BREAKPOINT_NOT_SMALL,
+  COLOR_CLASS_DARK_GRAY,
+} from '../constants/styles'
 
 // tslint:disable-next-line
 injectGlobal`
@@ -29,7 +32,7 @@ const AppStyles: React.SFC<React.HTMLAttributes<HTMLDivElement>> = ({
 }) => (
   <Styled
     className={classNames(
-      'lh-copy sans-serif dark-gray pt4 pb5 ph4-ns ph3',
+      `lh-copy sans-serif ${COLOR_CLASS_DARK_GRAY} pt4 pb5 ph4-ns ph3`,
       className
     )}
     {...props}

@@ -17,6 +17,11 @@ export interface IndexPageQuery_site {
   siteMetadata: IndexPageQuery_site_siteMetadata | null;
 }
 
+export interface IndexPageQuery_allMarkdownRemark_edges_node_wordCount {
+  __typename: "wordCount";
+  words: number | null;
+}
+
 export interface IndexPageQuery_allMarkdownRemark_edges_node_fields {
   __typename: "fields_2";
   slug: string | null;
@@ -63,6 +68,7 @@ export interface IndexPageQuery_allMarkdownRemark_edges_node {
   __typename: "MarkdownRemark";
   htmlAst: JSON | null;
   excerpt: string | null;
+  wordCount: IndexPageQuery_allMarkdownRemark_edges_node_wordCount | null;
   fields: IndexPageQuery_allMarkdownRemark_edges_node_fields | null;
   frontmatter: IndexPageQuery_allMarkdownRemark_edges_node_frontmatter | null;
 }

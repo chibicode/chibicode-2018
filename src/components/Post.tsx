@@ -5,8 +5,11 @@ import Block, { BlockBottomSpacing, BlockWidth } from '../components/Block'
 import { H1Tag, StandardTag } from '../components/BlockElements'
 import { ATag, NoUnderlineLink } from '../components/InlineElements'
 import PostContent from '../components/PostContent'
-import ShareWidget from '../components/ShareWidget'
-import { COLOR_RED, COLOR_YELLOW } from '../constants/styles'
+import {
+  COLOR_CLASS_DARK_GRAY,
+  COLOR_RED,
+  COLOR_YELLOW,
+} from '../constants/styles'
 
 interface Props {
   title: string
@@ -18,6 +21,7 @@ interface Props {
   imageAttributionUrl: string | null
   isMainArticleOnPostPage: boolean
   twitterId: string | null
+  numWords: number
 }
 
 const PostTopBorderYellow = styled.div`
@@ -28,7 +32,7 @@ const PostTopBorderRed = styled.div`
   background: ${COLOR_RED};
 `
 
-const postTopBorderClasses = 'pt2 mb3 nl3 nr3 nl4-ns nr4-ns b--dark-gray bt bw1'
+const postTopBorderClasses = `pt2 mb3 nl3 nr3 nl4-ns nr4-ns b--${COLOR_CLASS_DARK_GRAY} bt bw1`
 
 const Post: React.SFC<Props> = ({
   title,
@@ -40,6 +44,7 @@ const Post: React.SFC<Props> = ({
   imageAttributionUrl,
   isMainArticleOnPostPage,
   twitterId,
+  numWords,
 }) => (
   <article className="pt4-ns pt3 pb5-ns pb4">
     <StandardTag reactType={'div'} bottomSpacing={BlockBottomSpacing.XSmall}>
@@ -82,6 +87,7 @@ const Post: React.SFC<Props> = ({
         twitterId={twitterId}
         slug={slug}
         expanded={isMainArticleOnPostPage}
+        numWords={numWords}
       />
     </div>
   </article>

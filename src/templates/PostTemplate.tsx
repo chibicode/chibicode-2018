@@ -58,6 +58,7 @@ const PostTemplate: React.SFC<Props> = ({ data }) => (
       }
       isMainArticleOnPostPage
       twitterId={data!.markdownRemark!.frontmatter!.twitterId}
+      numWords={data!.markdownRemark!.wordCount!.words!}
     />
   </div>
 )
@@ -76,6 +77,10 @@ export const pageQuery = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       htmlAst
+      excerpt
+      wordCount {
+        words
+      }
       fields {
         slug
       }

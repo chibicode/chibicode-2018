@@ -6,3 +6,6 @@ export const BREAKPOINT_LARGE = 'screen and (min-width: 64em)'
 export const COLOR_BLACK = 'rgba(0, 0, 0, 0.87)'
 export const COLOR_YELLOW = '#FFEB3B' // Material Design Yellow 500
 export const COLOR_RED = '#E57373' // Material Design Red 300
+// http://tachyons.io/docs/themes/skins/
+export const COLOR_CLASS_DARK_GRAY = 'dark-gray'
+export const COLOR_CLASS_LIGHT_GRAY = 'silver'

@@ -19,6 +19,11 @@ export interface PostBySlugQuery_site {
   siteMetadata: PostBySlugQuery_site_siteMetadata | null;
 }
 
+export interface PostBySlugQuery_markdownRemark_wordCount {
+  __typename: "wordCount";
+  words: number | null;
+}
+
 export interface PostBySlugQuery_markdownRemark_fields {
   __typename: "fields_2";
   slug: string | null;
@@ -65,6 +70,8 @@ export interface PostBySlugQuery_markdownRemark {
   __typename: "MarkdownRemark";
   id: string;  // The id of this node.
   htmlAst: JSON | null;
+  excerpt: string | null;
+  wordCount: PostBySlugQuery_markdownRemark_wordCount | null;
   fields: PostBySlugQuery_markdownRemark_fields | null;
   frontmatter: PostBySlugQuery_markdownRemark_frontmatter | null;
 }
