@@ -3,8 +3,8 @@ import classnames from 'classnames'
 import debounce from 'lodash/debounce'
 import React from 'react'
 import Block, {
-  BlockTopSpacing,
   BlockBottomSpacing,
+  BlockTopSpacing,
   BlockWidth,
 } from '../components/Block'
 
@@ -92,6 +92,7 @@ export default class TwitterEmbed extends React.Component<Props, State> {
 
   public componentDidMount() {
     window.addEventListener('scroll', this.handleScrollDebounced)
+    this.handleScroll()
   }
 
   public componentWillUnmount() {
@@ -113,7 +114,9 @@ export default class TwitterEmbed extends React.Component<Props, State> {
         {...restProps}
         reactType="div"
         width={BlockWidth.Small}
-        bottomSpacing={renderSuccess ? BlockBottomSpacing.Medium : BlockBottomSpacing.None}
+        bottomSpacing={
+          renderSuccess ? BlockBottomSpacing.Medium : BlockBottomSpacing.None
+        }
         topSpacing={
           this.props.addSpaceToTop! && renderSuccess
             ? BlockTopSpacing.Medium

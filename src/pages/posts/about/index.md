@@ -4,7 +4,7 @@ date: "2018-03-22T01:00:00.000Z"
 image: "./cover.jpg"
 imageAttributionName: "Shu Uesugi"
 imageAttributionUrl: "https://twitter.com/chibicode/status/838586029330288640"
-twitterId: "975799665198157824"
+twitterId: "977480245107412992"
 ---
 
 * this blog is for TLDR ppl, but don't use TL; DR b/c people in developing country will not know what that means.
