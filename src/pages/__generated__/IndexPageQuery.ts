@@ -10,6 +10,7 @@
 export interface IndexPageQuery_site_siteMetadata {
   __typename: "siteMetadata_2";
   title: string | null;
+  siteUrl: string | null;
 }
 
 export interface IndexPageQuery_site {

@@ -13,16 +13,25 @@ interface Props {
 const PostTemplate: React.SFC<Props> = ({ data }) => (
   <div>
     <Helmet
-      title={`${data!.markdownRemark!.frontmatter!.title} | ${
-        data!.site!.siteMetadata!.title
-      }`}
+      title={`${data!.markdownRemark!.frontmatter!.title!} | ${data!.site!
+        .siteMetadata!.title!}`}
     >
+      {/* Do not include site title on og:title */}
+      <meta
+        property="og:title"
+        content={data!.markdownRemark!.frontmatter!.title!}
+      />
+      <meta property="og:type" content="article" />
+      <meta
+        property="og:url"
+        content={`${data!.site!.siteMetadata!.siteUrl!}${data!.markdownRemark!
+          .fields!.slug!}`}
+      />
       {data!.markdownRemark!.frontmatter!.image && (
         <meta
           property="og:image"
-          content={`${
-            data!.site!.siteMetadata!.siteUrl
-          }${data!.markdownRemark!.frontmatter!.image!.childImageSharp!.width1200!.src!.substring(
+          content={`${data!.site!.siteMetadata!
+            .siteUrl!}${data!.markdownRemark!.frontmatter!.image!.childImageSharp!.width1200!.src!.substring(
             1
           )}`}
         />

@@ -2,6 +2,7 @@ import { withPrefix } from 'gatsby-link'
 import 'katex/dist/katex.min.css'
 import 'prismjs/themes/prism-solarizedlight.css'
 import React from 'react'
+import Helmet from 'react-helmet'
 import 'tachyons'
 import 'typeface-lato'
 import 'typeface-roboto-mono'
@@ -17,6 +18,13 @@ const App: React.SFC<Props> = ({ location, children }) => {
   const isHomepage = location.pathname === withPrefix('/')
   return (
     <AppStyles>
+      <Helmet>
+        <meta property="og:locale" content="en" />
+        <meta property="og:site_name" content="Shu Uesugi" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@chibicode" />
+        <meta name="twitter:creator" content="@chibicode" />
+      </Helmet>
       <PageHeader
         location={
           isHomepage

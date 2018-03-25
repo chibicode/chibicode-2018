@@ -11,6 +11,9 @@ interface Props {
 const IndexPage: React.SFC<Props> = ({ data }) => (
   <main>
     <Helmet title={data!.site!.siteMetadata!.title!}>
+      <meta property="og:title" content={data!.site!.siteMetadata!.title!} />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content={data!.site!.siteMetadata!.siteUrl!} />
       <meta property="og:image" content={ogImage} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
@@ -26,6 +29,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        siteUrl
       }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
