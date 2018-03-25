@@ -11,7 +11,8 @@ const PostList: React.SFC<Props> = ({ allMarkdownRemark, exceptSlug }) => (
   <div>
     {allMarkdownRemark!.edges!.map(
       e =>
-        exceptSlug !== e!.node!.fields!.slug! && (
+        exceptSlug !== e!.node!.fields!.slug! &&
+        !e!.node!.frontmatter!.draft && (
           <Post
             key={e!.node!.fields!.slug!}
             title={e!.node!.frontmatter!.title!}

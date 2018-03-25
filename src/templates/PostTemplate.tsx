@@ -106,6 +106,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            draft
             imageAttributionName
             imageAttributionUrl
             twitterId
@@ -145,6 +146,7 @@ export const pageQuery = graphql`
         imageAttributionName
         imageAttributionUrl
         twitterId
+        draft
         image {
           childImageSharp {
             width1200: resolutions(width: 1200) {

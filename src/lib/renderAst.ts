@@ -13,6 +13,7 @@ import {
   OlTag,
   PreTag,
   PTag,
+  TwitterEmbedWrapper,
   UlTag,
 } from '../components/BlockElements'
 import { ATag } from '../components/InlineElements'
@@ -41,6 +42,7 @@ const renderAst: renderAstType = new rehypeReact({
     pre: PreTag,
     'post-separator': PostSeparator,
     'responsive-iframe': ResponsiveIframe,
+    'twitter-embed': TwitterEmbedWrapper,
   },
   createElement: React.createElement,
 }).Compiler

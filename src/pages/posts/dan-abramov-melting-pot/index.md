@@ -5,6 +5,7 @@ image: "./cover.jpg"
 imageAttributionName: "Zeit"
 imageAttributionUrl: "https://www.youtube.com/watch?v=G39lKaONAlA"
 twitterId: "977739841570918400"
+draft: true
 ---
 
 Hi `there` dela

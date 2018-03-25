@@ -49,14 +49,18 @@ const ShareWidget: React.SFC<ShareWidgetProps> = ({ twitterId, slug }) => {
     </H3Tag>
   )
 
-  return twitterId ? (
-    <div>
-      <H2Tag>Share or comment on Twitter</H2Tag>
-      <TwitterEmbed twitterId={twitterId} addSpaceToTop={false} />
-      {link}
+  return (
+    <div className="pt3">
+      {twitterId ? (
+        <div>
+          <H2Tag>Share or comment on Twitter</H2Tag>
+          <TwitterEmbed twitterId={twitterId} />
+          {link}
+        </div>
+      ) : (
+        link
+      )}
     </div>
-  ) : (
-    link
   )
 }
 

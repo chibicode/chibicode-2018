@@ -6,6 +6,7 @@ import Block, {
   BlockTopSpacing,
   BlockWidth,
 } from '../components/Block'
+import TwitterEmbed from '../components/TwitterEmbed'
 import {
   COLOR_DARK_GRAY,
   COLOR_YELLOW,
@@ -84,6 +85,7 @@ export const H2Tag: React.SFC<Props> = ({ className, ...props }) => (
     reactType={'h2'}
     className={classNames('f4 lh-title', className)}
     topSpacing={BlockTopSpacing.Medium}
+    bottomSpacing={BlockBottomSpacing.XSmall}
     {...props}
   />
 )
@@ -93,6 +95,7 @@ export const H3Tag: React.SFC<Props> = ({ className, ...props }) => (
     reactType={'h3'}
     className={classNames('f5 lh-title', className)}
     topSpacing={BlockTopSpacing.Medium}
+    bottomSpacing={BlockBottomSpacing.XSmall}
     {...props}
   />
 )
@@ -102,6 +105,7 @@ export const H4Tag: React.SFC<Props> = ({ className, ...props }) => (
     reactType={'h4'}
     className={classNames('f5 lh-title', className)}
     topSpacing={BlockTopSpacing.Medium}
+    bottomSpacing={BlockBottomSpacing.XSmall}
     {...props}
   />
 )
@@ -111,6 +115,7 @@ export const H5Tag: React.SFC<Props> = ({ className, ...props }) => (
     reactType={'h5'}
     className={classNames('f5 lh-title', className)}
     topSpacing={BlockTopSpacing.Medium}
+    bottomSpacing={BlockBottomSpacing.XSmall}
     {...props}
   />
 )
@@ -120,6 +125,7 @@ export const H6Tag: React.SFC<Props> = ({ className, ...props }) => (
     reactType={'h6'}
     className={classNames('f5 lh-title', className)}
     topSpacing={BlockTopSpacing.Medium}
+    bottomSpacing={BlockBottomSpacing.XSmall}
     {...props}
   />
 )
@@ -221,3 +227,11 @@ export const PreTag: React.SFC<Props> = ({ ...props }) => (
     </PreWrapper>
   </StandardTag>
 )
+
+interface TwitterEmbedWrapperProps {
+  id: string
+}
+
+export const TwitterEmbedWrapper: React.SFC<TwitterEmbedWrapperProps> = ({
+  id,
+}) => <TwitterEmbed twitterId={id} />

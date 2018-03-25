@@ -1,15 +1,20 @@
 ---
 title: About me (and this blog)
-date: "2018-03-22T01:00:00.000Z"
-image: "./cover.jpg"
-imageAttributionName: "Shu Uesugi"
-imageAttributionUrl: "https://twitter.com/chibicode/status/838586029330288640"
-twitterId: "977480245107412992"
+date: "2018-03-25T01:00:00.000Z"
+image: "./shu-uesugi.jpg"
 ---
 
 * this blog is for TLDR ppl, but don't use TL; DR b/c people in developing country will not know what that means.
 
 - https://www.youtube.com/watch?v=jeZ9RBMiaLs
+
+thing explainer bill gates
+
+source code of this blog can be found here
+
+copyright
+
+https://creativecommons.org/licenses/by/4.0/ cc-by
 
 Hi there
 

@@ -60,6 +60,7 @@ export interface PostBySlugQuery_allMarkdownRemark_edges_node_frontmatter {
   __typename: "frontmatter_2";
   date: string | null;
   title: string | null;
+  draft: boolean | null;
   imageAttributionName: string | null;
   imageAttributionUrl: string | null;
   twitterId: string | null;
@@ -129,6 +130,7 @@ export interface PostBySlugQuery_markdownRemark_frontmatter {
   imageAttributionName: string | null;
   imageAttributionUrl: string | null;
   twitterId: string | null;
+  draft: boolean | null;
   image: PostBySlugQuery_markdownRemark_frontmatter_image | null;
 }
 

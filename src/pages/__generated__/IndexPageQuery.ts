@@ -58,6 +58,7 @@ export interface IndexPageQuery_allMarkdownRemark_edges_node_frontmatter_image {
 export interface IndexPageQuery_allMarkdownRemark_edges_node_frontmatter {
   __typename: "frontmatter_2";
   date: string | null;
+  draft: boolean | null;
   title: string | null;
   imageAttributionName: string | null;
   imageAttributionUrl: string | null;
