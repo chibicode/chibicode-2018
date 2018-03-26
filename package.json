@@ -46,7 +46,6 @@
     "apollo-codegen": "^0.19.0",
     "eslint": "^4.19.0",
     "eslint-plugin-react": "^7.7.0",
-    "gh-pages": "^1.1.0",
     "prettier": "^1.11.1",
     "shelljs": "^0.8.1",
     "tslint": "^5.9.1",
@@ -55,9 +54,7 @@
     "typescript-styled-plugin": "^0.6.0"
   },
   "homepage": "https://github.com/chibicode/chibicode#readme",
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
   "license": "MIT",
   "main": "n/a",
   "repository": {
@@ -67,11 +64,13 @@
   "scripts": {
     "dev": "gatsby develop",
     "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "apollo:introspect-schema": "apollo-codegen introspect-schema http://localhost:8000/___graphql --output schema.json",
-    "apollo:generate": "apollo-codegen generate src/**/*.tsx --schema schema.json --target typescript-modern --tag-name=graphql --add-typename",
+    "apollo:introspect-schema":
+      "apollo-codegen introspect-schema http://localhost:8000/___graphql --output schema.json",
+    "apollo:generate":
+      "apollo-codegen generate src/**/*.tsx --schema schema.json --target typescript-modern --tag-name=graphql --add-typename",
     "apollo:fix": "node scripts/fixApollo.js",
-    "apollo": "yarn apollo:introspect-schema && yarn apollo:generate && yarn apollo:fix",
+    "apollo":
+      "yarn apollo:introspect-schema && yarn apollo:generate && yarn apollo:fix",
     "tsc-watch": "tsc -w --noEmit"
   }
 }
