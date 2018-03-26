@@ -235,3 +235,16 @@ interface TwitterEmbedWrapperProps {
 export const TwitterEmbedWrapper: React.SFC<TwitterEmbedWrapperProps> = ({
   id,
 }) => <TwitterEmbed twitterId={id} />
+
+export const HrTag: React.SFC<Props> = ({ className, ...props }) => (
+  <StandardTag
+    reactType={'div'}
+    topSpacing={BlockTopSpacing.Medium}
+    bottomSpacing={BlockBottomSpacing.Medium}
+  >
+    <hr
+      className={classNames('w-30 bt bb-0 b--moon-gray', className)}
+      {...props}
+    />
+  </StandardTag>
+)
