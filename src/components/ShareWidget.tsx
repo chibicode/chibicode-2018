@@ -17,12 +17,14 @@ const UrlBoxInput = styled.input`
   }
 `
 
+// Must use control component to make text selectable on mobile
 const noOp = () => {
   return
 }
 
+// https://stackoverflow.com/a/6302507/114157
 const urlBoxOnclick: React.MouseEventHandler<HTMLInputElement> = e =>
-  (e.target as HTMLInputElement).select()
+  (e.target as HTMLInputElement).setSelectionRange(0, 9999)
 
 const UrlBox: React.SFC<UrlBoxProps> = ({ slug }) => (
   <UrlBoxInput
