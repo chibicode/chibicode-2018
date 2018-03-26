@@ -54,5 +54,6 @@ module.exports = {
     'gatsby-plugin-sitemap',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-twitter',
+    'gatsby-plugin-react-next',
   ],
 }
