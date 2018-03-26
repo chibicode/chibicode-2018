@@ -48,7 +48,9 @@ I'm tired of reading long articles all the time, and I'm sure lots of people are
 
 One thing I learned from [traveling the world](/posts/world-travel-2017-2018) is that so many people in the world can speak English, but many don't speak English well. Globally, there are [3x](https://www.weforum.org/agenda/2015/10/which-languages-are-most-widely-spoken/) as many non-native English speakers as native English speakers.
 
-Because I want this blog to be read by many people around the world, I try to stick with simple English words and phrases. For example, I try not to say: _"this blog is for TL;DRers"_ - because most people in the world won't know what TL;DR means.
+**Why?:** I want this blog to be read by many people around the world, I try to stick with simple English words and phrases.
+
+**Example:** I try not to say: _"this blog is for TL;DRers"_ - because most people in the world won't know what _TL;DRer_ means (it means: people who often say "too long, didn't read"). Instead, I'd write: _"I try to keep my posts as short as possible."_
 
 **Inspiration:** I was inspired by my favorite book [Thing Explainer](https://xkcd.com/thing-explainer/) by xkcd's Randall Munroe, which explains things using only drawings and a vocabulary of the 1,000 most common words. Bill Gates chose this book as one of the [best books he read in 2015](https://www.youtube.com/watch?v=FpocCskZL1A).
 
