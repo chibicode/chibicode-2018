@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import PostList from '../components/PostList'
 import ogImage from '../images/og-image.jpg'
-import { IndexPageQuery } from '../pages/__generated__/IndexPageQuery'
+import { IndexPageQuery } from '../types/IndexPageQuery'
 
 interface Props {
   data: IndexPageQuery

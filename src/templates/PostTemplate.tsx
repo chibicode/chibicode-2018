@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import PageHeader, { PageHeaderLocation } from '../components/PageHeader'
 import Post from '../components/Post'
 import PostList from '../components/PostList'
-import { PostBySlugQuery } from '../templates/__generated__/PostBySlugQuery'
+import { PostBySlugQuery } from '../types/PostBySlugQuery'
 
 interface Props {
   data: PostBySlugQuery
