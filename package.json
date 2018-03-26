@@ -7,6 +7,7 @@
     "url": "https://github.com/chibicode/chibicode/issues"
   },
   "dependencies": {
+    "@ibm/plex": "^1.0.1",
     "classnames": "^2.2.5",
     "gatsby": "^1.9.236",
     "gatsby-image": "^1.0.42",
@@ -33,9 +34,7 @@
     "react-responsive-embed": "^2.1.0",
     "rehype-react": "^3.0.2",
     "styled-components": "^3.2.3",
-    "tachyons": "^4.9.1",
-    "typeface-lato": "^0.0.54",
-    "typeface-roboto-mono": "^0.0.54"
+    "tachyons": "^4.9.1"
   },
   "devDependencies": {
     "@types/classnames": "^2.2.3",

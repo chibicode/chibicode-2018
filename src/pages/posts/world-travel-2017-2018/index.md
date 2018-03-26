@@ -1,8 +1,7 @@
 ---
-title: Countries I visited from Feb 2017 to Jan 2018
+title: Countries I visited from February 2017 to January 2018
 date: "2018-03-25T02:00:00.000Z"
 image: "./cover.jpg"
-twitterId: "835603023367979010"
 imageAttributionName: "Shu Uesugi"
 imageAttributionUrl: "https://twitter.com/chibicode/status/838586029330288640"
 ---

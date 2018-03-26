@@ -25,8 +25,8 @@ const IntroText: React.SFC<Props> = ({ variation }) => {
       <PTag>
         {variation !== IntroTextVariation.BlogOnly && (
           <span>
-            I'm <strong>Shu Uesugi</strong>, a software developer in San
-            Francisco.
+            I'm <strong>Shu Uesugi</strong>, a software developer in Silicon
+            Valley.
           </span>
         )}
         {variation !== IntroTextVariation.NameOnly && (

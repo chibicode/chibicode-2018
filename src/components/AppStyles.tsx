@@ -29,7 +29,9 @@ injectGlobal`
 `
 
 const Styled = styled.div`
-  font-family: 'Lato', sans-serif;
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'avenir next',
+    avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial,
+    sans-serif;
 
   input,
   textarea,
@@ -49,8 +51,8 @@ const Styled = styled.div`
 
   pre,
   code {
-    font-family: 'Roboto Mono', SFMono-Regular, Menlo, Monaco, Consolas,
-      Liberation Mono, Courier New, monospace;
+    font-family: 'IBM Plex Mono', SFMono-Regular, 'Menlo', 'DejaVu Sans Mono',
+      'Bitstream Vera Sans Mono', Courier, monospace;
   }
 `
 
@@ -60,7 +62,7 @@ const AppStyles: React.SFC<React.HTMLAttributes<HTMLDivElement>> = ({
 }) => (
   <Styled
     className={classNames(
-      `lh-copy sans-serif ${COLOR_CLASS_DARK_GRAY} pt4 pb5 ph4-ns ph3`,
+      `lh-copy ${COLOR_CLASS_DARK_GRAY} pt4 pb5 ph4-ns ph3`,
       className
     )}
     {...props}
