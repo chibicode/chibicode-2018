@@ -6,57 +6,40 @@ image: "./shu-uesugi.jpg"
 
 I'm **Shu Uesugi**, a software developer in Silicon Valley.
 
-I'm currently freelancing. From `February 2017 to January 2018, I was traveling the world ([details](/posts/world-travel-2017-2018)). Before that, I was a lead software architect at [EdSurge](https://www.edsurge.com/) in Silicon Valley (2012-2017).
+**Present:** I'm currently freelancing. From February 2017 to January 2018, I was traveling the world ([details](/posts/world-travel-2017-2018)). Before that, I was a lead software architect at [EdSurge](https://www.edsurge.com/) in Silicon Valley (2012-2017).
 
 <post-separator></post-separator>
 
-I was born in Japan in 1988 and moved to Washington DC, USA in 2000. I graduated from Carnegie Mellon University in 2010 with a Bachelors degree in Computer Science and a Masters degree in Human-Computer Interaction.
+**Past:** I was born in Japan in 1988 and moved to Washington DC, USA in 2000. I graduated from Carnegie Mellon University in 2010 with a Bachelors degree in Computer Science and a Masters degree in Human-Computer Interaction.
 
-* this blog is for TLDR ppl, but don't use TL; DR b/c people in developing country will not know what that means.
+**Current Interests:** AI and machine learning, automation and future of work, role of technology in developing countries, and geopolitics.
 
-- https://www.youtube.com/watch?v=jeZ9RBMiaLs
+## About this blog
 
-thing explainer bill gates
+**Chibicode** is my blog, written with the following principles in mind:
 
-source code of this blog can be found here
+1.  **Short:** Keep it as short as possible.
+2.  **Signal:** Maximize signal-to-noise ratio.
+3.  **Simple:** Use simple words.
 
-copyright
+### Short / Signal
 
-https://creativecommons.org/licenses/by/4.0/ cc-by
+I'm tired of reading long articles all the time, and I'm sure lots of people are too. I believe most articles on the web can be cut in half and still convey 80% of the details, and that's what I plan to do with my writing.
 
-Hi there
+**Inspiration:** I was inspired by the news site [Axios](https://www.axios.com/), whose slogan is "smart brevity". Read their manifesto [here](https://www.axios.com/about), and also check out their video:
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<responsive-iframe width="560" height="315" src="https://www.youtube.com/embed/jeZ9RBMiaLs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></responsive-iframe>
 
-```javascript{1-2,22}
-// In your gatsby-config.js
-// Let's make this line very long so that our container has to scroll its overflow…
-plugins: [
-  {
-    resolve: `gatsby-transformer-remark`,
-    options: {
-      plugins: [
-        {
-          resolve: `gatsby-remark-images`,
-          options: {
-            maxWidth: 756,
-          },
-        },
-        {
-          resolve: `gatsby-remark-responsive-iframe`,
-          options: {
-            wrapperStyle: `margin-bottom: 1.0725rem`,
-          },
-        },
-        `gatsby-remark-copy-linked-files`,
-        `gatsby-remark-smartypants`,
-        `gatsby-remark-prismjs`,
-      ]
-    }
-  }
-]
-```
+### Simple
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+One thing I learned from [traveling the world](/posts/world-travel-2017-2018) is that so many people in the world can speak English, but many don't speak English well. Globally, there are [3x](https://www.weforum.org/agenda/2015/10/which-languages-are-most-widely-spoken/) as many non-native English speakers as native English speakers.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Because I want this blog to be read by many people around the world, I try to stick with simple English words and phrases. For example, I try not to say: _"this blog is for TL;DRers"_ - because most people in the world won't know what TL;DR means.
+
+**Inspiration:** I was inspired by my favorite book [Thing Explainer](https://xkcd.com/thing-explainer/) by xkcd's Randall Munroe, which explains things using only drawings and a vocabulary of the 1,000 most common words. Bill Gates chose this book as one of the [best books he read in 2015](https://www.gatesnotes.com/About-Bill-Gates/Best-Books-2015).
+
+## Colophon
+
+**License:** My writing on this blog is licensed [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/).
+
+**Source Code:** [Available on GitHub](http://github.com/chibicode/chibicode). Built using [GatsbyJS](https://gatsbyjs.com/) and [TypeScript](http://www.typescriptlang.org/).

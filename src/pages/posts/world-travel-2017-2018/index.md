@@ -49,8 +49,6 @@ Between February 2017 and January 2018, I traveled to **36 Countries in 94 Citie
 
 (Plus 🇹🇼 **Taiwan** (Taipei) which isn’t considered as a country by the USA.)
 
-## Tweetstorm
-
-I documented my travels in a series of 209 tweets. You can start reading it from here:
+**Tweetstorm:** I documented my travels in a series of 209 tweets. You can start reading it from here:
 
 <twitter-embed id="835603023367979010"></twitter-embed>
