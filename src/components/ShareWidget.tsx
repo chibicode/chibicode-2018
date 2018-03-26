@@ -22,9 +22,9 @@ const noOp = () => {
   return
 }
 
-// https://stackoverflow.com/a/6302507/114157
+// .setSelectionRange(0, 9999) wasn't working well on mobile
 const urlBoxOnclick: React.MouseEventHandler<HTMLInputElement> = e =>
-  (e.target as HTMLInputElement).setSelectionRange(0, 9999)
+  (e.target as HTMLInputElement).select()
 
 const UrlBox: React.SFC<UrlBoxProps> = ({ slug }) => (
   <UrlBoxInput
