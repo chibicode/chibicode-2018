@@ -7,11 +7,7 @@ import ogImage from '../images/og-image.jpg'
 
 const NotFoundPage: React.SFC<{}> = () => (
   <main>
-    <Helmet title={'404 Not Found'}>
-      <meta property="og:image" content={ogImage} />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
-    </Helmet>
+    <Helmet title={'404 Not Found'} />
     <StandardTag reactType={'div'} className="pt4">
       <PostTopBorder isRed />
       <H1Tag>Page Not Found</H1Tag>

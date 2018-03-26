@@ -21,6 +21,10 @@ const PostTemplate: React.SFC<Props> = ({ data }) => (
         property="og:title"
         content={data!.markdownRemark!.frontmatter!.title!}
       />
+      <meta
+        property="og:description"
+        content={data!.markdownRemark!.excerpt!}
+      />
       <meta property="og:type" content="article" />
       <meta
         property="og:url"

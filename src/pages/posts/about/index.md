@@ -2,6 +2,7 @@
 title: About me (and this blog)
 date: "2018-03-25T01:00:00.000Z"
 image: "./shu-uesugi.jpg"
+twitterId: "978163088217141248"
 ---
 
 I'm **Shu Uesugi**, a software developer in Silicon Valley.
