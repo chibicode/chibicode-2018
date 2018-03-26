@@ -50,10 +50,10 @@ One thing I learned from [traveling the world](/posts/world-travel-2017-2018) is
 
 Because I want this blog to be read by many people around the world, I try to stick with simple English words and phrases. For example, I try not to say: _"this blog is for TL;DRers"_ - because most people in the world won't know what TL;DR means.
 
-**Inspiration:** I was inspired by my favorite book [Thing Explainer](https://xkcd.com/thing-explainer/) by xkcd's Randall Munroe, which explains things using only drawings and a vocabulary of the 1,000 most common words. Bill Gates chose this book as one of the [best books he read in 2015](https://www.gatesnotes.com/About-Bill-Gates/Best-Books-2015).
+**Inspiration:** I was inspired by my favorite book [Thing Explainer](https://xkcd.com/thing-explainer/) by xkcd's Randall Munroe, which explains things using only drawings and a vocabulary of the 1,000 most common words. Bill Gates chose this book as one of the [best books he read in 2015](https://www.youtube.com/watch?v=FpocCskZL1A).
 
 ## Colophon
 
 **License:** My writing on this blog is licensed [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/).
 
-**Source Code:** [Available on GitHub](http://github.com/chibicode/chibicode). Built using [GatsbyJS](https://gatsbyjs.com/) and [TypeScript](http://www.typescriptlang.org/).
+**Source Code:** [Available on GitHub](http://github.com/chibicode/chibicode). Built using [GatsbyJS](https://www.gatsbyjs.org/) and [TypeScript](http://www.typescriptlang.org/).
