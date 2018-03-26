@@ -17,6 +17,17 @@ I'm **Shu Uesugi**, a software developer in Silicon Valley.
 
 **Past Interests:** I used to write a [popular blog in Japanese](http://chibicode.com/jp).
 
+**Social Media:**
+
+* [Facebook](https://www.facebook.com/shu)
+* [Instagram](https://www.instagram.com/chibicode/)
+* [LinkedIn](https://www.linkedin.com/in/chibicode)
+* [Medium](http://medium.com/@chibicode)
+
+**Most popular article on my Medium:** [You Could’ve Submitted a Pull Request to Inject Arbitrary JS Code into Donald Trump’s Site. Here’s How.](https://medium.com/@chibicode/you-can-submit-a-pull-request-to-inject-arbitrary-js-code-into-donald-trumps-site-here-s-how-782aa6a17a56)
+
+**Contact:** [shu@chibicode.com](mailto:shu@chibicode.com)
+
 ## About this blog
 
 **Chibicode** is my blog, written with the following principles in mind:

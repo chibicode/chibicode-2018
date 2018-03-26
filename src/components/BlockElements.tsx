@@ -83,7 +83,7 @@ export const H1Tag: React.SFC<Props> = ({ className, ...props }) => (
 export const H2Tag: React.SFC<Props> = ({ className, ...props }) => (
   <StandardTag
     reactType={'h2'}
-    className={classNames('f4 lh-title', className)}
+    className={classNames('f4 lh-title pt3', className)}
     topSpacing={BlockTopSpacing.Medium}
     bottomSpacing={BlockBottomSpacing.XSmall}
     {...props}
