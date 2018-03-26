@@ -76,6 +76,7 @@ export default class PostContent extends React.Component<Props, State> {
     HTMLButtonElement
   > = () => {
     this.setState({ expanded: true })
+    window.history.pushState({}, '', this.props.slug)
   }
 
   public render() {
