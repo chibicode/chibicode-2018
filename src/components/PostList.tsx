@@ -1,6 +1,6 @@
 import React from 'react'
 import Post from '../components/Post'
-import { IndexPageQuery_allMarkdownRemark } from '../pages/__generated__/IndexPageQuery'
+import { IndexPageQuery_allMarkdownRemark } from '../types/IndexPageQuery'
 
 interface Props {
   allMarkdownRemark: IndexPageQuery_allMarkdownRemark
