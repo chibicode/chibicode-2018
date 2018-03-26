@@ -1,9 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import Container from '../components/Container'
-import Logo from '../components/Logo'
-import PageHeaderLeft from '../components/PageHeaderLeft'
-import PageHeaderRight from '../components/PageHeaderRight'
+import Block, { BlockBottomSpacing, BlockWidth } from '../components/Block'
+import HeaderLogo from '../components/HeaderLogo'
+import IntroText, { IntroTextVariation } from '../components/IntroText'
 
 const HeaderSection = styled.div`
   flex: 1;
@@ -13,24 +12,42 @@ const HeaderLogoSection = styled.div`
   max-width: 6rem;
 `
 
-const PageHeader: React.SFC<{}> = () => (
-  <Container className="flex mt4 items-center">
-    <HeaderSection className="flex justify-center">
-      <div className="mr-auto">
-        <PageHeaderLeft />
-      </div>
-    </HeaderSection>
-    <HeaderSection className="flex justify-center">
-      <HeaderLogoSection>
-        <Logo />
-      </HeaderLogoSection>
-    </HeaderSection>
-    <HeaderSection className="flex justify-center">
-      <div className="ml-auto">
-        <PageHeaderRight />
-      </div>
-    </HeaderSection>
-  </Container>
+export enum PageHeaderLocation {
+  Homepage = 'HomePage',
+  PostPageTop = 'PostPageTop',
+  PostPageSecondary = 'PostPageSecondary',
+}
+
+interface Props {
+  location: PageHeaderLocation
+}
+
+const PageHeader: React.SFC<Props> = ({ location }) => (
+  <div>
+    <Block
+      reactType="section"
+      width={BlockWidth.Large}
+      bottomSpacing={BlockBottomSpacing.Medium}
+      className="flex items-start"
+    >
+      <HeaderSection className="flex justify-center">
+        <HeaderLogoSection>
+          <HeaderLogo
+            showAlternativeLogo={location === PageHeaderLocation.PostPageTop}
+          />
+        </HeaderLogoSection>
+      </HeaderSection>
+    </Block>
+    <IntroText
+      variation={
+        {
+          [PageHeaderLocation.Homepage]: IntroTextVariation.NameAndBlog,
+          [PageHeaderLocation.PostPageTop]: IntroTextVariation.NameOnly,
+          [PageHeaderLocation.PostPageSecondary]: IntroTextVariation.BlogOnly,
+        }[location]
+      }
+    />
+  </div>
 )
 
 export default PageHeader

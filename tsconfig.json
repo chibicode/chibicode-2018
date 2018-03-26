@@ -1,28 +1,25 @@
 {
-  "compileOnSave": false,
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "jsx": "preserve",
-    "allowJs": true,
-    "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "removeComments": false,
-    "preserveConstEnums": true,
     "sourceMap": true,
     "skipLibCheck": true,
-    "baseUrl": ".",
-    "paths": {},
     "lib": ["dom", "es2017"],
     "typeRoots": ["./node_modules/@types"],
+    "jsx": "react",
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "rootDir": "./src",
     "plugins": [
       {
         "name": "typescript-styled-plugin"
       }
     ]
-  },
-  "exclude": ["dist/**/*", "public/**/*", "node_modules"]
+  }
 }

@@ -1,0 +1,45 @@
+---
+title: About me (and this blog)
+date: "2018-03-25T01:00:00.000Z"
+image: "./shu-uesugi.jpg"
+---
+
+I'm **Shu Uesugi**, a software developer in Silicon Valley.
+
+**Present:** I'm currently freelancing. From February 2017 to January 2018, I was traveling the world ([details](/posts/world-travel-2017-2018)). Before that, I was a lead software architect at [EdSurge](https://www.edsurge.com/) in Silicon Valley (2012-2017).
+
+<post-separator></post-separator>
+
+**Past:** I was born in Japan in 1988 and moved to Washington DC, USA in 2000. I graduated from Carnegie Mellon University in 2010 with a Bachelors degree in Computer Science and a Masters degree in Human-Computer Interaction.
+
+**Current Interests:** AI and machine learning, automation and future of work, role of technology in developing countries, and geopolitics.
+
+## About this blog
+
+**Chibicode** is my blog, written with the following principles in mind:
+
+1.  **Short:** Keep it as short as possible.
+2.  **Signal:** Maximize signal-to-noise ratio.
+3.  **Simple:** Use simple words.
+
+### Short / Signal
+
+I'm tired of reading long articles all the time, and I'm sure lots of people are too. I believe most articles on the web can be cut in half and still convey 80% of the details, and that's what I plan to do with my writing.
+
+**Inspiration:** I was inspired by the news site [Axios](https://www.axios.com/), whose slogan is "smart brevity". Read their manifesto [here](https://www.axios.com/about), and also check out their video:
+
+<responsive-iframe width="560" height="315" src="https://www.youtube.com/embed/jeZ9RBMiaLs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></responsive-iframe>
+
+### Simple
+
+One thing I learned from [traveling the world](/posts/world-travel-2017-2018) is that so many people in the world can speak English, but many don't speak English well. Globally, there are [3x](https://www.weforum.org/agenda/2015/10/which-languages-are-most-widely-spoken/) as many non-native English speakers as native English speakers.
+
+Because I want this blog to be read by many people around the world, I try to stick with simple English words and phrases. For example, I try not to say: _"this blog is for TL;DRers"_ - because most people in the world won't know what TL;DR means.
+
+**Inspiration:** I was inspired by my favorite book [Thing Explainer](https://xkcd.com/thing-explainer/) by xkcd's Randall Munroe, which explains things using only drawings and a vocabulary of the 1,000 most common words. Bill Gates chose this book as one of the [best books he read in 2015](https://www.gatesnotes.com/About-Bill-Gates/Best-Books-2015).
+
+## Colophon
+
+**License:** My writing on this blog is licensed [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/).
+
+**Source Code:** [Available on GitHub](http://github.com/chibicode/chibicode). Built using [GatsbyJS](https://gatsbyjs.com/) and [TypeScript](http://www.typescriptlang.org/).

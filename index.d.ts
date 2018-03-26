@@ -1,1 +1,1 @@
-import * as images from './src/types/images'
+import * as images from './src/types/globals'
