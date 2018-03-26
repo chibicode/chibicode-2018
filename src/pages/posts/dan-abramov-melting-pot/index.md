@@ -12,4 +12,4 @@ draft: true
 
 <post-separator></post-separator>
 
-<responsive-iframe width="560" height="315" src="https://www.youtube.com/embed/G39lKaONAlA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></responsive-iframe>
+<div><responsive-iframe width="560" height="315" src="https://www.youtube.com/embed/G39lKaONAlA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></responsive-iframe></div>

@@ -3,7 +3,6 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { H1Tag, PTag, StandardTag } from '../components/BlockElements'
 import PostTopBorder from '../components/PostTopBorder'
-import ogImage from '../images/og-image.jpg'
 
 const NotFoundPage: React.SFC<{}> = () => (
   <main>

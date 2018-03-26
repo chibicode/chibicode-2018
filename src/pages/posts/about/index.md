@@ -31,7 +31,7 @@ I'm tired of reading long articles all the time, and I'm sure lots of people are
 
 **Inspiration:** I was inspired by the news site [Axios](https://www.axios.com/), whose slogan is "smart brevity". Read their manifesto [here](https://www.axios.com/about), and also check out their video:
 
-<responsive-iframe width="560" height="315" src="https://www.youtube.com/embed/jeZ9RBMiaLs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></responsive-iframe>
+<div><responsive-iframe width="560" height="315" src="https://www.youtube.com/embed/jeZ9RBMiaLs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></responsive-iframe></div>
 
 ### Simple
 
