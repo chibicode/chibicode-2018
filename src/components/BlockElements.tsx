@@ -220,15 +220,37 @@ export const TwitterEmbedWrapper: React.SFC<TwitterEmbedWrapperProps> = ({
   id,
 }) => <TwitterEmbed twitterId={id} />
 
-export const HrTag: React.SFC<Props> = ({ className, ...props }) => (
-  <BlockTag
-    reactType={'div'}
-    topSpacing={BlockTopSpacing.Medium}
-    bottomSpacing={BlockBottomSpacing.Medium}
-  >
-    <hr
-      className={classNames('w-30 bt bb-0 b--moon-gray', className)}
-      {...props}
-    />
-  </BlockTag>
-)
+interface HrTagProps extends Props {
+  useSpan: boolean
+}
+
+// NOTE: useSpan avoids validateDOMNesting(...):
+// <hr> cannot appear as a descendant of <p>.
+export const HrTag: React.SFC<HrTagProps> = ({
+  useSpan,
+  className,
+  ...props
+}) => {
+  const hrClassName = classNames(
+    'db w-30 bt bb-0 b--moon-gray mr-auto ml-auto',
+    className
+  )
+  return (
+    <BlockTag
+      reactType={useSpan ? 'span' : 'div'}
+      className="db"
+      topSpacing={BlockTopSpacing.Medium}
+      bottomSpacing={BlockBottomSpacing.Medium}
+    >
+      {useSpan ? (
+        <span className={hrClassName} {...props} />
+      ) : (
+        <hr className={hrClassName} {...props} />
+      )}
+    </BlockTag>
+  )
+}
+
+HrTag.defaultProps = {
+  useSpan: false,
+}

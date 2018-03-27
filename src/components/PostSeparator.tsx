@@ -2,7 +2,7 @@ import React from 'react'
 import { HrTag } from '../components/BlockElements'
 import { POST_SEPARATOR_DISPLAY_NAME } from '../constants/components'
 
-const PostSeparator: React.SFC<{}> = () => <HrTag />
+const PostSeparator: React.SFC<{}> = () => <HrTag useSpan />
 
 PostSeparator.displayName = POST_SEPARATOR_DISPLAY_NAME
 
