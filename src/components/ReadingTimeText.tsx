@@ -18,11 +18,11 @@ const ReadingTimeText: React.SFC<Props> = ({ numWords }) => {
   return (
     <span>
       <span className="db mb1">
-        Remaining time: <strong>{nativeSpeakers}</strong> min{nativeSpeakers >
+        Estimated reading time: <strong>{nativeSpeakers}</strong> minute{nativeSpeakers >
           1 && 's'}
       </span>
       <span className={`db ${COLOR_CLASS_LIGHT_GRAY}`}>
-        For English learners: <strong>{englishLearners}</strong> min{englishLearners >
+        For English learners: <strong>{englishLearners}</strong> minute{englishLearners >
           1 && 's'}
       </span>
     </span>
