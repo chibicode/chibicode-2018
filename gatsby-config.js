@@ -5,7 +5,7 @@ module.exports = {
     title: 'Shu Uesugi',
     author: 'Shu Uesugi',
     description: "Shu Uesugi's Blog.",
-    siteUrl: 'https://chibicode.com/',
+    siteUrl: 'https://chibicode.com',
   },
   plugins: [
     {

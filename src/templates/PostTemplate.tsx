@@ -34,10 +34,8 @@ const PostTemplate: React.SFC<Props> = ({ data }) => (
       {data!.markdownRemark!.frontmatter!.image && (
         <meta
           property="og:image"
-          content={`${data!.site!.siteMetadata!
-            .siteUrl!}${data!.markdownRemark!.frontmatter!.image!.childImageSharp!.width1200!.src!.substring(
-            1
-          )}`}
+          content={`${data!.site!.siteMetadata!.siteUrl!}${data!.markdownRemark!
+            .frontmatter!.image!.childImageSharp!.width1200!.src!}`}
         />
       )}
       {data!.markdownRemark!.frontmatter!.image && (

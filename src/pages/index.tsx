@@ -20,10 +20,7 @@ const IndexPage: React.SFC<Props> = ({ data }) => (
       <meta property="og:url" content={data!.site!.siteMetadata!.siteUrl!} />
       <meta
         property="og:image"
-        content={`${data!.site!.siteMetadata!.siteUrl!.replace(
-          /\/$/,
-          ''
-        )}${ogImage}`}
+        content={`${data!.site!.siteMetadata!.siteUrl!}${ogImage}`}
       />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
