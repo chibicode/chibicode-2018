@@ -4,8 +4,6 @@ import styled, { injectGlobal } from 'styled-components'
 import {
   BREAKPOINT_NOT_SMALL,
   COLOR_CLASS_DARK_GRAY,
-  COLOR_DARK_GRAY,
-  COLOR_YELLOW,
   COLOR_YELLOW_SEMI_TRANSPARENT_30,
 } from '../constants/styles'
 

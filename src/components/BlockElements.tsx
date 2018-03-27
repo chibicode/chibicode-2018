@@ -8,7 +8,6 @@ import Block, {
 } from '../components/Block'
 import TwitterEmbed from '../components/TwitterEmbed'
 import {
-  COLOR_DARK_GRAY,
   COLOR_YELLOW,
   COLOR_YELLOW_SEMI_TRANSPARENT_10,
   COLOR_YELLOW_SEMI_TRANSPARENT_30,
