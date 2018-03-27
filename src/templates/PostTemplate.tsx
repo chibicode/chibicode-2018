@@ -21,8 +21,22 @@ const PostTemplate: React.SFC<Props> = ({ data }) => (
         property="og:title"
         content={data!.markdownRemark!.frontmatter!.title!}
       />
+      <meta name="article:author" content={'Shu Uesugi'} />
+      <meta name="article:publisher" content={'Shu Uesugi'} />
+      <meta name="author" content={'Shu Uesugi'} />
+      <meta
+        name="article:published_time"
+        content={new Date(
+          data!.markdownRemark!.frontmatter!.dateRaw!
+        ).toISOString()}
+      />
+      <meta property="description" content={data!.markdownRemark!.excerpt!} />
       <meta
         property="og:description"
+        content={data!.markdownRemark!.excerpt!}
+      />
+      <meta
+        name="twitter:description"
         content={data!.markdownRemark!.excerpt!}
       />
       <meta property="og:type" content="article" />
@@ -145,6 +159,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        dateRaw: date
         imageAttributionName
         imageAttributionUrl
         twitterId

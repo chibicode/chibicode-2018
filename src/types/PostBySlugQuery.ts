@@ -127,6 +127,7 @@ export interface PostBySlugQuery_markdownRemark_frontmatter {
   __typename: "frontmatter_2";
   title: string | null;
   date: string | null;
+  dateRaw: Date | null;
   imageAttributionName: string | null;
   imageAttributionUrl: string | null;
   twitterId: string | null;

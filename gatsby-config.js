@@ -55,5 +55,11 @@ module.exports = {
     'gatsby-plugin-catch-links',
     'gatsby-plugin-twitter',
     'gatsby-plugin-react-next',
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://chibicode.com`,
+      },
+    },
   ],
 }
