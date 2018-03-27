@@ -33,6 +33,10 @@ const Styled = styled.div`
     avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial,
     sans-serif;
 
+  strong {
+    font-weight: 500;
+  }
+
   input,
   textarea,
   button,

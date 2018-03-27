@@ -24,7 +24,7 @@ const Button: React.SFC<React.HTMLAttributes<HTMLButtonElement>> = ({
 }) => (
   <StyledButton
     className={classNames(
-      `ba bw1 b--${COLOR_CLASS_DARK_GRAY} ph5 pv2 br2 b`,
+      `ba bw1 b--${COLOR_CLASS_DARK_GRAY} ph5 pv2 br2 fw5`,
       className
     )}
     {...props}

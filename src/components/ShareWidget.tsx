@@ -32,7 +32,7 @@ const UrlBox: React.SFC<UrlBoxProps> = ({ slug }) => (
     onClick={urlBoxOnclick}
     value={`https://chibicode.com${slug}`}
     onChange={noOp}
-    className="f7 db w-100 ba b--moon-gray br2 b"
+    className="f7 db w-100 ba b--moon-gray br2 fw5"
   />
 )
 
