@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { BlockTopSpacing } from '../components/Block'
 import { BlockTag, H2Tag } from '../components/BlockElements'
-import { UnderlineLink } from '../components/InlineElements'
+import { ATag } from '../components/InlineElements'
 import TwitterEmbed from '../components/TwitterEmbed'
 import {
   COLOR_YELLOW,
@@ -19,15 +19,31 @@ const ShareLinkBg = styled.div`
   border: 1px solid ${COLOR_YELLOW};
 `
 
+const noOp: React.MouseEventHandler<HTMLAnchorElement> = e => {
+  e.preventDefault()
+}
+
+export const ShareLinkATag = styled.a`
+  color: inherit;
+`
+
 const ShareWidget: React.SFC<ShareWidgetProps> = ({ twitterId, slug }) => {
   const link = (
     <BlockTag
-      className="ph2 pv2 f6 br2"
-      reactType={ShareLinkBg}
+      className="f6"
+      reactType={'div'}
       topSpacing={BlockTopSpacing.Small}
     >
-      <strong>Share Link:</strong>{' '}
-      <UnderlineLink to={slug}>{`https://chibicode.com${slug}`}</UnderlineLink>
+      <div className="flex items-center">
+        <strong className="mr1">Share Link:</strong>
+        <ShareLinkBg className="ph2 pv2 br2">
+          <ShareLinkATag
+            className="flex-auto"
+            onClick={noOp}
+            href={slug}
+          >{`https://chibicode.com${slug}`}</ShareLinkATag>
+        </ShareLinkBg>
+      </div>
     </BlockTag>
   )
 
