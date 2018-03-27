@@ -4,6 +4,8 @@ import styled, { injectGlobal } from 'styled-components'
 import {
   BREAKPOINT_NOT_SMALL,
   COLOR_CLASS_DARK_GRAY,
+  COLOR_DARK_GRAY,
+  COLOR_YELLOW,
   COLOR_YELLOW_SEMI_TRANSPARENT_30,
 } from '../constants/styles'
 
@@ -34,6 +36,7 @@ const Styled = styled.div`
 
   code {
     font-size: 0.85em;
+    color: ${COLOR_DARK_GRAY};
     background-color: ${COLOR_YELLOW_SEMI_TRANSPARENT_30};
   }
 
@@ -45,6 +48,24 @@ const Styled = styled.div`
   code {
     font-family: 'IBM Plex Mono', SFMono-Regular, 'Menlo', 'DejaVu Sans Mono',
       'Bitstream Vera Sans Mono', Courier, monospace;
+  }
+
+  /* Default selection color for prism solarized theme is ugly. */
+  /* Put these here b/c it also affects code tags in p tags.  */
+  pre[class*='language-']::-moz-selection,
+  pre[class*='language-'] ::-moz-selection,
+  code[class*='language-']::-moz-selection,
+  code[class*='language-'] ::-moz-selection {
+    background: ${COLOR_YELLOW};
+    color: ${COLOR_DARK_GRAY};
+  }
+
+  pre[class*='language-']::selection,
+  pre[class*='language-'] ::selection,
+  code[class*='language-']::selection,
+  code[class*='language-'] ::selection {
+    background: ${COLOR_YELLOW};
+    color: ${COLOR_DARK_GRAY};
   }
 `
 
