@@ -183,6 +183,7 @@ const PreWrapper = styled.div`
   .gatsby-highlight-inner {
     background-color: ${COLOR_YELLOW_SEMI_TRANSPARENT_10}; /* Modified */
     border-radius: 0.3em;
+    border: 1px solid ${COLOR_YELLOW};
     padding: 1em 0.85em; /* Modified - not sure why 0.85em */
     overflow: auto;
   }
@@ -202,7 +203,7 @@ const PreWrapper = styled.div`
 `
 
 export const PreTag: React.SFC<Props> = ({ ...props }) => (
-  <BlockTag reactType={'div'} width={BlockWidth.Large}>
+  <BlockTag reactType={'div'} width={BlockWidth.Medium}>
     <PreWrapper>
       <div className="gatsby-highlight-inner">
         <pre {...props} />
