@@ -26,7 +26,7 @@ const ShareWidget: React.SFC<ShareWidgetProps> = ({ twitterId, slug }) => {
       reactType={ShareLinkBg}
       topSpacing={BlockTopSpacing.Small}
     >
-      <strong>Link:</strong>{' '}
+      <strong>Share Link:</strong>{' '}
       <UnderlineLink to={slug}>{`https://chibicode.com${slug}`}</UnderlineLink>
     </BlockTag>
   )
