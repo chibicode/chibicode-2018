@@ -10,7 +10,7 @@ const formatEstimate = (estimate: number) => (estimate === 0 ? '< 1' : estimate)
 const numWordsToReadingTime = (numWords: number) => ({
   // Do floor() to account for the excerpt, which can be read in a minute
   englishLearners: formatEstimate(Math.floor(numWords / 100)),
-  nativeSpeakers: formatEstimate(Math.floor(numWords / 250)),
+  nativeSpeakers: formatEstimate(Math.floor(numWords / 200)),
 })
 
 const ReadingTimeText: React.SFC<Props> = ({ numWords }) => {
