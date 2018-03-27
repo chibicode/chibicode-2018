@@ -9,6 +9,7 @@
   "dependencies": {
     "@ibm/plex": "^1.0.1",
     "classnames": "^2.2.5",
+    "clipboard-copy": "^2.0.0",
     "gatsby": "^1.9.236",
     "gatsby-image": "^1.0.42",
     "gatsby-link": "^1.6.39",
