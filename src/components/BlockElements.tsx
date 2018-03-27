@@ -185,7 +185,7 @@ const PreWrapper = styled.div`
     border-radius: 0.3em;
     border: 1px solid ${COLOR_YELLOW};
     padding: 1em 0.85em; /* Modified - not sure why 0.85em */
-    overflow-x: scroll;
+    overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
 
