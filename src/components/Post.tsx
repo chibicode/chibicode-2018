@@ -1,7 +1,7 @@
 import GatsbyImage from 'gatsby-image'
 import React from 'react'
 import Block, { BlockBottomSpacing, BlockWidth } from '../components/Block'
-import { H1Tag, StandardTag } from '../components/BlockElements'
+import { H1Tag, BlockTag } from '../components/BlockElements'
 import { ATag, NoUnderlineLink } from '../components/InlineElements'
 import PostContent from '../components/PostContent'
 import PostTopBorder from '../components/PostTopBorder'
@@ -32,10 +32,10 @@ const Post: React.SFC<Props> = ({
   numWords,
 }) => (
   <article className="pt4-ns pt3 pb5-ns pb4">
-    <StandardTag reactType={'div'} bottomSpacing={BlockBottomSpacing.XSmall}>
+    <BlockTag reactType={'div'} bottomSpacing={BlockBottomSpacing.XSmall}>
       <PostTopBorder isRed={isMainArticleOnPostPage} />
       <time className="f6">{date}</time>
-    </StandardTag>
+    </BlockTag>
     <H1Tag className="pb2">
       <NoUnderlineLink to={slug}>{title}</NoUnderlineLink>
     </H1Tag>
@@ -49,14 +49,14 @@ const Post: React.SFC<Props> = ({
           <GatsbyImage sizes={image} alt="Cover Image" className="db" />
           {imageAttributionName && (
             <div className="mt2 mh3 mh4-ns">
-              <StandardTag reactType={'figcaption'} className="silver f7">
+              <BlockTag reactType={'figcaption'} className="silver f7">
                 Image by{' '}
                 {imageAttributionUrl ? (
                   <ATag href={imageAttributionUrl}>{imageAttributionName}</ATag>
                 ) : (
                   imageAttributionName
                 )}
-              </StandardTag>
+              </BlockTag>
             </div>
           )}
         </figure>

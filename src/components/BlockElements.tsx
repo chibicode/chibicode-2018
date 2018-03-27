@@ -14,7 +14,7 @@ import {
   COLOR_YELLOW_SEMI_TRANSPARENT_30,
 } from '../constants/styles'
 
-interface StandardTagProps extends Props {
+interface BlockTagProps extends Props {
   reactType: React.ReactType
 }
 
@@ -28,7 +28,7 @@ interface Props
   width?: BlockWidth
 }
 
-export const StandardTag: React.SFC<StandardTagProps> = ({
+export const BlockTag: React.SFC<BlockTagProps> = ({
   reactType,
   bottomSpacing,
   topSpacing,
@@ -45,7 +45,7 @@ export const StandardTag: React.SFC<StandardTagProps> = ({
 )
 
 export const PTag: React.SFC<Props> = ({ ...props }) => (
-  <StandardTag reactType={'p'} {...props} />
+  <BlockTag reactType={'p'} {...props} />
 )
 
 const StyledOlTag = styled.ol`
@@ -53,7 +53,7 @@ const StyledOlTag = styled.ol`
 `
 
 export const OlTag: React.SFC<Props> = ({ ...props }) => (
-  <StandardTag reactType={StyledOlTag} {...props} />
+  <BlockTag reactType={StyledOlTag} {...props} />
 )
 
 const StyledUlTag = styled.ul`
@@ -61,11 +61,11 @@ const StyledUlTag = styled.ul`
 `
 
 export const UlTag: React.SFC<Props> = ({ ...props }) => (
-  <StandardTag reactType={StyledUlTag} {...props} />
+  <BlockTag reactType={StyledUlTag} {...props} />
 )
 
 export const LiTag: React.SFC<Props> = ({ ...props }) => (
-  <StandardTag
+  <BlockTag
     reactType={'li'}
     bottomSpacing={BlockBottomSpacing.XSmall}
     {...props}
@@ -73,7 +73,7 @@ export const LiTag: React.SFC<Props> = ({ ...props }) => (
 )
 
 export const H1Tag: React.SFC<Props> = ({ className, ...props }) => (
-  <StandardTag
+  <BlockTag
     reactType={'h1'}
     className={classNames('f3 lh-title fw6', className)}
     {...props}
@@ -81,7 +81,7 @@ export const H1Tag: React.SFC<Props> = ({ className, ...props }) => (
 )
 
 export const H2Tag: React.SFC<Props> = ({ className, ...props }) => (
-  <StandardTag
+  <BlockTag
     reactType={'h2'}
     className={classNames('f4 lh-title pt3 fw6', className)}
     topSpacing={BlockTopSpacing.Medium}
@@ -91,7 +91,7 @@ export const H2Tag: React.SFC<Props> = ({ className, ...props }) => (
 )
 
 export const H3Tag: React.SFC<Props> = ({ className, ...props }) => (
-  <StandardTag
+  <BlockTag
     reactType={'h3'}
     className={classNames('f5 lh-title fw6', className)}
     topSpacing={BlockTopSpacing.Medium}
@@ -101,7 +101,7 @@ export const H3Tag: React.SFC<Props> = ({ className, ...props }) => (
 )
 
 export const H4Tag: React.SFC<Props> = ({ className, ...props }) => (
-  <StandardTag
+  <BlockTag
     reactType={'h4'}
     className={classNames('f5 lh-title fw6', className)}
     topSpacing={BlockTopSpacing.Medium}
@@ -111,7 +111,7 @@ export const H4Tag: React.SFC<Props> = ({ className, ...props }) => (
 )
 
 export const H5Tag: React.SFC<Props> = ({ className, ...props }) => (
-  <StandardTag
+  <BlockTag
     reactType={'h5'}
     className={classNames('f5 lh-title fw6', className)}
     topSpacing={BlockTopSpacing.Medium}
@@ -121,7 +121,7 @@ export const H5Tag: React.SFC<Props> = ({ className, ...props }) => (
 )
 
 export const H6Tag: React.SFC<Props> = ({ className, ...props }) => (
-  <StandardTag
+  <BlockTag
     reactType={'h6'}
     className={classNames('f5 lh-title fw6', className)}
     topSpacing={BlockTopSpacing.Medium}
@@ -131,7 +131,7 @@ export const H6Tag: React.SFC<Props> = ({ className, ...props }) => (
 )
 
 export const FigureTag: React.SFC<Props> = ({ className, ...props }) => (
-  <StandardTag
+  <BlockTag
     reactType={'figure'}
     className={classNames('mr0 ml0', className)}
     topSpacing={BlockTopSpacing.None}
@@ -140,7 +140,7 @@ export const FigureTag: React.SFC<Props> = ({ className, ...props }) => (
 )
 
 export const FigcaptionTag: React.SFC<Props> = ({ className, ...props }) => (
-  <StandardTag
+  <BlockTag
     reactType={'figcaption'}
     className={classNames('silver f7', className)}
     topSpacing={BlockTopSpacing.XSmall}
@@ -157,7 +157,7 @@ export const BlockquoteTag: React.SFC<Props> = ({
   children,
   ...props
 }) => (
-  <StandardTag
+  <BlockTag
     reactType={'div'}
     className={classNames('bl bw1 b--dark-gray i', className)}
     {...props}
@@ -165,7 +165,7 @@ export const BlockquoteTag: React.SFC<Props> = ({
     <StyledBlockquoteTag className="mh0 pl3 bl bw3">
       {children}
     </StyledBlockquoteTag>
-  </StandardTag>
+  </BlockTag>
 )
 
 const PreWrapper = styled.div`
@@ -219,13 +219,13 @@ const PreWrapper = styled.div`
 `
 
 export const PreTag: React.SFC<Props> = ({ ...props }) => (
-  <StandardTag reactType={'div'} width={BlockWidth.Large}>
+  <BlockTag reactType={'div'} width={BlockWidth.Large}>
     <PreWrapper>
       <div className="gatsby-highlight-inner">
         <pre {...props} />
       </div>
     </PreWrapper>
-  </StandardTag>
+  </BlockTag>
 )
 
 interface TwitterEmbedWrapperProps {
@@ -237,7 +237,7 @@ export const TwitterEmbedWrapper: React.SFC<TwitterEmbedWrapperProps> = ({
 }) => <TwitterEmbed twitterId={id} />
 
 export const HrTag: React.SFC<Props> = ({ className, ...props }) => (
-  <StandardTag
+  <BlockTag
     reactType={'div'}
     topSpacing={BlockTopSpacing.Medium}
     bottomSpacing={BlockBottomSpacing.Medium}
@@ -246,5 +246,5 @@ export const HrTag: React.SFC<Props> = ({ className, ...props }) => (
       className={classNames('w-30 bt bb-0 b--moon-gray', className)}
       {...props}
     />
-  </StandardTag>
+  </BlockTag>
 )

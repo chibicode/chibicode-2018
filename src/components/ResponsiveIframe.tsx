@@ -1,6 +1,6 @@
 import React from 'react'
 import ResponsiveEmbed from 'react-responsive-embed'
-import { StandardTag } from '../components/BlockElements'
+import { BlockTag } from '../components/BlockElements'
 
 interface Props
   extends React.DetailedHTMLProps<
@@ -11,9 +11,9 @@ interface Props
 }
 
 const ResponsiveIframe: React.SFC<Props> = ({ ...props }) => (
-  <StandardTag reactType={'span'} className="db">
+  <BlockTag reactType={'span'} className="db">
     <ResponsiveEmbed {...props} />
-  </StandardTag>
+  </BlockTag>
 )
 
 ResponsiveIframe.defaultProps = {
