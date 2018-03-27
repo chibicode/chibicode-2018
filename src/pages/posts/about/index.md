@@ -54,7 +54,7 @@ One thing I learned from [traveling the world](/posts/world-travel-2017-2018) is
 
 **Inspiration:** I was inspired by my favorite book [Thing Explainer](https://xkcd.com/thing-explainer/) by xkcd's Randall Munroe, which explains things using only drawings and a vocabulary of the 1,000 most common words. Bill Gates chose this book as one of the [best books he read in 2015](https://www.youtube.com/watch?v=FpocCskZL1A).
 
-## Colophon
+## Footnotes
 
 **License:** My writing on this blog is licensed [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/).
 
