@@ -75,7 +75,7 @@ export const LiTag: React.SFC<Props> = ({ ...props }) => (
 export const H1Tag: React.SFC<Props> = ({ className, ...props }) => (
   <StandardTag
     reactType={'h1'}
-    className={classNames('f3 lh-title fw5', className)}
+    className={classNames('f3 lh-title fw6', className)}
     {...props}
   />
 )
@@ -83,7 +83,7 @@ export const H1Tag: React.SFC<Props> = ({ className, ...props }) => (
 export const H2Tag: React.SFC<Props> = ({ className, ...props }) => (
   <StandardTag
     reactType={'h2'}
-    className={classNames('f4 lh-title pt3 fw5', className)}
+    className={classNames('f4 lh-title pt3 fw6', className)}
     topSpacing={BlockTopSpacing.Medium}
     bottomSpacing={BlockBottomSpacing.XSmall}
     {...props}
@@ -93,7 +93,7 @@ export const H2Tag: React.SFC<Props> = ({ className, ...props }) => (
 export const H3Tag: React.SFC<Props> = ({ className, ...props }) => (
   <StandardTag
     reactType={'h3'}
-    className={classNames('f5 lh-title fw5', className)}
+    className={classNames('f5 lh-title fw6', className)}
     topSpacing={BlockTopSpacing.Medium}
     bottomSpacing={BlockBottomSpacing.XSmall}
     {...props}
@@ -103,7 +103,7 @@ export const H3Tag: React.SFC<Props> = ({ className, ...props }) => (
 export const H4Tag: React.SFC<Props> = ({ className, ...props }) => (
   <StandardTag
     reactType={'h4'}
-    className={classNames('f5 lh-title fw5', className)}
+    className={classNames('f5 lh-title fw6', className)}
     topSpacing={BlockTopSpacing.Medium}
     bottomSpacing={BlockBottomSpacing.XSmall}
     {...props}
@@ -113,7 +113,7 @@ export const H4Tag: React.SFC<Props> = ({ className, ...props }) => (
 export const H5Tag: React.SFC<Props> = ({ className, ...props }) => (
   <StandardTag
     reactType={'h5'}
-    className={classNames('f5 lh-title fw5', className)}
+    className={classNames('f5 lh-title fw6', className)}
     topSpacing={BlockTopSpacing.Medium}
     bottomSpacing={BlockBottomSpacing.XSmall}
     {...props}
@@ -123,7 +123,7 @@ export const H5Tag: React.SFC<Props> = ({ className, ...props }) => (
 export const H6Tag: React.SFC<Props> = ({ className, ...props }) => (
   <StandardTag
     reactType={'h6'}
-    className={classNames('f5 lh-title fw5', className)}
+    className={classNames('f5 lh-title fw6', className)}
     topSpacing={BlockTopSpacing.Medium}
     bottomSpacing={BlockBottomSpacing.XSmall}
     {...props}

@@ -34,7 +34,7 @@ const Styled = styled.div`
     sans-serif;
 
   strong {
-    font-weight: 500;
+    font-weight: 600;
   }
 
   input,
