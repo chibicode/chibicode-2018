@@ -38,7 +38,9 @@ I'm **Shu Uesugi**, a software developer in Silicon Valley.
 
 ### Short / Signal
 
-I'm tired of reading long articles all the time, and I'm sure lots of people are too. I believe most articles on the web can be cut in half and still convey 80% of the details, and that's what I plan to do with my writing.
+I'm tired of reading long articles all the time, and I'm sure lots of people are too. And I'm also tired of _writing_ long articles.
+
+I believe most articles on the web can be cut in half and still convey 80% of the details, and that's what I plan to do with my writing.
 
 **Inspiration:** I was inspired by the news site [Axios](https://www.axios.com/), whose slogan is "smart brevity". Read their manifesto [here](https://www.axios.com/about), and also check out their video:
 
