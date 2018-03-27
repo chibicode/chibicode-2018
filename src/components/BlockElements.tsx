@@ -200,22 +200,6 @@ const PreWrapper = styled.div`
   .gatsby-highlight-inner code {
     background-color: transparent;
   }
-
-  pre[class*='language-']::-moz-selection,
-  pre[class*='language-'] ::-moz-selection,
-  code[class*='language-']::-moz-selection,
-  code[class*='language-'] ::-moz-selection {
-    background: ${COLOR_YELLOW};
-    color: ${COLOR_DARK_GRAY};
-  }
-
-  pre[class*='language-']::selection,
-  pre[class*='language-'] ::selection,
-  code[class*='language-']::selection,
-  code[class*='language-'] ::selection {
-    background: ${COLOR_YELLOW};
-    color: ${COLOR_DARK_GRAY};
-  }
 `
 
 export const PreTag: React.SFC<Props> = ({ ...props }) => (

@@ -16,16 +16,6 @@ injectGlobal`
       font-size: 18px;
     }
   }
-
-  ::selection {
-    background: ${COLOR_YELLOW};
-    color: ${COLOR_DARK_GRAY};
-  }
-
-  ::-moz-selection {
-    background: ${COLOR_YELLOW};
-    color: ${COLOR_DARK_GRAY};
-  }
 `
 
 const Styled = styled.div`
