@@ -1,7 +1,8 @@
 ---
 title: '“Reverse linked list” coding puzzle for Python and JavaScript beginners'
-date: "2018-03-25T03:00:00.000Z"
+date: "2018-03-27T01:00:00.000Z"
 image: "./cover.jpg"
+twitterId: "978627527382990848"
 ---
 
 Reversing a linked list is a popular coding interview question.
