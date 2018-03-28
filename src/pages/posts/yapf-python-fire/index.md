@@ -153,7 +153,7 @@ if __name__ == "__main__":
 * `argv[1]` contains the first argument
 * `argv[...]` returns strings, so they need to be converted to `int`
 
-And if argument length can be of variable length, it's much more difficult.
+And if argument length can vary, the code will become more complicated.
 
 ### With `python-fire`
 
