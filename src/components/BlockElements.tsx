@@ -12,6 +12,9 @@ import {
   COLOR_YELLOW_SEMI_TRANSPARENT_10,
   COLOR_YELLOW_SEMI_TRANSPARENT_30,
   COLOR_YELLOW_SEMI_TRANSPARENT_50,
+  H1_SIZE,
+  H2_SIZE,
+  H3_SIZE,
 } from '../constants/styles'
 
 interface BlockTagProps extends Props {
@@ -72,28 +75,41 @@ export const LiTag: React.SFC<Props> = ({ ...props }) => (
   />
 )
 
+const StyledH1Tag = styled.h1`
+  font-size: ${H1_SIZE};
+  letter-spacing: -0.5px;
+`
+
 export const H1Tag: React.SFC<Props> = ({ className, ...props }) => (
   <BlockTag
-    reactType={'h1'}
-    className={classNames('f3 lh-title fw6', className)}
+    reactType={StyledH1Tag}
+    className={classNames('lh-title fw6', className)}
     {...props}
   />
 )
+
+const StyledH2Tag = styled.h1`
+  font-size: ${H2_SIZE};
+`
 
 export const H2Tag: React.SFC<Props> = ({ className, ...props }) => (
   <BlockTag
-    reactType={'h2'}
-    className={classNames('f4 lh-title pt3 fw6', className)}
+    reactType={StyledH2Tag}
+    className={classNames('lh-title pt3 fw6', className)}
     topSpacing={BlockTopSpacing.Medium}
-    bottomSpacing={BlockBottomSpacing.XSmall}
+    bottomSpacing={BlockBottomSpacing.Small}
     {...props}
   />
 )
 
+const StyledH3Tag = styled.h1`
+  font-size: ${H3_SIZE};
+`
+
 export const H3Tag: React.SFC<Props> = ({ className, ...props }) => (
   <BlockTag
-    reactType={'h3'}
-    className={classNames('f5 lh-title fw6', className)}
+    reactType={StyledH3Tag}
+    className={classNames('lh-title fw6', className)}
     topSpacing={BlockTopSpacing.Medium}
     bottomSpacing={BlockBottomSpacing.XSmall}
     {...props}

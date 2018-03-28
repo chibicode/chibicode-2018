@@ -13,3 +13,7 @@ export const COLOR_DARK_GRAY = '#333333'
 // http://tachyons.io/docs/themes/skins/
 export const COLOR_CLASS_DARK_GRAY = 'dark-gray'
 export const COLOR_CLASS_LIGHT_GRAY = 'silver'
+
+export const H1_SIZE = '1.75rem'
+export const H2_SIZE = '1.5rem'
+export const H3_SIZE = '1.25rem'
