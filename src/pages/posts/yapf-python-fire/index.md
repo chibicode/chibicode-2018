@@ -1,5 +1,5 @@
 ---
-title: 'Teach yapf and python-fire to python beginners'
+title: 'Teach yapf and python-fire to Python beginners'
 date: "2018-03-27T02:00:00.000Z"
 image: "./cover.jpg"
 twitterId: "978857238063443969"
