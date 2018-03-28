@@ -4,7 +4,7 @@ date: "2018-03-27T03:00:00.000Z"
 image: "./cover.jpg"
 imageAttributionName: "Zeit"
 imageAttributionUrl: "https://www.youtube.com/watch?v=G39lKaONAlA"
-twitterId: null
+twitterId: "978874163124428800"
 ---
 
 Last year, Dan Abramov from the React team gave an excellent talk called "[The Melting Pot of JavaScript](https://www.youtube.com/watch?v=G39lKaONAlA)". Here are my top three favorite quotes.
