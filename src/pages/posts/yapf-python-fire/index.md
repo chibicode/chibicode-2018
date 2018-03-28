@@ -19,6 +19,8 @@ I'm currently teaching Python to a beginner programmer, and I found that these t
 
 The title of the article is: **[Don't teach students the hard way first](http://varianceexplained.org/r/teach-hard-way/)**.
 
+<div><twitter-embed id="910869810178936832"></twitter-embed></div>
+
 > I talk to people about teaching a lot, and that phrase keeps popping up: “**I teach them X just to show them how much easier Y is**”. It’s a trap—a trap I’ve fallen into before when teaching, and one that I’d like to warn others against.
 
 **Example** (in R programming):
