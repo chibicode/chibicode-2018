@@ -88,7 +88,7 @@ export const H1Tag: React.SFC<Props> = ({ className, ...props }) => (
   />
 )
 
-const StyledH2Tag = styled.h1`
+const StyledH2Tag = styled.h2`
   font-size: ${H2_SIZE};
 `
 
@@ -102,7 +102,7 @@ export const H2Tag: React.SFC<Props> = ({ className, ...props }) => (
   />
 )
 
-const StyledH3Tag = styled.h1`
+const StyledH3Tag = styled.h3`
   font-size: ${H3_SIZE};
 `
 
