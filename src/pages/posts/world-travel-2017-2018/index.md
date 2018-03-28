@@ -5,6 +5,7 @@ image: "./cover.jpg"
 imageAttributionName: "Shu Uesugi"
 imageAttributionUrl: "https://twitter.com/chibicode/status/838586029330288640"
 twitterId: "978163545098534912"
+draft: false
 ---
 
 Between February 2017 and January 2018, I traveled to **36 Countries in 94 Cities**. Here's the list.

@@ -3,6 +3,7 @@ title: 'Teach yapf and python-fire to python beginners'
 date: "2018-03-27T02:00:00.000Z"
 image: "./cover.jpg"
 twitterId: null
+draft: false
 ---
 
 As of today, Google has released two popular Python tools:

@@ -3,6 +3,9 @@ title: About me (and this blog)
 date: "2018-03-25T01:00:00.000Z"
 image: "./shu-uesugi.jpg"
 twitterId: "978163088217141248"
+# At least one item must have draft: else compilation will fail as:
+# "There was an error while compiling your site's GraphQL queries. GraphQLParser"
+draft: false
 ---
 
 I'm **Shu Uesugi**, a software developer in Silicon Valley.
