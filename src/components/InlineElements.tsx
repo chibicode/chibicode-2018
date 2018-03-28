@@ -10,7 +10,11 @@ export const UnderlineLink = styled(Link)`
   &:focus,
   &:active {
     background-color: ${COLOR_YELLOW};
-  NoUnderlineLink
+
+    code {
+      background-color: ${COLOR_YELLOW};
+    }
+  }
 `
 
 export const ATag = styled.a`
@@ -19,6 +23,10 @@ export const ATag = styled.a`
   &:focus,
   &:active {
     background-color: ${COLOR_YELLOW};
+
+    code {
+      background-color: ${COLOR_YELLOW};
+    }
   }
 `
 

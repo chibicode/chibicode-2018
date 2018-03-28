@@ -44,6 +44,13 @@ const Styled = styled.div`
     font-size: 0.95em;
   }
 
+  /* Override prism */
+  & :not(pre) > code[class*='language-'] {
+    padding: 0;
+    border-radius: 0;
+    background-color: ${COLOR_YELLOW_SEMI_TRANSPARENT_30};
+  }
+
   pre,
   code {
     font-family: 'IBM Plex Mono', SFMono-Regular, 'Menlo', 'DejaVu Sans Mono',

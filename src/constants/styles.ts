@@ -7,6 +7,7 @@ export const COLOR_BLACK = 'rgba(0, 0, 0, 0.87)'
 export const COLOR_YELLOW = '#FFEB3B' // Material Design Yellow 500
 export const COLOR_YELLOW_SEMI_TRANSPARENT_10 = 'rgba(255, 235, 59, 0.1)'
 export const COLOR_YELLOW_SEMI_TRANSPARENT_30 = 'rgba(255, 235, 59, 0.3)'
+export const COLOR_YELLOW_SEMI_TRANSPARENT_50 = 'rgba(255, 235, 59, 0.5)'
 export const COLOR_RED = '#E57373' // Material Design Red 300
 export const COLOR_DARK_GRAY = '#333333'
 // http://tachyons.io/docs/themes/skins/

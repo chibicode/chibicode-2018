@@ -11,6 +11,7 @@ import {
   COLOR_YELLOW,
   COLOR_YELLOW_SEMI_TRANSPARENT_10,
   COLOR_YELLOW_SEMI_TRANSPARENT_30,
+  COLOR_YELLOW_SEMI_TRANSPARENT_50,
 } from '../constants/styles'
 
 interface BlockTagProps extends Props {
@@ -148,7 +149,7 @@ export const FigcaptionTag: React.SFC<Props> = ({ className, ...props }) => (
 )
 
 const StyledBlockquoteTag = styled.blockquote`
-  border-left-color: ${COLOR_YELLOW};
+  border-left-color: ${COLOR_YELLOW_SEMI_TRANSPARENT_50};
 `
 
 export const BlockquoteTag: React.SFC<Props> = ({
@@ -158,7 +159,7 @@ export const BlockquoteTag: React.SFC<Props> = ({
 }) => (
   <BlockTag
     reactType={'div'}
-    className={classNames('bl bw1 b--dark-gray i', className)}
+    className={classNames('bl bw1 b--silver i', className)}
     {...props}
   >
     <StyledBlockquoteTag className="mh0 pl3 bl bw3">
