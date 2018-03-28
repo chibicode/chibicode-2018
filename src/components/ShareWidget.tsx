@@ -16,6 +16,7 @@ interface UrlBoxProps {
 
 interface UrlBoxState {
   copied: boolean
+  timeoutId?: number
 }
 
 const UrlBoxInput = styled.input`
@@ -40,17 +41,24 @@ const noOpInputClick = () => {
 class UrlBox extends React.Component<UrlBoxProps, UrlBoxState> {
   public state = {
     copied: false,
+    timeoutId: undefined,
   }
 
   private urlBoxOnclick: React.MouseEventHandler<HTMLInputElement> = e => {
     // .setSelectionRange(0, 9999) wasn't working well on mobile
     ;(e.target as HTMLInputElement).select()
     const copied = !!copy((e.target as HTMLInputElement).value)
+    const { timeoutId } = this.state
     if (copied) {
+      if (timeoutId) {
+        window.clearTimeout(timeoutId)
+      }
       this.setState({ copied }, () => {
-        window.setTimeout(() => {
-          this.setState({ copied: false })
-        }, 3000)
+        this.setState({
+          timeoutId: window.setTimeout(() => {
+            this.setState({ copied: false })
+          }, 3000),
+        })
       })
     }
   }
