@@ -36,6 +36,10 @@ interface State {
   tweetRenderStatus: TweetRenderStatus
 }
 
+// Start rendering when the top of the twitter embed is 1 screen height
+// away from being visible while scrolling down.
+const TRIGGER_OFFSET = 1
+
 export default class TwitterEmbed extends React.Component<Props, State> {
   public static defaultProps = {
     wrapperProps: {},
@@ -51,7 +55,8 @@ export default class TwitterEmbed extends React.Component<Props, State> {
     if (
       this.state.tweetRenderStatus === TweetRenderStatus.NOT_READY &&
       this.wrapper &&
-      this.wrapper.getBoundingClientRect().top < window.innerHeight
+      this.wrapper.getBoundingClientRect().top <
+        window.innerHeight * (TRIGGER_OFFSET + 1)
     ) {
       this.setState({ tweetRenderStatus: TweetRenderStatus.READY })
     }

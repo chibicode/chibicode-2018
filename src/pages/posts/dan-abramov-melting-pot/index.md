@@ -11,7 +11,7 @@ Last year, Dan Abramov from the React team gave an excellent talk called "[The M
 
 <post-separator></post-separator>
 
-## The Video
+## The video
 
 <div><responsive-iframe width="560" height="315" src="https://www.youtube.com/embed/G39lKaONAlA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></responsive-iframe></div>
 
@@ -39,6 +39,6 @@ Around 27:19:
 >
 > And if you think improving newcomer experience is polish, it's not polish. If you go out there in the field you will see that it makes a real difference in people's lives, and what they can learn, and what they can build with it. So it's not just polish. Take this seriously.
 
-## Dig Deeper
+## Dig deeper
 
 Read Dan's detailed writeup: [The Melting Pot of JavaScript](https://increment.com/development/the-melting-pot-of-javascript/)
