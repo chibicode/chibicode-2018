@@ -109,7 +109,7 @@ const ShareWidget: React.SFC<ShareWidgetProps> = ({ twitterId, slug }) => {
       topSpacing={BlockTopSpacing.Small}
     >
       <div className="flex items-center">
-        <strong className="mr2">Share Link:</strong>
+        <strong className="mr2 nowrap">Share Link:</strong>
         <div className="flex-auto db dn-ns">
           <ShareLinkBg className="ph2 pv2 br2 ba b--moon-gray">
             <ShareLinkATag
