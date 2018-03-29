@@ -39,4 +39,11 @@ But it's hard to remember all the commands. So here's the cheatsheet:
 
 [KaTeX](https://khan.github.io/KaTeX/) is a way to display LaTeX equations on a browser.
 
-[Its documentation page](https://khan.github.io/KaTeX/function-support.html) works as a great LaTeX cheat sheet, because you can search for and copy equations easily. I recommend bookmarking this page.
+[Its documentation page](https://khan.github.io/KaTeX/function-support.html) works as a great LaTeX cheat sheet because:
+
+- The page loads quickly
+- The commands are organized well
+- You can search for equations (Command+F or Control+F)
+- You can copy commands
+
+I recommend bookmarking this page.
