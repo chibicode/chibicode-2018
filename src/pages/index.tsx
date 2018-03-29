@@ -65,7 +65,7 @@ export const pageQuery = graphql`
                   src
                   width
                 }
-                width750: sizes(maxWidth: 750) {
+                width1000: sizes(maxWidth: 1000) {
                   aspectRatio
                   base64
                   sizes

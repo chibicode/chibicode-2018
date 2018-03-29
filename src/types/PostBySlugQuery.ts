@@ -36,7 +36,7 @@ export interface PostBySlugQuery_allMarkdownRemark_edges_node_frontmatter_image_
   width: number | null;
 }
 
-export interface PostBySlugQuery_allMarkdownRemark_edges_node_frontmatter_image_childImageSharp_width750 {
+export interface PostBySlugQuery_allMarkdownRemark_edges_node_frontmatter_image_childImageSharp_width1000 {
   __typename: "ImageSharpSizes";
   aspectRatio: number | null;
   base64: string | null;
@@ -48,7 +48,7 @@ export interface PostBySlugQuery_allMarkdownRemark_edges_node_frontmatter_image_
 export interface PostBySlugQuery_allMarkdownRemark_edges_node_frontmatter_image_childImageSharp {
   __typename: "ImageSharp";
   width1200: PostBySlugQuery_allMarkdownRemark_edges_node_frontmatter_image_childImageSharp_width1200 | null;
-  width750: PostBySlugQuery_allMarkdownRemark_edges_node_frontmatter_image_childImageSharp_width750 | null;
+  width1000: PostBySlugQuery_allMarkdownRemark_edges_node_frontmatter_image_childImageSharp_width1000 | null;
 }
 
 export interface PostBySlugQuery_allMarkdownRemark_edges_node_frontmatter_image {
@@ -103,7 +103,7 @@ export interface PostBySlugQuery_markdownRemark_frontmatter_image_childImageShar
   width: number | null;
 }
 
-export interface PostBySlugQuery_markdownRemark_frontmatter_image_childImageSharp_width750 {
+export interface PostBySlugQuery_markdownRemark_frontmatter_image_childImageSharp_width1000 {
   __typename: "ImageSharpSizes";
   aspectRatio: number | null;
   base64: string | null;
@@ -115,7 +115,7 @@ export interface PostBySlugQuery_markdownRemark_frontmatter_image_childImageShar
 export interface PostBySlugQuery_markdownRemark_frontmatter_image_childImageSharp {
   __typename: "ImageSharp";
   width1200: PostBySlugQuery_markdownRemark_frontmatter_image_childImageSharp_width1200 | null;
-  width750: PostBySlugQuery_markdownRemark_frontmatter_image_childImageSharp_width750 | null;
+  width1000: PostBySlugQuery_markdownRemark_frontmatter_image_childImageSharp_width1000 | null;
 }
 
 export interface PostBySlugQuery_markdownRemark_frontmatter_image {

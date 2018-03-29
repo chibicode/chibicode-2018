@@ -75,7 +75,7 @@ const PostTemplate: React.SFC<Props> = ({ data }) => (
       htmlAst={data!.markdownRemark!.htmlAst!}
       image={
         data!.markdownRemark!.frontmatter!.image &&
-        data!.markdownRemark!.frontmatter!.image!.childImageSharp!.width750
+        data!.markdownRemark!.frontmatter!.image!.childImageSharp!.width1000
       }
       imageAttributionName={
         data!.markdownRemark!.frontmatter!.imageAttributionName
@@ -133,7 +133,7 @@ export const pageQuery = graphql`
                   src
                   width
                 }
-                width750: sizes(maxWidth: 750) {
+                width1000: sizes(maxWidth: 1000) {
                   aspectRatio
                   base64
                   sizes
@@ -166,12 +166,12 @@ export const pageQuery = graphql`
         draft
         image {
           childImageSharp {
-            width1200: resolutions(width: 1200) {
+            width1200: resolutions(width: 1200, quality: 80) {
               height
               src
               width
             }
-            width750: sizes(maxWidth: 750) {
+            width1000: sizes(maxWidth: 1000, quality: 80) {
               aspectRatio
               base64
               sizes

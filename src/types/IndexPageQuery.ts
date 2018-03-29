@@ -36,7 +36,7 @@ export interface IndexPageQuery_allMarkdownRemark_edges_node_frontmatter_image_c
   width: number | null;
 }
 
-export interface IndexPageQuery_allMarkdownRemark_edges_node_frontmatter_image_childImageSharp_width750 {
+export interface IndexPageQuery_allMarkdownRemark_edges_node_frontmatter_image_childImageSharp_width1000 {
   __typename: "ImageSharpSizes";
   aspectRatio: number | null;
   base64: string | null;
@@ -48,7 +48,7 @@ export interface IndexPageQuery_allMarkdownRemark_edges_node_frontmatter_image_c
 export interface IndexPageQuery_allMarkdownRemark_edges_node_frontmatter_image_childImageSharp {
   __typename: "ImageSharp";
   width1200: IndexPageQuery_allMarkdownRemark_edges_node_frontmatter_image_childImageSharp_width1200 | null;
-  width750: IndexPageQuery_allMarkdownRemark_edges_node_frontmatter_image_childImageSharp_width750 | null;
+  width1000: IndexPageQuery_allMarkdownRemark_edges_node_frontmatter_image_childImageSharp_width1000 | null;
 }
 
 export interface IndexPageQuery_allMarkdownRemark_edges_node_frontmatter_image {

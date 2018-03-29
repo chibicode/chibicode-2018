@@ -21,7 +21,7 @@ const PostList: React.SFC<Props> = ({ allMarkdownRemark, exceptSlug }) => (
             htmlAst={e!.node!.htmlAst!}
             image={
               e!.node!.frontmatter!.image &&
-              e!.node!.frontmatter!.image!.childImageSharp!.width750
+              e!.node!.frontmatter!.image!.childImageSharp!.width1000
             }
             imageAttributionName={e!.node!.frontmatter!.imageAttributionName}
             imageAttributionUrl={e!.node!.frontmatter!.imageAttributionUrl}
