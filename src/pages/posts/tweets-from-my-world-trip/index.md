@@ -3,7 +3,7 @@ title: 209 Tweets from my world trip
 date: '2018-04-04T13:57:38.649Z'
 draft: false
 image: ./iguazu.jpg
-twitterId: null
+twitterId: "981651742742921216"
 ---
 
 Between February 2017 and January 2018, I traveled to **36 Countries in 94 Cities**. Here are the tweets from my world trip.
