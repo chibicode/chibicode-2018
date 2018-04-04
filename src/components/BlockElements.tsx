@@ -232,11 +232,21 @@ export const PreTag: React.SFC<Props> = ({ ...props }) => (
 
 interface TwitterEmbedWrapperProps {
   id: string
+  hideconversation?: string
+  delay?: string
 }
 
 export const TwitterEmbedWrapper: React.SFC<TwitterEmbedWrapperProps> = ({
   id,
-}) => <TwitterEmbed twitterId={id} />
+  hideconversation,
+  delay,
+}) => (
+  <TwitterEmbed
+    twitterId={id}
+    hideConversation={hideconversation}
+    delay={delay}
+  />
+)
 
 interface HrTagProps extends Props {
   useSpan: boolean

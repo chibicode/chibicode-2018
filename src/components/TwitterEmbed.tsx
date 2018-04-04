@@ -9,7 +9,13 @@ import Block, {
 } from '../components/Block'
 
 // https://dev.twitter.com/web/embedded-tweets/parameters
-const twitterOptions = {
+interface TwitterOptions {
+  cards: string
+  dnt: string
+  conversation?: string
+}
+
+const twitterOptions: TwitterOptions = {
   cards: 'true',
   dnt: 'true',
 }
@@ -22,10 +28,13 @@ declare let window: WindowWithTwttr
 
 interface Props {
   twitterId: string
+  hideConversation?: string
+  delay?: string
   wrapperProps?: React.HTMLAttributes<HTMLDivElement>
 }
 
 enum TweetRenderStatus {
+  DELAYED = 'DELAYED',
   NOT_READY = 'NOT_READY',
   READY = 'READY',
   SUCCESS = 'SUCCESS',
@@ -48,7 +57,7 @@ export default class TwitterEmbed extends React.Component<Props, State> {
   public wrapper: HTMLElement | null = null
 
   public state = {
-    tweetRenderStatus: TweetRenderStatus.NOT_READY,
+    tweetRenderStatus: TweetRenderStatus.DELAYED,
   }
 
   private handleScroll = () => {
@@ -84,6 +93,10 @@ export default class TwitterEmbed extends React.Component<Props, State> {
             this.wrapper.innerHTML = ''
           }
 
+          if (props.hideConversation) {
+            twitterOptions.conversation = 'none'
+          }
+
           widgets
             .createTweetEmbed(props.twitterId, this.wrapper, twitterOptions)
             .then(this.onTweetLoadSuccess)
@@ -95,7 +108,10 @@ export default class TwitterEmbed extends React.Component<Props, State> {
 
   public componentDidMount() {
     window.addEventListener('scroll', this.handleScrollDebounced)
-    this.handleScroll()
+    setTimeout(() => {
+      this.setState({ tweetRenderStatus: TweetRenderStatus.NOT_READY })
+      this.handleScroll()
+    }, this.props.delay ? parseInt(this.props.delay, 10) : 0)
   }
 
   public componentWillUnmount() {
