@@ -2,7 +2,7 @@
 title: "Takeaways from fast.ai Computational Linear Algebra course: Lecture 1"
 date: "2018-04-04T01:00:00.000Z"
 image: "./cover.jpg"
-twitterId: null
+twitterId: "981518682835755011"
 draft: false
 ---
 
