@@ -31,9 +31,10 @@ correlate(images[0], top)
 
 **Cool link**: [Matrix factorization jungle](https://sites.google.com/site/igorcarron2/matrixfactorizations).
 
-**`numpy` Tip 1**: Use `@` for matrix multiplication.
+**`numpy` Tips**:
 
-**`numpy` Tip 2**: Show less digits and avoid scientific notations on small numbers (`e+..`) using `set_printoptions`.
+- Use `@` for matrix multiplication.
+- Show less digits and avoid scientific notations on small numbers (`e+..`) using `set_printoptions`.
 
 ```python
 np.set_printoptions(suppress=True, precision=4)
