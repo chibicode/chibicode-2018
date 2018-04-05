@@ -22,13 +22,13 @@ Here's the text that talks about the motivation behind topic modeling using matr
 
 > Consider the most extreme case - reconstructing the matrix using an outer product of two vectors. Clearly, in most cases we won't be able to reconstruct the matrix exactly. But if we had one vector with the relative frequency of each vocabulary word out of the total word count, and one with the average number of words per document, then that outer product would be as close as we can get.
 
-![](./vis1.png)
+![](./v1.png)
 
 ### Matrix Factorization, Motivation 2
 
 > Now consider increasing that matrices to two columns and two rows. The optimal decomposition would now be to cluster the documents into two groups, each of which has as different a distribution of words as possible to each other, but as similar as possible amongst the documents in the cluster. We will call those two groups "topics". And we would cluster the words into two groups, based on those which most frequently appear in each of the topics.
 
-![](./vis2.png)
+![](./v2.png)
 
 ### SVD
 
@@ -36,7 +36,7 @@ Here's the text that talks about the motivation behind topic modeling using matr
 >
 > The SVD algorithm factorizes a matrix into one matrix with orthogonal columns and one with orthogonal rows (along with a diagonal matrix, which contains the relative importance of each factor).
 
-![](./vis3.png)
+![](./v3.png)
 
 ### NMF
 
@@ -44,7 +44,7 @@ Here's the text that talks about the motivation behind topic modeling using matr
 
 ### My visualization
 
-![](./vis4.png)
+![](./v4.png)
 
 ## Coding Tips
 
