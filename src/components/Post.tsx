@@ -1,7 +1,7 @@
 import GatsbyImage from 'gatsby-image'
 import React from 'react'
 import Block, { BlockBottomSpacing, BlockWidth } from '../components/Block'
-import { H1Tag, BlockTag } from '../components/BlockElements'
+import { BlockTag, H1Tag } from '../components/BlockElements'
 import { ATag, NoUnderlineLink } from '../components/InlineElements'
 import PostContent from '../components/PostContent'
 import PostTopBorder from '../components/PostTopBorder'
@@ -31,7 +31,7 @@ const Post: React.SFC<Props> = ({
   twitterId,
   numWords,
 }) => (
-  <article className="pt4-ns pt3 pb5-ns pb4">
+  <article className="pt4-ns pt3 pb5">
     <BlockTag reactType={'div'} bottomSpacing={BlockBottomSpacing.XSmall}>
       <PostTopBorder isRed={isMainArticleOnPostPage} />
       <time className="f6">{date}</time>
