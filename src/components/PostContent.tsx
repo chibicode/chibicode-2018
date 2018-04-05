@@ -1,10 +1,11 @@
 import React from 'react'
+import styled from 'styled-components'
 import { BlockTopSpacing } from '../components/Block'
 import { PTag } from '../components/BlockElements'
 import Button from '../components/Button'
-import ReadingTimeText from '../components/ReadingTimeText'
 import ShareWidget, { ShareWidgetProps } from '../components/ShareWidget'
 import { POST_SEPARATOR_DISPLAY_NAME } from '../constants/components'
+import chevronDown from '../images/chevron-down.svg'
 import renderAst from '../lib/renderAst'
 
 interface Props extends ShareWidgetProps {
@@ -16,6 +17,12 @@ interface Props extends ShareWidgetProps {
 interface State {
   expanded: boolean
 }
+
+const ChevronDownImage = styled.img`
+  position: relative;
+  top: 0.125em;
+  width: 0.75em;
+`
 
 const searchForPostSeparator = (child: React.ReactChild) => {
   if (
@@ -93,11 +100,10 @@ export default class PostContent extends React.Component<Props, State> {
             {childArray}
             <PTag className="tc" topSpacing={BlockTopSpacing.Medium}>
               <Button onClick={this.onClickKeepReadingButton}>
-                Keep Reading
+                Keep Reading<span className="ml2">
+                  <ChevronDownImage src={chevronDown} />
+                </span>
               </Button>
-              <span className={`f6 db mt2`}>
-                <ReadingTimeText numWords={this.props.numWords} />
-              </span>
             </PTag>
           </div>
         )
