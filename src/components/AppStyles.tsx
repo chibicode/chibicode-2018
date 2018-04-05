@@ -41,7 +41,7 @@ const Styled = styled.div`
   }
 
   pre {
-    font-size: 0.95em;
+    font-size: 0.9em;
   }
 
   /* Override prism */
