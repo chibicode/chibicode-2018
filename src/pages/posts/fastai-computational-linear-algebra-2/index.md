@@ -42,8 +42,6 @@ I added some visualizations to help visualize what Rachel's talking about.
 
 > Nonnegative matrix factorization (NMF) is a non-exact factorization that factors into one skinny positive matrix and one short positive matrix.
 
-### My visualization
-
 ![](./v4.png)
 
 ## Coding Tips
