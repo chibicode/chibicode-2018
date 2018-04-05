@@ -16,7 +16,7 @@ I started watching [fast.ai's Computational Linear Algebra course](http://www.fa
 
 ## Some Visualization
 
-Here's the text that talks about the motivation behind topic modeling using matrix factorization. I added some visualizations to help visualize what Rachel's talking about.
+I added some visualizations to help visualize what Rachel's talking about.
 
 ### Matrix Factorization, Motivation 1
 
