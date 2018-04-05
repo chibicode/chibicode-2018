@@ -221,7 +221,7 @@ const PreWrapper = styled.div`
 `
 
 export const PreTag: React.SFC<Props> = ({ ...props }) => (
-  <BlockTag reactType={'div'} width={BlockWidth.Medium}>
+  <BlockTag reactType={'div'}>
     <PreWrapper>
       <div className="gatsby-highlight-inner">
         <pre {...props} />
