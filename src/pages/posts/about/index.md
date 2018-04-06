@@ -18,7 +18,7 @@ I'm **Shu Uesugi**, a software developer in Silicon Valley.
 
 **Current Interests:** AI and machine learning, automation and future of work, role of technology in developing countries, and geopolitics.
 
-**Past Interests:** I used to write a [popular blog in Japanese](http://chibicode.com/jp).
+**Past Interests:** I used to write a <a href="https://chibicode.com/jp" target="_blank">popular blog in Japanese</a>.<!-- Using target="_blank" to avoid catch-links -->
 
 **Social Media:**
 
