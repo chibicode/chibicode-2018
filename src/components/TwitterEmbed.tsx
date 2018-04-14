@@ -115,7 +115,7 @@ export default class TwitterEmbed extends React.Component<Props, State> {
   }
 
   public componentWillUnmount() {
-    window.addEventListener('scroll', this.handleScrollDebounced)
+    window.removeEventListener('scroll', this.handleScrollDebounced)
   }
 
   public componentWillUpdate(nextProps: Props, nextState: State) {
