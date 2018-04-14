@@ -175,7 +175,7 @@ export const BlockquoteTag: React.SFC<Props> = ({
 }) => (
   <BlockTag
     reactType={'div'}
-    className={classNames('bl bw1 b--silver i', className)}
+    className={classNames('bl bw1 b--silver', className)}
     {...props}
   >
     <StyledBlockquoteTag className="mh0 pl3 bl bw3">
