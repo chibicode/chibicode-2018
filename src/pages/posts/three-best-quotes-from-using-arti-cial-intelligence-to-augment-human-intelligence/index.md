@@ -25,3 +25,7 @@ As someone who studied interface design in college and has worked as a designer/
 > It is conventional wisdom that AI will change how we interact with computers. **Unfortunately, many in the AI community greatly underestimate the depth of interface design, often regarding it as a simple problem, mostly about making things pretty or easy-to-use.** In this view, interface design is a problem to be handed off to others, while the hard work is to train some machine learning system.
 >
 > **This view is incorrect.** At its deepest, interface design means developing the fundamental primitives human beings think and create with. This is a problem whose intellectual genesis goes back to the inventors of the alphabet, of cartography, and of musical notation, as well as modern giants such as Descartes, Playfair, Feynman, Engelbart, and Kay. **It is one of the hardest, most important and most fundamental problems humanity grapples with.**
+
+## Read the article
+
+[Carter & Nielsen, "Using Artificial Intelligence to Augment Human Intelligence", Distill, 2017.](https://distill.pub/2017/aia/)
