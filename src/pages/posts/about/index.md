@@ -10,8 +10,6 @@ draft: false
 
 I'm **Shu Uesugi**, a software developer in Silicon Valley.
 
-**Contact:** Email me at [shu@chibicode.com](mailto:shu@chibicode.com).
-
 <post-separator></post-separator>
 
 ## Present & Past
@@ -24,6 +22,10 @@ I'm **Shu Uesugi**, a software developer in Silicon Valley.
 
 **Past Interests:** I used to write a <a href="https://chibicode.com/jp" target="_blank">popular blog in Japanese</a>.<!-- Using target="_blank" to avoid catch-links -->
 
+## Contact / Email
+
+Email me at [shu@chibicode.com](mailto:shu@chibicode.com).
+
 ## Social Media
 
 * [Facebook](https://www.facebook.com/shu)
@@ -31,7 +33,6 @@ I'm **Shu Uesugi**, a software developer in Silicon Valley.
 * [Instagram](https://www.instagram.com/chibicode/)
 * [LinkedIn](https://www.linkedin.com/in/chibicode)
 * [Medium](http://medium.com/@chibicode)
-* **Email:** [shu@chibicode.com](mailto:shu@chibicode.com)
 
 **Most popular article on my Medium:** [You Could’ve Submitted a Pull Request to Inject Arbitrary JS Code into Donald Trump’s Site. Here’s How.](https://medium.com/@chibicode/you-can-submit-a-pull-request-to-inject-arbitrary-js-code-into-donald-trumps-site-here-s-how-782aa6a17a56)
 
