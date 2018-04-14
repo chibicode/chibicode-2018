@@ -16,7 +16,6 @@ interface Props {
   imageAttributionUrl: string | null
   isMainArticleOnPostPage: boolean
   twitterId: string | null
-  numWords: number
 }
 
 const Post: React.SFC<Props> = ({
@@ -29,7 +28,6 @@ const Post: React.SFC<Props> = ({
   imageAttributionUrl,
   isMainArticleOnPostPage,
   twitterId,
-  numWords,
 }) => (
   <article className="pt4-ns pt3 pb5">
     <BlockTag reactType={'div'} bottomSpacing={BlockBottomSpacing.XSmall}>
@@ -68,7 +66,6 @@ const Post: React.SFC<Props> = ({
         twitterId={twitterId}
         slug={slug}
         expanded={isMainArticleOnPostPage}
-        numWords={numWords}
       />
     </div>
   </article>

@@ -19,11 +19,6 @@ export interface PostBySlugQuery_site {
   siteMetadata: PostBySlugQuery_site_siteMetadata | null;
 }
 
-export interface PostBySlugQuery_allMarkdownRemark_edges_node_wordCount {
-  __typename: "wordCount";
-  words: number | null;
-}
-
 export interface PostBySlugQuery_allMarkdownRemark_edges_node_fields {
   __typename: "fields_2";
   slug: string | null;
@@ -71,7 +66,6 @@ export interface PostBySlugQuery_allMarkdownRemark_edges_node {
   __typename: "MarkdownRemark";
   htmlAst: JSON | null;
   excerpt: string | null;
-  wordCount: PostBySlugQuery_allMarkdownRemark_edges_node_wordCount | null;
   fields: PostBySlugQuery_allMarkdownRemark_edges_node_fields | null;
   frontmatter: PostBySlugQuery_allMarkdownRemark_edges_node_frontmatter | null;
 }
@@ -84,11 +78,6 @@ export interface PostBySlugQuery_allMarkdownRemark_edges {
 export interface PostBySlugQuery_allMarkdownRemark {
   __typename: "MarkdownRemarkConnection";
   edges: (PostBySlugQuery_allMarkdownRemark_edges | null)[] | null;  // A list of edges.
-}
-
-export interface PostBySlugQuery_markdownRemark_wordCount {
-  __typename: "wordCount";
-  words: number | null;
 }
 
 export interface PostBySlugQuery_markdownRemark_fields {
@@ -140,7 +129,6 @@ export interface PostBySlugQuery_markdownRemark {
   id: string;  // The id of this node.
   htmlAst: JSON | null;
   excerpt: string | null;
-  wordCount: PostBySlugQuery_markdownRemark_wordCount | null;
   fields: PostBySlugQuery_markdownRemark_fields | null;
   frontmatter: PostBySlugQuery_markdownRemark_frontmatter | null;
 }

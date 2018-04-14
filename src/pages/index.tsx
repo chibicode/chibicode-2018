@@ -45,9 +45,6 @@ export const pageQuery = graphql`
         node {
           htmlAst
           excerpt
-          wordCount {
-            words
-          }
           fields {
             slug
           }

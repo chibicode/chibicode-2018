@@ -88,7 +88,6 @@ export default class PostList extends React.Component<Props, State> {
                   }
                   isMainArticleOnPostPage={false}
                   twitterId={e!.node!.frontmatter!.twitterId}
-                  numWords={e!.node!.wordCount!.words!}
                 />
               )
           )}

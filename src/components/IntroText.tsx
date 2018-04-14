@@ -15,9 +15,12 @@ export enum IntroTextVariation {
 const IntroText: React.SFC<Props> = ({ variation }) => {
   const learnMore = (
     <span>
-      <UnderlineLink to="/posts/about">
-        Learn more about me (and this blog) here
-      </UnderlineLink>.
+      <UnderlineLink to="/posts/about">Learn more about me here</UnderlineLink>.
+    </span>
+  )
+  const archive = (
+    <span>
+      <UnderlineLink to="/posts/">Read the archive here.</UnderlineLink>.
     </span>
   )
   return (
@@ -55,7 +58,9 @@ const IntroText: React.SFC<Props> = ({ variation }) => {
               as many non-native English speakers as native English speakers.
             </LiTag>
           </OlTag>{' '}
-          <PTag>{learnMore}</PTag>
+          <PTag>
+            {learnMore} | {archive}
+          </PTag>
         </div>
       )}
     </section>

@@ -11,7 +11,6 @@ import renderAst from '../lib/renderAst'
 interface Props extends ShareWidgetProps {
   htmlAst: JSON
   expanded: boolean
-  numWords: number
 }
 
 interface State {

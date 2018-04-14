@@ -85,7 +85,6 @@ const PostTemplate: React.SFC<Props> = ({ data }) => (
       }
       isMainArticleOnPostPage
       twitterId={data!.markdownRemark!.frontmatter!.twitterId}
-      numWords={data!.markdownRemark!.wordCount!.words!}
     />
     <div className="pt6-ns pt5">
       <PageHeader location={PageHeaderLocation.PostPageSecondary} />
@@ -113,9 +112,6 @@ export const pageQuery = graphql`
         node {
           htmlAst
           excerpt
-          wordCount {
-            words
-          }
           fields {
             slug
           }
@@ -150,9 +146,6 @@ export const pageQuery = graphql`
       id
       htmlAst
       excerpt
-      wordCount {
-        words
-      }
       fields {
         slug
       }

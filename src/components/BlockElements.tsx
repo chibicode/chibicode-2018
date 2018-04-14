@@ -31,6 +31,10 @@ interface Props
   width?: BlockWidth
 }
 
+interface OlTagProps extends Props {
+  reversed?: boolean
+}
+
 export const BlockTag: React.SFC<BlockTagProps> = ({
   reactType,
   bottomSpacing,
@@ -55,7 +59,7 @@ const StyledOlTag = styled.ol`
   padding-left: 1.5em;
 `
 
-export const OlTag: React.SFC<Props> = ({ ...props }) => (
+export const OlTag: React.SFC<OlTagProps> = ({ ...props }) => (
   <BlockTag reactType={StyledOlTag} {...props} />
 )
 

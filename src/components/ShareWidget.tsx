@@ -3,6 +3,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { BlockTopSpacing } from '../components/Block'
 import { BlockTag, H2Tag } from '../components/BlockElements'
+import { UnderlineLink } from '../components/InlineElements'
 import TwitterEmbed from '../components/TwitterEmbed'
 import {
   COLOR_DARK_GRAY,
@@ -108,7 +109,7 @@ const ShareWidget: React.SFC<ShareWidgetProps> = ({ twitterId, slug }) => {
       reactType={'div'}
       topSpacing={BlockTopSpacing.Small}
     >
-      <div className="flex items-center">
+      <div className="flex items-center pb3">
         <strong className="mr2 nowrap">Share Link:</strong>
         <div className="flex-auto db dn-ns">
           <ShareLinkBg className="ph2 pv2 br2 ba b--moon-gray">
@@ -122,6 +123,15 @@ const ShareWidget: React.SFC<ShareWidgetProps> = ({ twitterId, slug }) => {
         <div className="flex-auto db-ns dn">
           <UrlBox slug={slug} />
         </div>
+      </div>
+      <div>
+        <strong>Author:</strong>{' '}
+        <span>
+          Shu Uesugi.{' '}
+          <UnderlineLink to="/posts/about">
+            Learn more about me here
+          </UnderlineLink>.
+        </span>
       </div>
     </BlockTag>
   )

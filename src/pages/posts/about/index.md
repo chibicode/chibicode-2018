@@ -10,26 +10,30 @@ draft: false
 
 I'm **Shu Uesugi**, a software developer in Silicon Valley.
 
-**Present:** I'm currently freelancing. From February 2017 to January 2018, I was traveling the world ([details](/posts/world-travel-2017-2018)). Before that, I was a lead software architect at [EdSurge](https://www.edsurge.com/) in Silicon Valley (2012-2017).
+**Contact:** Email me at [shu@chibicode.com](mailto:shu@chibicode.com).
 
 <post-separator></post-separator>
 
+## Present & Past
+
+**Present:** I'm currently freelancing. From February 2017 to January 2018, I was traveling the world ([details](/posts/world-travel-2017-2018)). Before that, I was a lead software architect at [EdSurge](https://www.edsurge.com/) in Silicon Valley (2012-2017).
+
 **Past:** I was born in Japan in 1988 and moved to Washington DC, USA in 2000. I graduated from Carnegie Mellon University in 2010 with a Bachelors degree in Computer Science and a Masters degree in Human-Computer Interaction.
 
-**Current Interests:** AI and machine learning, automation and future of work, role of technology in developing countries, and geopolitics.
+**Present Interests:** AI and machine learning, automation and future of work, role of technology in developing countries, and geopolitics.
 
 **Past Interests:** I used to write a <a href="https://chibicode.com/jp" target="_blank">popular blog in Japanese</a>.<!-- Using target="_blank" to avoid catch-links -->
 
-**Social Media:**
+## Social Media
 
 * [Facebook](https://www.facebook.com/shu)
+* [Twitter](https://twitter.com/chibicode)
 * [Instagram](https://www.instagram.com/chibicode/)
 * [LinkedIn](https://www.linkedin.com/in/chibicode)
 * [Medium](http://medium.com/@chibicode)
+* **Email:** [shu@chibicode.com](mailto:shu@chibicode.com)
 
 **Most popular article on my Medium:** [You Could’ve Submitted a Pull Request to Inject Arbitrary JS Code into Donald Trump’s Site. Here’s How.](https://medium.com/@chibicode/you-can-submit-a-pull-request-to-inject-arbitrary-js-code-into-donald-trumps-site-here-s-how-782aa6a17a56)
-
-**Contact:** [shu@chibicode.com](mailto:shu@chibicode.com)
 
 ## About this blog
 

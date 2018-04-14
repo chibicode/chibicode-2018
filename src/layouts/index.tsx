@@ -15,7 +15,9 @@ interface Props {
 }
 
 const App: React.SFC<Props> = ({ location, children }) => {
-  const isHomepage = location.pathname === withPrefix('/')
+  const isHomepage =
+    location.pathname === withPrefix('/') ||
+    location.pathname === withPrefix('/posts')
   return (
     <AppStyles>
       <Helmet>
