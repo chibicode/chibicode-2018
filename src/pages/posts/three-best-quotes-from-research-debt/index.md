@@ -3,7 +3,7 @@ title: Three best quotes from “Research Debt”
 date: '2018-04-13T23:21:57.606Z'
 draft: false
 image: ./cover.jpg
-twitterId: null
+twitterId: "985050643747368960"
 ---
 
 As someone who's done a lot of expository writing online ([in Japanese](https://chibicode.com/jp/)), I resonated deeply with [“Research Debt”](https://distill.pub/2017/research-debt/) by Chris Olah and Shan Carter, although I'm not a researcher. Here are the three quotes I especially liked (emphasis mine).
