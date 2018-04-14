@@ -26,6 +26,6 @@ As someone who studied interface design in college and has worked as a designer/
 >
 > **This view is incorrect.** At its deepest, interface design means developing the fundamental primitives human beings think and create with. This is a problem whose intellectual genesis goes back to the inventors of the alphabet, of cartography, and of musical notation, as well as modern giants such as Descartes, Playfair, Feynman, Engelbart, and Kay. **It is one of the hardest, most important and most fundamental problems humanity grapples with.**
 
-## Read the article
+## Read the paper
 
 [Carter & Nielsen, "Using Artificial Intelligence to Augment Human Intelligence", Distill, 2017.](https://distill.pub/2017/aia/)
