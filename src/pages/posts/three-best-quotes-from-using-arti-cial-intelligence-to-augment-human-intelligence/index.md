@@ -5,7 +5,7 @@ title: >-
 date: '2018-04-13T21:24:29.767Z'
 draft: false
 image: ./cover.jpg
-twitterId: null
+twitterId: "985017353086779392"
 ---
 
 As someone who studied interface design in college and has worked as a designer/frontend engineer, ["Using Artificial Intelligence to Augment Human Intelligence"](https://distill.pub/2017/aia/) by Shan Carter and Michael Nielsen was a great read. Here are the three quotes I especially liked.
