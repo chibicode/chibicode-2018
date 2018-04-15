@@ -145,3 +145,7 @@ Here's one final quote from the book I liked (page 153) - I felt exactly like th
 > On our way out, I told a fellow student I was supposed to be with the fourth-years. “That’s us,” he said. I was stunned. They had caste marks on their foreheads and lived where exotic palm trees grew. **How could they know much more than me? Over the next few days I learned that they had a textbook three times as thick as mine, and they had read it three times as many times.**
 >
 > I remember this whole experience as the first time in my life that **I suddenly had to change my worldview: my assumption that I was superior because of where I came from….**
+
+## Buy the book
+
+[Factfulness: Ten Reasons We're Wrong About the World--and Why Things Are Better Than You Think](https://www.amazon.com/dp/B0756J1LLV)
