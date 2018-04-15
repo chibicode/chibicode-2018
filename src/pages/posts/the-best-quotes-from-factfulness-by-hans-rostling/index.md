@@ -149,3 +149,9 @@ Here's one final quote from the book I liked (page 153) - I felt exactly like th
 ## Buy the book
 
 [Factfulness: Ten Reasons We're Wrong About the World--and Why Things Are Better Than You Think](https://www.amazon.com/dp/B0756J1LLV)
+
+## Check out Hans's TED talks
+
+<div><responsive-iframe width="560" height="315" src="https://www.youtube.com/embed/hVimVzgtD6w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></responsive-iframe></div>
+
+<div><responsive-iframe width="560" height="315" src="https://www.youtube.com/embed/Sm5xF-UYgdg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></responsive-iframe></div>
