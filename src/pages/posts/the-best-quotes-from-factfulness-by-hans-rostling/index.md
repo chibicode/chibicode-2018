@@ -1,5 +1,5 @@
 ---
-title: "The best quotes from “Factfulness” by Hans Rostling, a book Bill Gates called “one of the best books I’ve read in a long time”"
+title: "The best quotes from “Factfulness” by Hans Rostling, the book Bill Gates called “one of the best books I’ve read in a long time”"
 date: '2018-04-15T12:06:26.680Z'
 draft: false
 image: ./cover.jpg
