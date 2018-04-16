@@ -136,7 +136,13 @@ Page 212:
 
 ## Final thoughts from the book
 
-As someone who traveled to [94 cities in 36 countries](/posts/world-travel-2017-2018/) last year, I found that by actually seeing the world with your own eyes, you become more humble. The tone of Hans's book was exactly that.
+As someone who traveled to [94 cities in 36 countries](/posts/world-travel-2017-2018/) last year, I found that by actually seeing the world with your own eyes, you realize how incorrect your stereotypes were, and as a result, you become more humble.
+
+The tone of Hans's book was exactly that - extremely humble. [Bill gates agrees](https://www.gatesnotes.com/Books/Factfulness):
+
+> Another remarkable thing about Factfulness—and about Hans himself—is that he refuses to judge anyone for their misconceptions. Most writers would beat people up for their ignorance, but he doesn’t. Hans even resists going after the media. Instead, he tells you about the history of his own ignorance. He explains that these instincts make us human, and that overcoming them isn’t easy.
+>
+> That’s classic Hans. He was always kind, often patient, and never judgmental.
 
 Here's one final quote from the book I liked (page 153) - I felt exactly like this when I gave a talk in Bangladesh last year:
 
