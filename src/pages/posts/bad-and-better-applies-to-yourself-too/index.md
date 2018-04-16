@@ -3,7 +3,7 @@ title: "“Bad and Better” applies to yourself, too"
 date: '2018-04-15T21:33:29.875Z'
 draft: false
 image: ./cover.jpg
-twitterId: null
+twitterId: "985754910867140608"
 ---
 
 Yesterday [I wrote some of my favorite quotes from "Factfulness" by Hans Rosling](/posts/the-best-quotes-from-factfulness-by-hans-rostling/). There was one quote I left out, the one about **"bad and better."**
@@ -32,6 +32,8 @@ Looking at myself in the mirror, I realize that I have numerous personality flaw
 
 And my personality flaws manifest themselves in my words and actions over and over again. Every time that happens, I get the feeling that I'd always be vain for the rest of my life.
 
-**But**: Looking back at my old conversation logs, I also know that I'm less pretentious than my younger self from 5 years ago. I'm not humble, but more modest than before. Of course, I am improving at much, much slower rate than countries in Africa. Nonetheless, *personality wise, I'm both bad and better* today.
+**But**: Looking back at my old conversation logs, I also know that I'm less pretentious than my younger self from 5 years ago. I'm not humble, but more modest than before. I still make sweeping statements and generalizations, out of my lack of knowledge, kindness, and self confidence, but less frequently so.
+
+Of course, as an individual, I am improving at much, much slower rate than countries in Africa. Nonetheless, *personality wise, I'm both bad and better* today.
 
 **Conclusion:** I think "bad and better" is a good framework to reflect on your weaknesses. *Your weaknesses are not something you should be proud of, because they're bad, but they're also not something you should dread too much about, as long as they're getting better.*
