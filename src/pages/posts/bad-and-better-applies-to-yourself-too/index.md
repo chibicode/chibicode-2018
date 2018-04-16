@@ -18,7 +18,7 @@ From page 70 (emphasis mine):
 >
 > That is how we must think about the current state of the world.
 
-Hans said this in the context of poverty in the world. Bill Gates, who spoke highly of the book, recites this idea on [his book review](https://www.gatesnotes.com/Books/Factfulness) (emphasis *not* mine):
+Bill Gates, who spoke highly of the book, recited this idea on [his book review](https://www.gatesnotes.com/Books/Factfulness) (emphasis *not* mine):
 
 > Imagine news coverage about a natural disaster—say, a tornado that kills 10 people in a small town. If you look at only the headlines, you’ll view the event as an unbearable tragedy (which it is). But if you put it in the context of history, you’ll also know that tornadoes today are a lot less deadly than they used to be, thanks to advanced warning systems. That’s no consolation to the loved ones of those who died, but it matters a great deal to everyone who survived the tornado.
 >
