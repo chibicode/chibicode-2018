@@ -24,7 +24,7 @@ Page 90:
 >
 > … “Saving poor children just increases the population” sounds correct, **but the opposite is true**. … The only proven method for curbing population growth is to eradicate extreme poverty and give people better lives, including education and contraceptives.
 
-## On “Now is not the time to politicize X” argument after crisis
+## On “Now is not the time to politicize X” argument after a crisis
 
 Page 111:
 

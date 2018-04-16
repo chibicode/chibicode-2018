@@ -20,7 +20,7 @@ const IntroText: React.SFC<Props> = ({ variation }) => {
   )
   const archive = (
     <span>
-      <UnderlineLink to="/posts/">Read the archive here.</UnderlineLink>
+      <UnderlineLink to="/posts/">Read the archive here</UnderlineLink>.
     </span>
   )
   return (
