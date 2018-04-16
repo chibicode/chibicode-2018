@@ -32,7 +32,7 @@ Looking at myself in the mirror, I realize that I have numerous personality flaw
 
 And my personality flaws manifest themselves in my words and actions over and over again. Every time that happens, I get the feeling that I'd always be vain for the rest of my life.
 
-**But**: Looking back at my old conversation logs, I also know that I'm less pretentious than my younger self from 5 years ago. I'm not humble, but more modest than before. I still make sweeping statements and generalizations, out of my lack of knowledge, kindness, and self confidence, but less frequently so.
+**But**: Looking back at my old conversation logs, I also know that I'm less pretentious than my younger self from 5 years ago. I'm not yet humble—far from it—but more modest than before. I still make sweeping statements and generalizations, out of my lack of knowledge, kindness, and self confidence, but less frequently so.
 
 Of course, as an individual, I am improving at much, much slower rate than countries in Africa. Nonetheless, *personality wise, I'm both bad and better* today.
 
