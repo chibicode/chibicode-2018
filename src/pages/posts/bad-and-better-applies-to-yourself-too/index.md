@@ -26,7 +26,7 @@ Hans said this in the context of poverty in the world. Bill Gates, who spoke hig
 
 ## You can also be bad and better
 
-But this idea of "bad and better" applies to *yourself* as well.
+This idea of "bad and better" applies not only to the state of the world, **but also to yourself**.
 
 Looking at myself in the mirror, I realize that I have numerous personality flaws. *For one, it's extremely difficult for me to stay humble like Hans*, even though I have no achievements to back up my arrogance.
 
