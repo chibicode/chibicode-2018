@@ -4,6 +4,8 @@ date: "2018-04-04T23:00:00.000Z"
 image: "./cover.jpg"
 twitterId: "981863642638331904"
 draft: false
+tags:
+  - "fast.ai Computational Linear Algebra course"
 ---
 
 I started watching [fast.ai's Computational Linear Algebra course](http://www.fast.ai/2017/07/17/num-lin-alg/). Here's some (very) quick takeaways from lecture 2.

@@ -52,6 +52,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             draft
             title
+            tags
             imageAttributionName
             imageAttributionUrl
             twitterId

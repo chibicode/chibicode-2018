@@ -1,6 +1,7 @@
 import debounce from 'lodash/debounce'
 import React from 'react'
 import Post from '../components/Post'
+import getRelatedPostsData from '../lib/getRelatedPostsData'
 import { IndexPageQuery_allMarkdownRemark } from '../types/IndexPageQuery'
 
 interface Props {
@@ -64,33 +65,35 @@ export default class PostList extends React.Component<Props, State> {
     const { postsToShow } = this.state
     return (
       <div>
-        {allMarkdownRemark!
-          .edges!.slice(0, postsToShow)
-          .map(
-            e =>
-              exceptSlug !== e!.node!.fields!.slug! &&
-              !e!.node!.frontmatter!.draft && (
-                <Post
-                  key={e!.node!.fields!.slug!}
-                  title={e!.node!.frontmatter!.title!}
-                  slug={e!.node!.fields!.slug!}
-                  date={e!.node!.frontmatter!.date!}
-                  htmlAst={e!.node!.htmlAst!}
-                  image={
-                    e!.node!.frontmatter!.image &&
-                    e!.node!.frontmatter!.image!.childImageSharp!.width1000
-                  }
-                  imageAttributionName={
-                    e!.node!.frontmatter!.imageAttributionName
-                  }
-                  imageAttributionUrl={
-                    e!.node!.frontmatter!.imageAttributionUrl
-                  }
-                  isMainArticleOnPostPage={false}
-                  twitterId={e!.node!.frontmatter!.twitterId}
-                />
-              )
-          )}
+        {allMarkdownRemark!.edges!.slice(0, postsToShow).map(
+          e =>
+            exceptSlug !== e!.node!.fields!.slug! &&
+            (process.env.NODE_ENV === 'development' ||
+              !e!.node!.frontmatter!.draft) && (
+              <Post
+                key={e!.node!.fields!.slug!}
+                title={e!.node!.frontmatter!.title!}
+                slug={e!.node!.fields!.slug!}
+                draft={e!.node!.frontmatter!.draft}
+                date={e!.node!.frontmatter!.date!}
+                htmlAst={e!.node!.htmlAst!}
+                relatedPostsData={getRelatedPostsData({
+                  node: e!.node!,
+                  allMarkdowwnRemark: allMarkdownRemark!,
+                })}
+                image={
+                  e!.node!.frontmatter!.image &&
+                  e!.node!.frontmatter!.image!.childImageSharp!.width1000
+                }
+                imageAttributionName={
+                  e!.node!.frontmatter!.imageAttributionName
+                }
+                imageAttributionUrl={e!.node!.frontmatter!.imageAttributionUrl}
+                isMainArticleOnPostPage={false}
+                twitterId={e!.node!.frontmatter!.twitterId}
+              />
+            )
+        )}
       </div>
     )
   }

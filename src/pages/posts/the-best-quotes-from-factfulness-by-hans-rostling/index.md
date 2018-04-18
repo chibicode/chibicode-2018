@@ -4,6 +4,8 @@ date: '2018-04-15T12:06:26.680Z'
 draft: false
 image: ./cover.jpg
 twitterId: "985641485189111808"
+tags:
+  - “Factfulness” by Hans Rostling
 ---
 
 I just read [Factfulness: Ten Reasons We're Wrong About the World--and Why Things Are Better Than You Think](https://www.amazon.com/dp/B0756J1LLV/) by the late Hans Rosling, his son Ola Rosling, and his daughter-in-law Anna Rosling Rönnlund.

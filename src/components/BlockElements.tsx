@@ -224,7 +224,9 @@ const PreWrapper = styled.div`
   }
 `
 
-export const PreTag: React.SFC<Props> = ({ ...props }) => (
+export const PreTag: React.SFC<React.HTMLAttributes<HTMLPreElement>> = ({
+  ...props
+}) => (
   <BlockTag reactType={'div'}>
     <PreWrapper>
       <div className="gatsby-highlight-inner">
@@ -252,7 +254,7 @@ export const TwitterEmbedWrapper: React.SFC<TwitterEmbedWrapperProps> = ({
   />
 )
 
-interface HrTagProps extends Props {
+interface HrTagProps extends React.HTMLAttributes<HTMLHRElement> {
   useSpan: boolean
 }
 

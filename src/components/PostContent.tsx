@@ -4,13 +4,16 @@ import { BlockTopSpacing } from '../components/Block'
 import { PTag } from '../components/BlockElements'
 import Button from '../components/Button'
 import ShareWidget, { ShareWidgetProps } from '../components/ShareWidget'
+import TagsWidget from '../components/TagsWidget'
 import { POST_SEPARATOR_DISPLAY_NAME } from '../constants/components'
 import chevronDown from '../images/chevron-down.svg'
+import { RelatedPostData } from '../lib/getRelatedPostsData'
 import renderAst from '../lib/renderAst'
 
 interface Props extends ShareWidgetProps {
   htmlAst: JSON
   expanded: boolean
+  relatedPostsData: RelatedPostData
 }
 
 interface State {
@@ -51,10 +54,11 @@ export default class PostContent extends React.Component<Props, State> {
   }
 
   private renderExpanded() {
-    const { htmlAst, twitterId, slug } = this.props
+    const { htmlAst, twitterId, slug, relatedPostsData } = this.props
     return (
       <div>
         {renderAst(htmlAst)}
+        <TagsWidget relatedPostsData={relatedPostsData} />
         <ShareWidget twitterId={twitterId} slug={slug} />
       </div>
     )

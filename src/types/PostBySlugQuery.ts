@@ -56,6 +56,7 @@ export interface PostBySlugQuery_allMarkdownRemark_edges_node_frontmatter {
   date: string | null;
   title: string | null;
   draft: boolean | null;
+  tags: (string | null)[] | null;
   imageAttributionName: string | null;
   imageAttributionUrl: string | null;
   twitterId: string | null;
@@ -121,6 +122,7 @@ export interface PostBySlugQuery_markdownRemark_frontmatter {
   imageAttributionUrl: string | null;
   twitterId: string | null;
   draft: boolean | null;
+  tags: (string | null)[] | null;
   image: PostBySlugQuery_markdownRemark_frontmatter_image | null;
 }
 

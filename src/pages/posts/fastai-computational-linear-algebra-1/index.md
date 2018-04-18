@@ -4,6 +4,8 @@ date: "2018-04-04T01:00:00.000Z"
 image: "./cover.jpg"
 twitterId: "981518682835755011"
 draft: false
+tags:
+  - "fast.ai Computational Linear Algebra course"
 ---
 
 I started watching [fast.ai's Computational Linear Algebra course](http://www.fast.ai/2017/07/17/num-lin-alg/). Here's some (very) quick takeaways from lecture 1.
@@ -39,3 +41,7 @@ correlate(images[0], top)
 ```python
 np.set_printoptions(suppress=True, precision=4)
 ```
+
+## More notes:
+
+- [Lecture 2](/posts/fastai-computational-linear-algebra-2/)

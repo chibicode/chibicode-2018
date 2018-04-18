@@ -5,29 +5,34 @@ import { BlockTag, H1Tag } from '../components/BlockElements'
 import { ATag, NoUnderlineLink } from '../components/InlineElements'
 import PostContent from '../components/PostContent'
 import PostTopBorder from '../components/PostTopBorder'
+import { RelatedPostData } from '../lib/getRelatedPostsData'
 
 interface Props {
   title: string
   slug: string
   date: string
+  draft?: boolean | null
   htmlAst: JSON
   image: object | null
   imageAttributionName: string | null
   imageAttributionUrl: string | null
   isMainArticleOnPostPage: boolean
   twitterId: string | null
+  relatedPostsData: RelatedPostData
 }
 
 const Post: React.SFC<Props> = ({
   title,
   slug,
   date,
+  draft,
   htmlAst,
   image,
   imageAttributionName,
   imageAttributionUrl,
   isMainArticleOnPostPage,
   twitterId,
+  relatedPostsData,
 }) => (
   <article className="pt4-ns pt3 pb5">
     <BlockTag reactType={'div'} bottomSpacing={BlockBottomSpacing.XSmall}>
@@ -35,6 +40,7 @@ const Post: React.SFC<Props> = ({
       <time className="f6">{date}</time>
     </BlockTag>
     <H1Tag className="pb2">
+      {draft && '(Draft) '}
       <NoUnderlineLink to={slug}>{title}</NoUnderlineLink>
     </H1Tag>
     {image && (
@@ -65,6 +71,7 @@ const Post: React.SFC<Props> = ({
         htmlAst={htmlAst}
         twitterId={twitterId}
         slug={slug}
+        relatedPostsData={relatedPostsData}
         expanded={isMainArticleOnPostPage}
       />
     </div>

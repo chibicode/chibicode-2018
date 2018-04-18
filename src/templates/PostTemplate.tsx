@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import PageHeader, { PageHeaderLocation } from '../components/PageHeader'
 import Post from '../components/Post'
 import PostList from '../components/PostList'
+import getRelatedPostsData from '../lib/getRelatedPostsData'
 import { PostBySlugQuery } from '../types/PostBySlugQuery'
 
 interface Props {
@@ -72,7 +73,12 @@ const PostTemplate: React.SFC<Props> = ({ data }) => (
       title={data!.markdownRemark!.frontmatter!.title!}
       slug={data!.markdownRemark!.fields!.slug!}
       date={data!.markdownRemark!.frontmatter!.date!}
+      draft={data!.markdownRemark!.frontmatter!.draft}
       htmlAst={data!.markdownRemark!.htmlAst!}
+      relatedPostsData={getRelatedPostsData({
+        node: data!.markdownRemark!,
+        allMarkdowwnRemark: data!.allMarkdownRemark!,
+      })}
       image={
         data!.markdownRemark!.frontmatter!.image &&
         data!.markdownRemark!.frontmatter!.image!.childImageSharp!.width1000
@@ -119,6 +125,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             draft
+            tags
             imageAttributionName
             imageAttributionUrl
             twitterId
@@ -157,6 +164,7 @@ export const pageQuery = graphql`
         imageAttributionUrl
         twitterId
         draft
+        tags
         image {
           childImageSharp {
             width1200: resolutions(width: 1200, quality: 80) {

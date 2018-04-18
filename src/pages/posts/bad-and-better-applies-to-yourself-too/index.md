@@ -4,6 +4,7 @@ date: '2018-04-15T21:33:29.875Z'
 draft: false
 image: ./cover.jpg
 twitterId: "985754910867140608"
+tags: [“Factfulness” by Hans Rostling]
 ---
 
 Yesterday [I wrote some of my favorite quotes from "Factfulness" by Hans Rosling](/posts/the-best-quotes-from-factfulness-by-hans-rostling/). There was one quote I left out, the one about **"bad and better."**
