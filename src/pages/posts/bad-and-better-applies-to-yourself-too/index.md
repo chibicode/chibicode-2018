@@ -38,7 +38,3 @@ And my personality flaws manifest themselves in my words and actions over and ov
 Of course, as an individual, I am improving at much, much slower rate than countries in Africa. Nonetheless, *personality wise, I'm both bad and better* today.
 
 **Conclusion:** I think "bad and better" is a good framework to reflect on your weaknesses. *Your weaknesses are not something you should be proud of, because they're bad, but they're also not something you should dread too much about, as long as they're getting better.*
-
-## Read my favorite quotes from the book
-
-**Link:** [The best quotes from “Factfulness” by Hans Rostling, the book Bill Gates called “one of the best books I’ve read in a long time”](/posts/the-best-quotes-from-factfulness-by-hans-rostling/)

@@ -41,7 +41,3 @@ correlate(images[0], top)
 ```python
 np.set_printoptions(suppress=True, precision=4)
 ```
-
-## More notes:
-
-- [Lecture 2](/posts/fastai-computational-linear-algebra-2/)

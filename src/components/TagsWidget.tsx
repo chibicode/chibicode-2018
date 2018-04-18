@@ -11,7 +11,7 @@ const TagsWidget: React.SFC<Props> = ({ relatedPostsData }) => (
   <div>
     {relatedPostsData.map(({ tag, posts }) => (
       <div>
-        <H2Tag>More from {tag}</H2Tag>
+        <H2Tag>More posts on {tag}</H2Tag>
         <UlTag>
           {posts.map(post => (
             <LiTag>
