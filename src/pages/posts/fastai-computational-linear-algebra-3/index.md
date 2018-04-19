@@ -8,7 +8,7 @@ tags:
   - fast.ai Computational Linear Algebra course
 ---
 
-I started watching [fast.ai's Computational Linear Algebra course](http://www.fast.ai/2017/07/17/num-lin-alg/). Here's some (very) quick takeaways from lecture 3.
+Here's some (very) quick takeaways from [fast.ai's Computational Linear Algebra course](http://www.fast.ai/2017/07/17/num-lin-alg/), lecture 3.
 
 <post-separator></post-separator>
 
