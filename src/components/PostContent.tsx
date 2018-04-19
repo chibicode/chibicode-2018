@@ -64,6 +64,16 @@ export default class PostContent extends React.Component<Props, State> {
     )
   }
 
+  private renderSeparatorNotFound() {
+    const { htmlAst, slug } = this.props
+    return (
+      <div>
+        {renderAst(htmlAst)}
+        <ShareWidget slug={slug} hideTitle />
+      </div>
+    )
+  }
+
   private childArrayBeforeSeparator(): {
     childArray: React.ReactChild[]
     separatorFound: boolean
@@ -95,7 +105,7 @@ export default class PostContent extends React.Component<Props, State> {
     } else {
       const { childArray, separatorFound } = this.childArrayBeforeSeparator()
       if (!separatorFound) {
-        return this.renderExpanded()
+        return this.renderSeparatorNotFound()
       } else {
         // NOTE: Using Fragment instead of div doesn't work
         return (

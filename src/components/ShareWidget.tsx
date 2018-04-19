@@ -2,7 +2,7 @@ import copy from 'clipboard-copy'
 import React from 'react'
 import styled from 'styled-components'
 import { BlockTopSpacing } from '../components/Block'
-import { BlockTag, H2Tag } from '../components/BlockElements'
+import { BlockTag, H2Tag, HrTag } from '../components/BlockElements'
 import { UnderlineLink } from '../components/InlineElements'
 import TwitterEmbed from '../components/TwitterEmbed'
 import {
@@ -87,6 +87,7 @@ class UrlBox extends React.Component<UrlBoxProps, UrlBoxState> {
 export interface ShareWidgetProps {
   twitterId?: string | null
   slug: string
+  hideTitle?: boolean
 }
 
 const ShareLinkBg = styled.div`
@@ -102,8 +103,14 @@ export const ShareLinkATag = styled.a`
   color: inherit;
 `
 
-const ShareWidget: React.SFC<ShareWidgetProps> = ({ twitterId, slug }) => {
-  const link = (
+const ShareWidget: React.SFC<ShareWidgetProps> = ({
+  twitterId,
+  slug,
+  hideTitle,
+}) => (
+  <div>
+    {hideTitle ? <HrTag useSpan={false} /> : <H2Tag>Share this article</H2Tag>}
+    {twitterId && <TwitterEmbed twitterId={twitterId} />}
     <BlockTag
       className="f6"
       reactType={'div'}
@@ -124,25 +131,19 @@ const ShareWidget: React.SFC<ShareWidgetProps> = ({ twitterId, slug }) => {
           <UrlBox slug={slug} />
         </div>
       </div>
-      <div>
-        <strong>Author:</strong>{' '}
-        <span>
-          Shu Uesugi.{' '}
-          <UnderlineLink to="/posts/about">
-            Learn more about me here
-          </UnderlineLink>.
-        </span>
-      </div>
+      {!hideTitle && (
+        <div>
+          <strong>Author:</strong>{' '}
+          <span>
+            Shu Uesugi.{' '}
+            <UnderlineLink to="/posts/about">
+              Learn more about me here
+            </UnderlineLink>.
+          </span>
+        </div>
+      )}
     </BlockTag>
-  )
-
-  return (
-    <div>
-      <H2Tag>Share this article</H2Tag>
-      {twitterId && <TwitterEmbed twitterId={twitterId} />}
-      {link}
-    </div>
-  )
-}
+  </div>
+)
 
 export default ShareWidget
