@@ -12,6 +12,8 @@ Here's some (very) quick takeaways from [fast.ai's Computational Linear Algebra 
 
 <div><responsive-iframe width="560" height="315" src="https://www.youtube.com/embed/Ys8R2nUTOAk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></responsive-iframe></div>
 
+**Read this first:** [jupyter notebook for the lecture](https://github.com/fastai/numerical-linear-algebra/blob/master/nbs/3.%20Background%20Removal%20with%20Robust%20PCA.ipynb)
+
 ## numpy.save
 
 Use `numpy.save` to serialize numpy into a file.
