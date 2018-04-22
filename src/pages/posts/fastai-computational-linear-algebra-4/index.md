@@ -1,9 +1,9 @@
 ---
-title: '"Takeaways from fast.ai Computational Linear Algebra course: Lecture 4"'
+title: "Takeaways from fast.ai Computational Linear Algebra course: Lecture 4"
 date: '2018-04-22T03:17:00.770Z'
 draft: false
 image: ./cover.jpg
-twitterId: null
+twitterId: "988008382060642304"
 ---
 
 Here's some (very) quick takeaways from [fast.ai's Computational Linear Algebra course](http://www.fast.ai/2017/07/17/num-lin-alg/), lecture 4.
