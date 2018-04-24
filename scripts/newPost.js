@@ -25,6 +25,7 @@ prompt.get(['title'], (err, result) => {
     draft: true,
     image: './cover.jpg',
     twitterId: null,
+    tags: null,
   }
 
   postFileStr += yaml.safeDump(frontmatter)
