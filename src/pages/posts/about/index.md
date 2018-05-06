@@ -18,7 +18,7 @@ I'm **Shu Uesugi**, a software developer in Silicon Valley.
 
 **Past:** I was born in Japan in 1988 and moved to Washington DC, USA in 2000. I graduated from Carnegie Mellon University in 2010 with a Bachelors degree in Computer Science and a Masters degree in Human-Computer Interaction.
 
-**Present Interests:** AI and machine learning, automation and future of work, role of technology in developing countries, and geopolitics.
+**Present Interests:** (1) Explainable AI and machine learning interpretability, (2) Automation and future of work, (3) Geopolitics and job creation in emerging economies.
 
 **Past Interests:** I used to write a [popular blog in Japanese](https://jp.chibicode.com).<!-- Using target="_blank" to avoid catch-links -->
 
