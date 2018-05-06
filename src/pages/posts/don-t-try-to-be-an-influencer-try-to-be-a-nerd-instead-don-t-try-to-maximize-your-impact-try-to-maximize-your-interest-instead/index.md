@@ -29,6 +29,8 @@ So in my 30s, I let it all go. I no longer set being an influencer my goal.
 
 Instead, I now try to be a **nerd** and be devoted to whatever I'm interested in. Being influential is secondary or even less important. Being a nerd is always a winning strategy - there's no way to lose (unless you try to become the *best* nerd, which you shouldn't try). And being devoted to something actually can help you become influential, if you're lucky.
 
-I no longer care about maximizing my impact to the world. I now only care about maximizing my interest for things I like. I also realized that I actually couldn't care less about making the world a better place.
+I no longer care about maximizing my impact to the world. I now only care about maximizing my interest for things I like.
+
+I also realized that I actually couldn't care less about making the world a better place; I'd like the world to be a better place, but to be completely honest, I no longer feel the pressure to be involved in shaping the world.
 
 This has certainly made me happier. Hope this advice helps you somehow.
