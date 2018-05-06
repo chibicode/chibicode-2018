@@ -31,6 +31,6 @@ Instead, I now try to be a **nerd** and be devoted to whatever I'm interested in
 
 I no longer care about maximizing my impact to the world. I now only care about maximizing my interest for things I like.
 
-I also realized that I actually couldn't care less about making the world a better place. Of course I'd like the world to be a better place, but to be completely honest, I no longer feel the pressure to be involved in shaping the world.
+I also realized that I actually couldn't care less about making the world a better place. Of course I'd like the humanity to prosper, but to be completely honest, I no longer feel the pressure to be involved in shaping the world.
 
 This has certainly made me happier. Hope this advice helps you somehow.
