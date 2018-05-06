@@ -27,10 +27,10 @@ In my 20s, I became a micro-influencer of a small subset of the Japanese blogosp
 
 As I turned 30 after [traveling the world](/posts/world-travel-2017-2018), I let it all go. I no longer set becoming an influencer as my goal.
 
-Instead, I now try to be a **nerd** and be devoted to whatever I'm interested in. Being influential is secondary or even less important. Being a nerd is always a winning strategy - there's no way to lose (unless you try to become the *best* nerd, which you shouldn't try). And being devoted to something actually can help you become influential, if you're lucky.
+Instead, I now try to be a **nerd** and be devoted to whatever I'm interested in. Being influential is secondary or even less important. Being a nerd is always a winning strategy - there's no way to lose (unless you try to become the *best* nerd, which you shouldn't try). And being devoted to something actually can help you become influential, *if you're lucky*.
 
 I no longer care about maximizing my impact to the world. I now only care about maximizing my interest for things I like.
 
-I also realized that I actually couldn't care less about making the world a better place. Of course I'd like the humanity to prosper, but to be completely honest, I no longer feel the pressure to be involved in shaping the society.
+I also realized that I actually couldn't care less about making the world a better place. Of course I'd like the humanity to prosper, but to be completely honest, I no longer feel the pressure to be involved in *shaping* the society.
 
 This has certainly made me happier. Hope this advice helps you somehow.
