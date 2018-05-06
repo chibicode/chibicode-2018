@@ -25,7 +25,7 @@ In my 20s, I became a micro-influencer of a small subset of the Japanese blogosp
 
 <div><twitter-embed id="852311991981035520"></twitter-embed></div>
 
-So in my 30s, I let it all go. I no longer set being an influencer my goal.
+As I turned 30 after [traveling the world](/posts/world-travel-2017-2018), I let it all go. I no longer set being an influencer my goal.
 
 Instead, I now try to be a **nerd** and be devoted to whatever I'm interested in. Being influential is secondary or even less important. Being a nerd is always a winning strategy - there's no way to lose (unless you try to become the *best* nerd, which you shouldn't try). And being devoted to something actually can help you become influential, if you're lucky.
 
