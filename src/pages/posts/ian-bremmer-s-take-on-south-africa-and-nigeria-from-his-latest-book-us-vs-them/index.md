@@ -69,3 +69,7 @@ Inside the most populous country and the largest economy in Africa:
 **World bank's [2016 digital dividend report](http://www.worldbank.org/en/publication/wdr2016)**: Around 65% of jobs in Nigeria and South Africa are susceptible to automation, although technology adoption might be slow.
 
 ![](./automation.png)
+
+## Buy the book
+
+[Us vs. Them: The Failure of Globalism](https://www.amazon.com/Us-vs-Them-Failure-Globalism-ebook/dp/B074DG6K8K/)
