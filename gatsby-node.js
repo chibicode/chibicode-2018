@@ -13,15 +13,11 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           {
             allMarkdownRemark(
               sort: { fields: [frontmatter___date], order: DESC }
-              limit: 1000
             ) {
               edges {
                 node {
                   fields {
                     slug
-                  }
-                  frontmatter {
-                    title
                   }
                 }
               }
@@ -34,24 +30,16 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           reject(result.errors)
         }
 
-        // Create blog posts pages.
-        const posts = result.data.allMarkdownRemark.edges
-
-        posts.forEach((post, index) => {
-          const previous =
-            index === posts.length - 1 ? false : posts[index + 1].node
-          const next = index === 0 ? false : posts[index - 1].node
-
-          createPage({
-            path: post.node.fields.slug,
-            component: blogPost,
-            // passed onto PostTemplate as pathContext
-            context: {
-              slug: post.node.fields.slug,
-              previous,
-              next,
-            },
-          })
+        result.data.allMarkdownRemark.edges.forEach((post, index) => {
+          if (post.node.fields && post.node.fields.slug) {
+            createPage({
+              path: post.node.fields.slug,
+              component: blogPost,
+              context: {
+                slug: post.node.fields.slug,
+              },
+            })
+          }
         })
       })
     )

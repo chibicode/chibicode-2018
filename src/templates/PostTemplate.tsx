@@ -8,7 +8,6 @@ import { PostBySlugQuery } from '../types/PostBySlugQuery'
 
 interface Props {
   data: PostBySlugQuery
-  pathContext?: object
 }
 
 const PostTemplate: React.SFC<Props> = ({ data }) =>
