@@ -14,6 +14,7 @@ const PostArchiveList: React.SFC<Props> = ({ allMarkdownRemark }) => (
     <OlTag reversed>
       {allMarkdownRemark!.edges!.map(
         e =>
+          e!.node!.fields &&
           !e!.node!.frontmatter!.draft && (
             <LiTag bottomSpacing={BlockBottomSpacing.Medium}>
               <NoUnderlineLink to={e!.node!.fields!.slug!} className="b">

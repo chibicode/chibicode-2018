@@ -27,6 +27,7 @@ const getRelatedPostsData = ({
           posts: allMarkdowwnRemark
             .edges!.filter(
               e =>
+                e!.node!.fields &&
                 node.fields!.slug! !== e!.node!.fields!.slug! &&
                 (process.env.NODE_ENV === 'development' ||
                   !e!.node!.frontmatter!.draft) &&

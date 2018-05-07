@@ -67,6 +67,7 @@ export default class PostList extends React.Component<Props, State> {
       <div>
         {allMarkdownRemark!.edges!.slice(0, postsToShow).map(
           e =>
+            e!.node!.fields &&
             exceptSlug !== e!.node!.fields!.slug! &&
             (process.env.NODE_ENV === 'development' ||
               !e!.node!.frontmatter!.draft) && (
