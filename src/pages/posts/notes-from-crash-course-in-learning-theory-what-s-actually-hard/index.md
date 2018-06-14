@@ -3,7 +3,7 @@ title: 'Notes from "Crash course in learning theory": What''s actually hard'
 date: '2018-06-14T04:27:27.622Z'
 draft: false
 image: ./cover.jpg
-twitterId: null
+twitterId: "1007243582594433024"
 tags: null
 ---
 
