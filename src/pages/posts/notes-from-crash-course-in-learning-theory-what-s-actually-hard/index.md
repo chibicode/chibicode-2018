@@ -34,3 +34,4 @@ I've tweeted some notes about my favorite blog post from 2006, [Kathy Sierra's C
 <div><twitter-embed hideConversation="true" id="1007235766349586432"></twitter-embed></div>
 <div><twitter-embed hideConversation="true" id="1007237300663644173"></twitter-embed></div>
 <div><twitter-embed hideConversation="true" id="1007260944076947458"></twitter-embed></div>
+<div><twitter-embed hideConversation="true" id="1007263915779112960"></twitter-embed></div>
