@@ -1,3 +1,4 @@
+import { graphql } from 'gatsby'
 import React from 'react'
 import Helmet from 'react-helmet'
 import PageHeader, { PageHeaderLocation } from '../components/PageHeader'
@@ -132,15 +133,15 @@ export const pageQuery = graphql`
             twitterId
             image {
               childImageSharp {
-                width1200: resolutions(width: 1200, quality: 80) {
+                width1200: fixed(width: 1200, quality: 80) {
                   height
                   src
                   width
                 }
-                width1000: sizes(maxWidth: 1000, quality: 80) {
+                width1000: fluid(maxWidth: 1000, quality: 80) {
                   aspectRatio
                   base64
-                  sizes
+                  fluid
                   src
                   srcSet
                 }
@@ -168,15 +169,15 @@ export const pageQuery = graphql`
         tags
         image {
           childImageSharp {
-            width1200: resolutions(width: 1200, quality: 80) {
+            width1200: fixed(width: 1200, quality: 80) {
               height
               src
               width
             }
-            width1000: sizes(maxWidth: 1000, quality: 80) {
+            width1000: fluid(maxWidth: 1000, quality: 80) {
               aspectRatio
               base64
-              sizes
+              fluid
               src
               srcSet
             }

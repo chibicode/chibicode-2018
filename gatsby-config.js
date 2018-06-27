@@ -42,7 +42,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-feed',
-    'gatsby-plugin-remove-serviceworker',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-typescript',
@@ -55,7 +54,6 @@ module.exports = {
     'gatsby-plugin-sitemap',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-twitter',
-    'gatsby-plugin-react-next',
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {

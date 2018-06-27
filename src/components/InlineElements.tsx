@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import Link, { GatsbyLinkProps } from 'gatsby-link'
+import { GatsbyLinkProps, Link } from 'gatsby'
 import React from 'react'
 import styled from 'styled-components'
 import { COLOR_YELLOW } from '../constants/styles'

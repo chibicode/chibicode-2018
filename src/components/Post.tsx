@@ -50,7 +50,7 @@ const Post: React.SFC<Props> = ({
         width={BlockWidth.Small}
       >
         <figure className="mv0 nl3 nr3 nl4-ns nr4-ns">
-          <GatsbyImage sizes={image} alt="Cover Image" className="db" />
+          <GatsbyImage fluid={image} alt="Cover Image" className="db" />
           {imageAttributionName && (
             <div className="mt2 mh3 mh4-ns">
               <BlockTag reactType={'figcaption'} className="silver f7">
