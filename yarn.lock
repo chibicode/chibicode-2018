@@ -4861,19 +4861,19 @@ gatsby-link@^2.0.0-beta.4:
     react-lifecycles-compat "^3.0.2"
     ric "^1.3.0"
 
-gatsby-plugin-canonical-urls@next:
+gatsby-plugin-canonical-urls@^2.0.0-beta.2:
   version "2.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-canonical-urls/-/gatsby-plugin-canonical-urls-2.0.0-beta.2.tgz#6dc0d8078180e4d188202e2bd5a114e0dc2e23a9"
   dependencies:
     "@babel/runtime" "7.0.0-beta.51"
 
-gatsby-plugin-catch-links@next:
+gatsby-plugin-catch-links@^2.0.2-beta.2:
   version "2.0.2-beta.2"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-catch-links/-/gatsby-plugin-catch-links-2.0.2-beta.2.tgz#f9e9f1ccc1e9138aabf1318e5f00286b02c3088f"
   dependencies:
     "@babel/runtime" "7.0.0-beta.51"
 
-gatsby-plugin-feed@next:
+gatsby-plugin-feed@^2.0.0-beta.3:
   version "2.0.0-beta.3"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-2.0.0-beta.3.tgz#66328de7744415775f5ddd08f21d7c7f4062ec46"
   dependencies:
@@ -4883,7 +4883,7 @@ gatsby-plugin-feed@next:
     pify "^3.0.0"
     rss "^1.2.2"
 
-gatsby-plugin-google-analytics@next:
+gatsby-plugin-google-analytics@^2.0.0-beta.2:
   version "2.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.0.0-beta.2.tgz#39a455aa5b864dc1e8c39dedd9c87d23177e50cb"
   dependencies:
@@ -4927,20 +4927,20 @@ gatsby-plugin-sharp@^2.0.0-beta.5:
     sharp "^0.20.2"
     svgo "^0.7.2"
 
-gatsby-plugin-sitemap@next:
+gatsby-plugin-sitemap@^2.0.0-beta.2:
   version "2.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-sitemap/-/gatsby-plugin-sitemap-2.0.0-beta.2.tgz#0c648f9c3aaa04aace916436d7d696435572ac89"
   dependencies:
     "@babel/runtime" "7.0.0-beta.51"
     sitemap "^1.12.0"
 
-gatsby-plugin-styled-components@next:
+gatsby-plugin-styled-components@^3.0.0-beta.2:
   version "3.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-3.0.0-beta.2.tgz#2e925bd56ecd51be50770b3455ffb9e95585c37e"
   dependencies:
     "@babel/runtime" "7.0.0-beta.51"
 
-gatsby-plugin-twitter@next:
+gatsby-plugin-twitter@^2.0.0-beta.2:
   version "2.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-twitter/-/gatsby-plugin-twitter-2.0.0-beta.2.tgz#d756bc84af1c19ceb3ae6dd2430a5acd09d5b06c"
   dependencies:
@@ -4962,7 +4962,7 @@ gatsby-react-router-scroll@^2.0.0-beta.2:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
-gatsby-remark-copy-linked-files@next:
+gatsby-remark-copy-linked-files@^2.0.0-beta.2:
   version "2.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/gatsby-remark-copy-linked-files/-/gatsby-remark-copy-linked-files-2.0.0-beta.2.tgz#233025bcbfec08d06f5d6e047e53893d7cbf7a0d"
   dependencies:
@@ -4987,7 +4987,7 @@ gatsby-remark-images@^2.0.1-beta.6:
     slash "^1.0.0"
     unist-util-select "^1.5.0"
 
-gatsby-remark-katex@next:
+gatsby-remark-katex@^2.0.0-beta.2:
   version "2.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/gatsby-remark-katex/-/gatsby-remark-katex-2.0.0-beta.2.tgz#824441d5d724c1b206c893557749175e0aec685d"
   dependencies:
@@ -5004,7 +5004,7 @@ gatsby-remark-prismjs@^3.0.0-beta.3:
     parse-numeric-range "^0.0.2"
     unist-util-visit "^1.3.0"
 
-gatsby-remark-smartypants@next:
+gatsby-remark-smartypants@^2.0.0-beta.2:
   version "2.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/gatsby-remark-smartypants/-/gatsby-remark-smartypants-2.0.0-beta.2.tgz#8f03ac53bdcb30b20bff299c39b7fa99828d1fde"
   dependencies:
@@ -5054,7 +5054,7 @@ gatsby-transformer-remark@^2.1.1-beta.3:
     unist-util-select "^1.5.0"
     unist-util-visit "^1.3.0"
 
-gatsby-transformer-sharp@next:
+gatsby-transformer-sharp@^2.1.1-beta.3:
   version "2.1.1-beta.3"
   resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-2.1.1-beta.3.tgz#63e4d5a3997f5fe4f38bdba3a9e5a6d276f606c6"
   dependencies:
