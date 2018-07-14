@@ -11,10 +11,10 @@ import favicon152 from '../images/favicon-152.png'
 
 interface Props {
   location: Location
-  children: () => React.ReactNode
+  children: React.ReactNode
 }
 
-const App: React.SFC<Props> = ({ location, children }) => {
+const Layout: React.SFC<Props> = ({ location, children }) => {
   const isHomepage =
     location.pathname === withPrefix('/') ||
     location.pathname === withPrefix('/posts/')
@@ -35,9 +35,9 @@ const App: React.SFC<Props> = ({ location, children }) => {
             : PageHeaderLocation.PostPageTop
         }
       />
-      {children()}
+      {children}
     </AppStyles>
   )
 }
 
-export default App
+export default Layout
