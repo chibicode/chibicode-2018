@@ -1,6 +1,7 @@
 import { graphql } from 'gatsby'
 import React from 'react'
 import Helmet from 'react-helmet'
+import Layout from '../components/Layout'
 import PageHeader, { PageHeaderLocation } from '../components/PageHeader'
 import Post from '../components/Post'
 import PostList from '../components/PostList'
@@ -9,11 +10,12 @@ import { PostBySlugQuery } from '../types/PostBySlugQuery'
 
 interface Props {
   data: PostBySlugQuery
+  location: Location
 }
 
-const PostTemplate: React.SFC<Props> = ({ data }) =>
+const PostTemplate: React.SFC<Props> = ({ data, location }) =>
   data!.markdownRemark && (
-    <div>
+    <Layout location={location}>
       <Helmet
         title={`${data!.markdownRemark!.frontmatter!.title!} | ${data!.site!
           .siteMetadata!.title!}`}
@@ -101,7 +103,7 @@ const PostTemplate: React.SFC<Props> = ({ data }) =>
           allMarkdownRemark={data!.allMarkdownRemark!}
         />
       </div>
-    </div>
+    </Layout>
   )
 
 export default PostTemplate
@@ -141,7 +143,7 @@ export const pageQuery = graphql`
                 width1000: fluid(maxWidth: 1000, quality: 80) {
                   aspectRatio
                   base64
-                  fluid
+                  sizes
                   src
                   srcSet
                 }
@@ -177,7 +179,7 @@ export const pageQuery = graphql`
             width1000: fluid(maxWidth: 1000, quality: 80) {
               aspectRatio
               base64
-              fluid
+              sizes
               src
               srcSet
             }

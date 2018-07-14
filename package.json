@@ -60,7 +60,6 @@
     "mkdirp": "^0.5.1",
     "prettier": "^1.11.1",
     "prompt": "^1.0.0",
-    "shelljs": "^0.8.1",
     "tslint": "^5.9.1",
     "tslint-config-prettier": "^1.10.0",
     "tslint-react": "^3.5.1",
@@ -84,8 +83,7 @@
     "build": "gatsby build",
     "apollo:introspect-schema": "apollo-codegen introspect-schema http://localhost:8000/___graphql --output schema.json",
     "apollo:generate": "apollo-codegen generate src/**/*.tsx --schema schema.json --target typescript --tag-name=graphql --add-typename --output src/types",
-    "apollo:fix": "node scripts/fixApollo.js",
-    "apollo": "yarn apollo:introspect-schema && yarn apollo:generate && yarn apollo:fix",
+    "apollo": "yarn apollo:introspect-schema && yarn apollo:generate",
     "tsc-watch": "tsc -w --noEmit"
   }
 }

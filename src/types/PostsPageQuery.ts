@@ -26,7 +26,7 @@ export interface PostsPageQuery_allMarkdownRemark_edges_node_fields {
 
 export interface PostsPageQuery_allMarkdownRemark_edges_node_frontmatter {
   __typename: "frontmatter_2";
-  date: string | null;
+  date: any | null;
   draft: boolean | null;
   title: string | null;
 }
@@ -53,11 +53,11 @@ export interface PostsPageQuery {
   allMarkdownRemark: PostsPageQuery_allMarkdownRemark | null;  // Connection to all MarkdownRemark nodes
 }
 
+/* tslint:disable */
+// This file was automatically generated and should not be edited.
+
 //==============================================================
 // START Enums and Input Objects
-// All enums and input objects are included in every output file
-// for now, but this will be changed soon.
-// TODO: Link to issue to fix this.
 //==============================================================
 
 //==============================================================

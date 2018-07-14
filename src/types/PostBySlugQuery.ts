@@ -25,14 +25,14 @@ export interface PostBySlugQuery_allMarkdownRemark_edges_node_fields {
 }
 
 export interface PostBySlugQuery_allMarkdownRemark_edges_node_frontmatter_image_childImageSharp_width1200 {
-  __typename: "ImageSharpResolutions";
+  __typename: "ImageSharpFixed";
   height: number | null;
   src: string | null;
   width: number | null;
 }
 
 export interface PostBySlugQuery_allMarkdownRemark_edges_node_frontmatter_image_childImageSharp_width1000 {
-  __typename: "ImageSharpSizes";
+  __typename: "ImageSharpFluid";
   aspectRatio: number | null;
   base64: string | null;
   sizes: string | null;
@@ -53,7 +53,7 @@ export interface PostBySlugQuery_allMarkdownRemark_edges_node_frontmatter_image 
 
 export interface PostBySlugQuery_allMarkdownRemark_edges_node_frontmatter {
   __typename: "frontmatter_2";
-  date: string | null;
+  date: any | null;
   title: string | null;
   draft: boolean | null;
   tags: (string | null)[] | null;
@@ -65,7 +65,7 @@ export interface PostBySlugQuery_allMarkdownRemark_edges_node_frontmatter {
 
 export interface PostBySlugQuery_allMarkdownRemark_edges_node {
   __typename: "MarkdownRemark";
-  htmlAst: JSON | null;
+  htmlAst: any | null;
   excerpt: string | null;
   fields: PostBySlugQuery_allMarkdownRemark_edges_node_fields | null;
   frontmatter: PostBySlugQuery_allMarkdownRemark_edges_node_frontmatter | null;
@@ -87,14 +87,14 @@ export interface PostBySlugQuery_markdownRemark_fields {
 }
 
 export interface PostBySlugQuery_markdownRemark_frontmatter_image_childImageSharp_width1200 {
-  __typename: "ImageSharpResolutions";
+  __typename: "ImageSharpFixed";
   height: number | null;
   src: string | null;
   width: number | null;
 }
 
 export interface PostBySlugQuery_markdownRemark_frontmatter_image_childImageSharp_width1000 {
-  __typename: "ImageSharpSizes";
+  __typename: "ImageSharpFluid";
   aspectRatio: number | null;
   base64: string | null;
   sizes: string | null;
@@ -116,8 +116,8 @@ export interface PostBySlugQuery_markdownRemark_frontmatter_image {
 export interface PostBySlugQuery_markdownRemark_frontmatter {
   __typename: "frontmatter_2";
   title: string | null;
-  date: string | null;
-  dateRaw: Date | null;
+  date: any | null;
+  dateRaw: any | null;
   imageAttributionName: string | null;
   imageAttributionUrl: string | null;
   twitterId: string | null;
@@ -129,7 +129,7 @@ export interface PostBySlugQuery_markdownRemark_frontmatter {
 export interface PostBySlugQuery_markdownRemark {
   __typename: "MarkdownRemark";
   id: string;  // The id of this node.
-  htmlAst: JSON | null;
+  htmlAst: any | null;
   excerpt: string | null;
   fields: PostBySlugQuery_markdownRemark_fields | null;
   frontmatter: PostBySlugQuery_markdownRemark_frontmatter | null;
@@ -145,11 +145,11 @@ export interface PostBySlugQueryVariables {
   slug: string;
 }
 
+/* tslint:disable */
+// This file was automatically generated and should not be edited.
+
 //==============================================================
 // START Enums and Input Objects
-// All enums and input objects are included in every output file
-// for now, but this will be changed soon.
-// TODO: Link to issue to fix this.
 //==============================================================
 
 //==============================================================

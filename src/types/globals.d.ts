@@ -1,5 +1,0 @@
-declare module '*.png'
-declare module '*.jpg'
-declare module '*.svg'
-declare module 'rehype-react'
-declare module 'react-responsive-embed'
