@@ -1,5 +1,5 @@
 import '@ibm/plex/css/ibm-plex.min.css'
-import { withPrefix } from 'gatsby-link'
+import { withPrefix } from 'gatsby'
 import 'katex/dist/katex.min.css'
 import 'prismjs/themes/prism-solarizedlight.css'
 import React from 'react'
