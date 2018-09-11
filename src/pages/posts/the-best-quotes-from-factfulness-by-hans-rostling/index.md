@@ -120,6 +120,44 @@ Page 198:
 
 > \[T\]here is a small number of rich countries with life expectancies as low as that in the United States: **the rich Gulf states of Oman, Saudi Arabia, Bahrain, United Arab Emirates, and Kuwait.** But these states have a very different history. Until the 1960s when they really started getting rich on oil, their populations were poor and illiterate. Their health systems have been built in just two generations. Unlike the United States, these states are not constrained by a suspicion of anything governmental and I would not be surprised if within a couple of years they all had higher life expectancies than the United States. **Perhaps the United States will then be less reluctant to learn from them than it is to learn from Western European countries.**
 
+## On big pharma
+
+Page 204:
+
+> I was lecturing at Karolinska Institutet, explaining that the big pharmaceutical companies do hardly any research on malaria and nothing at all on sleeping sickness or other illnesses that affect only the poorest.
+>
+> A student sitting in the front said, “Let’s punch them in the face.”
+>
+> “Aha,” I said. “I am actually going to Novartis in the fall.” (Novartis is a global pharma company based in Switzerland, and I had been invited to give a lecture there.) “If you explain to me what I will achieve and who I should punch, I could try it. Who should I punch in the face? Is it just anybody who works there?”
+>
+> “No, no, no, no. It’s the boss,” said that guy.
+>
+> “Aha. OK. It is Daniel Vasella.” That was the name of the boss back then. “Well, I do know Daniel Vasella a bit. When I see him in the fall, should I punch him in the face? Will everything be good then? Will he become a good boss and realize that he should change the company’s research priorities?”
+>
+> A student farther back answered, “No, you have to punch the board members in the face.”
+>
+> “Well, that is actually interesting because I will probably speak in front of the board in the afternoon. So then I’ll stay calm in the morning when I see Daniel, but when I get to the boardroom I’ll walk around and punch as many as I can. I will of course not have time to knock everyone down … I have no fighting experience and there is security there, so they will probably stop me after three or four. But should I do that, then? You think this will make the board change its research policy?”
+>
+> No,” said a third student. “Novartis is a public company. It’s not the boss or the board who decides. It’s the shareholders. If the board changes its priorities the shareholders will just elect a new board.”
+>
+> “That’s right,” I said. “It’s the shareholders who want this company to spend their money on researching rich people’s illnesses. That’s how they get a good return on their shares.”
+>
+> So there’s nothing wrong with the employees, the boss, or the board, then.
+>
+> “Now, the question is”—I looked at the student who had first suggested the face punching—“who owns the shares in these big pharmaceutical companies?”
+>
+> “Well, it’s the rich.” He shrugged.
+>
+> “No. It’s actually interesting because pharmaceutical shares are very stable. When the stock market goes up and down, or oil prices go up and down, pharma shares keep giving a pretty steady return. Many other kinds of companies’ shares follow the economy—they do better or worse as people go on spending sprees or cut back—but the cancer patients always need treatment. So who owns the shares in these stable companies?” My young audience looked back at me, their faces like one big question mark.
+>
+> “It’s retirement funds.”
+>
+> Silence.
+>
+> “So maybe I don’t have to do any punching, because I will not meet the shareholders. But you will. This weekend, go visit your grandma and punch her in the face. If you feel you need someone to blame and punish, it’s the seniors and their greedy need for stable stocks.
+>
+> “And remember last summer, when you went backpacking and grandma gave you a little extra travel money? Well. Maybe you should give that back to her, so she can give it back to Novartis and ask them to invest in poor people’s health. Or maybe you spent it already, and you should punch yourself in the face.”
+
 ## On fake news
 
 Page 209:
