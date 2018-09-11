@@ -148,13 +148,13 @@ Page 204:
 >
 > “Well, it’s the rich.” He shrugged.
 >
-> “No. It’s actually interesting because pharmaceutical shares are very stable. When the stock market goes up and down, or oil prices go up and down, pharma shares keep giving a pretty steady return. Many other kinds of companies’ shares follow the economy—they do better or worse as people go on spending sprees or cut back—but the cancer patients always need treatment. So who owns the shares in these stable companies?” My young audience looked back at me, their faces like one big question mark.
+> “**No. It’s actually interesting because pharmaceutical shares are very stable. When the stock market goes up and down, or oil prices go up and down, pharma shares keep giving a pretty steady return. Many other kinds of companies’ shares follow the economy—they do better or worse as people go on spending sprees or cut back—but the cancer patients always need treatment.** So who owns the shares in these stable companies?” My young audience looked back at me, their faces like one big question mark.
 >
-> “It’s retirement funds.”
+> “It’s **retirement funds**.”
 >
 > Silence.
 >
-> “So maybe I don’t have to do any punching, because I will not meet the shareholders. But you will. This weekend, go visit your grandma and punch her in the face. If you feel you need someone to blame and punish, it’s the seniors and their greedy need for stable stocks.
+> “So maybe I don’t have to do any punching, because I will not meet the shareholders. But you will. **This weekend, go visit your grandma and punch her in the face. If you feel you need someone to blame and punish, it’s the seniors and their greedy need for stable stocks.**
 >
 > “And remember last summer, when you went backpacking and grandma gave you a little extra travel money? Well. Maybe you should give that back to her, so she can give it back to Novartis and ask them to invest in poor people’s health. Or maybe you spent it already, and you should punch yourself in the face.”
 
