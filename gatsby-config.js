@@ -62,5 +62,16 @@ module.exports = {
         siteUrl: `https://chibicode.com`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://chibicode.com',
+        sitemap: 'https://chibicode.com/sitemap.xml',
+        policy: [
+          { userAgent: 'ia_archiver', disallow: '/' },
+          { userAgent: 'Megalodon', disallow: '/' },
+        ],
+      },
+    },
   ],
 }
