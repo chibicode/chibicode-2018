@@ -72,7 +72,7 @@ class UrlBox extends React.Component<UrlBoxProps, UrlBoxState> {
         <UrlBoxInput
           type="text"
           onClick={this.urlBoxOnclick}
-          value={`https://chibicode.com${slug}`}
+          value={`https://2018.chibicode.com${slug}`}
           onChange={noOpInputClick}
           className="f6 db flex-auto ba b--moon-gray br2"
         />
@@ -124,7 +124,7 @@ const ShareWidget: React.SFC<ShareWidgetProps> = ({
               className="flex-auto"
               onClick={noOpLinkClick}
               href={slug}
-            >{`https://chibicode.com${slug}`}</ShareLinkATag>
+            >{`https://2018.chibicode.com${slug}`}</ShareLinkATag>
           </ShareLinkBg>
         </div>
         <div className="flex-auto db-ns dn">

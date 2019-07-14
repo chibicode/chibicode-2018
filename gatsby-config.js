@@ -5,7 +5,7 @@ module.exports = {
     title: 'Shu Uesugi',
     author: 'Shu Uesugi',
     description: "Shu Uesugi's Blog.",
-    siteUrl: 'https://chibicode.com',
+    siteUrl: 'https://2018.chibicode.com',
   },
   plugins: [
     {
@@ -59,14 +59,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://chibicode.com`,
+        siteUrl: `https://2018.chibicode.com`,
       },
     },
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://chibicode.com',
-        sitemap: 'https://chibicode.com/sitemap.xml',
+        host: 'https://2018.chibicode.com',
+        sitemap: 'https://2018.chibicode.com/sitemap.xml',
         policy: [
           { userAgent: 'ia_archiver', disallow: '/' },
           { userAgent: 'Megalodon', disallow: '/' },

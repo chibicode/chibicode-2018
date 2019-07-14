@@ -1,8 +1,8 @@
-# [chibicode](https://chibicode.com)
+# [chibicode](https://2018.chibicode.com)
 
 ![](src/images/favicon-152.png)
 
-Source code for my blog at [http://chibicode.com](http://chibicode.com). Built using [GatsbyJS](https://www.gatsbyjs.org/) and [TypeScript](http://www.typescriptlang.org/).
+Source code for my blog at [https://2018.chibicode.com](https://2018.chibicode.com). Built using [GatsbyJS](https://www.gatsbyjs.org/) and [TypeScript](http://www.typescriptlang.org/).
 
 ## Setup
 
