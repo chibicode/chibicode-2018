@@ -8,7 +8,7 @@ twitterId: "978163545098534912"
 draft: false
 ---
 
-Between February 2017 and January 2018, I traveled to **36 Countries in 94 Cities**. Here's the list.
+Between February 2017 and January 2018, I traveled to **36 Countries and 94 Cities**. Here's the list.
 
 <post-separator></post-separator>
 
