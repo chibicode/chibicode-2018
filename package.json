@@ -6,6 +6,9 @@
   "bugs": {
     "url": "https://github.com/chibicode/chibicode/issues"
   },
+  "engines": {
+    "node": "10.x"
+  },
   "dependencies": {
     "@ibm/plex": "^1.0.1",
     "babel-plugin-styled-components": "^1.5.1",
